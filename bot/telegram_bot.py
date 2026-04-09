@@ -5,6 +5,9 @@ from transformers import AutoProcessor, AutoModelForImageTextToText, BitsAndByte
 from peft import PeftModel
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "YOUR_TOKEN")
 MODEL_ID = "google/medgemma-4b-it"

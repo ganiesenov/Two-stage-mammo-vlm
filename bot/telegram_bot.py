@@ -6,7 +6,7 @@ from peft import PeftModel
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "8793457731:AAFs7o-_BRq7VrAr6SBfU3leqGCL-m_VVPw")
+BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "YOUR_TOKEN")
 MODEL_ID = "google/medgemma-4b-it"
 LORA_PATH = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/lora_ablation/r64_a64/checkpoint-204"
 PROMPT = "Generate a structured mammography radiology report with breast composition (ACR density), findings, BI-RADS category, and recommendation."

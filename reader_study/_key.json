@@ -1,0 +1,213 @@
+{
+  "note": "НЕ выдавать читателям — раскрывает источник",
+  "mapping": {
+    "R000": {
+      "image": "Img459",
+      "model": "two_stage_r64"
+    },
+    "R001": {
+      "image": "Img460",
+      "model": "two_stage_r64"
+    },
+    "R002": {
+      "image": "Img461",
+      "model": "two_stage_r64"
+    },
+    "R003": {
+      "image": "Img462",
+      "model": "two_stage_r64"
+    },
+    "R004": {
+      "image": "Img463",
+      "model": "two_stage_r64"
+    },
+    "R005": {
+      "image": "Img464",
+      "model": "two_stage_r64"
+    },
+    "R006": {
+      "image": "Img465",
+      "model": "two_stage_r64"
+    },
+    "R007": {
+      "image": "Img466",
+      "model": "two_stage_r64"
+    },
+    "R008": {
+      "image": "Img467",
+      "model": "two_stage_r64"
+    },
+    "R009": {
+      "image": "Img468",
+      "model": "two_stage_r64"
+    },
+    "R010": {
+      "image": "Img469",
+      "model": "two_stage_r64"
+    },
+    "R011": {
+      "image": "Img470",
+      "model": "two_stage_r64"
+    },
+    "R012": {
+      "image": "Img471",
+      "model": "two_stage_r64"
+    },
+    "R013": {
+      "image": "Img472",
+      "model": "two_stage_r64"
+    },
+    "R014": {
+      "image": "Img473",
+      "model": "two_stage_r64"
+    },
+    "R015": {
+      "image": "Img474",
+      "model": "two_stage_r64"
+    },
+    "R016": {
+      "image": "Img475",
+      "model": "two_stage_r64"
+    },
+    "R017": {
+      "image": "Img476",
+      "model": "two_stage_r64"
+    },
+    "R018": {
+      "image": "Img477",
+      "model": "two_stage_r64"
+    },
+    "R019": {
+      "image": "Img478",
+      "model": "two_stage_r64"
+    },
+    "R020": {
+      "image": "Img479",
+      "model": "two_stage_r64"
+    },
+    "R021": {
+      "image": "Img480",
+      "model": "two_stage_r64"
+    },
+    "R022": {
+      "image": "Img481",
+      "model": "two_stage_r64"
+    },
+    "R023": {
+      "image": "Img482",
+      "model": "two_stage_r64"
+    },
+    "R024": {
+      "image": "Img483",
+      "model": "two_stage_r64"
+    },
+    "R025": {
+      "image": "Img484",
+      "model": "two_stage_r64"
+    },
+    "R026": {
+      "image": "Img485",
+      "model": "two_stage_r64"
+    },
+    "R027": {
+      "image": "Img486",
+      "model": "two_stage_r64"
+    },
+    "R028": {
+      "image": "Img487",
+      "model": "two_stage_r64"
+    },
+    "R029": {
+      "image": "Img488",
+      "model": "two_stage_r64"
+    },
+    "R030": {
+      "image": "Img489",
+      "model": "two_stage_r64"
+    },
+    "R031": {
+      "image": "Img490",
+      "model": "two_stage_r64"
+    },
+    "R032": {
+      "image": "Img491",
+      "model": "two_stage_r64"
+    },
+    "R033": {
+      "image": "Img492",
+      "model": "two_stage_r64"
+    },
+    "R034": {
+      "image": "Img493",
+      "model": "two_stage_r64"
+    },
+    "R035": {
+      "image": "Img494",
+      "model": "two_stage_r64"
+    },
+    "R036": {
+      "image": "Img495",
+      "model": "two_stage_r64"
+    },
+    "R037": {
+      "image": "Img496",
+      "model": "two_stage_r64"
+    },
+    "R038": {
+      "image": "Img497",
+      "model": "two_stage_r64"
+    },
+    "R039": {
+      "image": "Img498",
+      "model": "two_stage_r64"
+    },
+    "R040": {
+      "image": "Img499",
+      "model": "two_stage_r64"
+    },
+    "R041": {
+      "image": "Img500",
+      "model": "two_stage_r64"
+    },
+    "R042": {
+      "image": "Img501",
+      "model": "two_stage_r64"
+    },
+    "R043": {
+      "image": "Img502",
+      "model": "two_stage_r64"
+    },
+    "R044": {
+      "image": "Img503",
+      "model": "two_stage_r64"
+    },
+    "R045": {
+      "image": "Img504",
+      "model": "two_stage_r64"
+    },
+    "R046": {
+      "image": "Img505",
+      "model": "two_stage_r64"
+    },
+    "R047": {
+      "image": "Img506",
+      "model": "two_stage_r64"
+    },
+    "R048": {
+      "image": "Img507",
+      "model": "two_stage_r64"
+    },
+    "R049": {
+      "image": "Img508",
+      "model": "two_stage_r64"
+    },
+    "R050": {
+      "image": "Img509",
+      "model": "two_stage_r64"
+    },
+    "R051": {
+      "image": "Img510",
+      "model": "two_stage_r64"
+    }
+  }
+}

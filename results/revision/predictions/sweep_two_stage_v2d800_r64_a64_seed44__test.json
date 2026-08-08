@@ -1,0 +1,281 @@
+{
+  "model": "sweep_two_stage_v2d800_r64_a64_seed44",
+  "split": "test",
+  "meta": {
+    "arm": "two_stage",
+    "r": 64,
+    "alpha": 64,
+    "seed": 44,
+    "corpus_scores": {
+      "bleu1": 0.4236,
+      "bleu4": 0.2249,
+      "rouge1": 0.6899,
+      "rouge2": 0.4755,
+      "rougeL": 0.6194,
+      "meteor": 0.597,
+      "cider": 0.2965
+    }
+  },
+  "predictions": [
+    {
+      "id": "Img459",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a small well defined soft opacity with internal popcorn calcifications seen in upper quadrant of breast suggest benign lesion - calcified fibroadenoma most likely (BIRADS 2). \n\nfew foci of microcalcifications seen anterior to above lesion. \n\nskin, nipple, and pectoral muscle appear normal. \n\nno significant axillary adenopathy seen. \n\nBIRADS: 2",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4b\n\nFindings:\nA large well-defined irregular soft opacity with spiculated margin seen in the upper quadrant of the breast suggests a moderate suspicious malignant lesion (BIRADS 4b).\nNo abnormal microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img460",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a small well defined soft opacity with internal popcorn and rim calcifications seen in inner quadrant of breast suggest benign lesion - calcified fibroadenoma most likely (BIRADS 2). \n\nfew foci of microcalcifications seen anterior to above lesion. \n\nskin and nipple appear normal. \n\nBIRADS: 2",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4a\n\nFindings:\nA large well-defined soft opacity with spiculated margin seen in the upper quadrant of the breast suggests a low suspicious malignant lesion (BIRADS 4a).\nNo abnormal microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img461",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: No abnormal soft opacity or microcalcifications seen.\n\nskin, nipple and pectoral muscle appear normal. \n\nfew small benign looking axillary node seen. \n\nBIRADS: 1",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin, nipple, and pectoral muscle appear normal.\nbenign-looking axillary adenopathy."
+    },
+    {
+      "id": "Img462",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: No abnormal soft opacity or microcalcifications seen.\n\nskin and nipple appear normal. \n\nBIRADS: 1",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img463",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: No abnormal soft opacity or microcalcifications seen.\n\nskin, nipple and pectoral muscle appear normal. \n\nno significant axillary adenopathy seen. \n\nBIRADS: 1",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img464",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: No abnormal soft opacity or microcalcifications seen.\n\nskin and nipple appear normal. \n\nBIRADS: 1",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img465",
+      "ref": "BREAST COMPOSITION: dense fibro glandular breast parenchyma (ACR D)\n\nFINDINGS: a large well defined soft opacity seen in upper periareolar region of breast suggest probably benign lesion (BIRADS 3)\n\nskin, nipple and pectoral muscle appear normal. \n\nfew small benign looking axillary nodes seen. \n\nBIRADS: 3",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img466",
+      "ref": "BREAST COMPOSITION: dense fibro glandular breast parenchyma (ACR D)\n\nFINDINGS: a large well defined soft opacity seen in outer quadrant of breast suggest probably benign lesion (BIRADS 3)\n\nskin and nipple appear normal. \n\nBIRADS: 3",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img467",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a well defined lobulated soft opacity seen in upper quadrant of breast suggest probably benign lesion (BIRADS 3)\n\nskin, nipple and pectoral muscle appear normal. \n\nfew small benign looking axillary nodes seen. \n\nBIRADS: 3",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img468",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a well defined lobulated soft opacity seen in outer quadrant of breast suggest probably benign lesion (BIRADS 3)\n\nskin and nipple appear normal. \n\nBIRADS: 3",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img469",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: about two well defined lobulated soft opacity seen in lower quadrant of breast suggest probably benign lesions (BIRADS 3)\n\nanother small well defined soft opacity with foci of microcalcification seen in posterior aspect of lower quadrant of breast suggest moderate suspiciois malignant lesion (BIRADS 4b)\n\nskin, nipple and pectoral muscle appear normal. \n\nfew small benign looking axillary nodes seen. \n\nBIRADS: 3, 4b",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4a\n\nFindings:\nA well-defined irregular soft opacity seen in the upper quadrant of the breast suggests a low suspicious lesion (BIRADS 4a).\nskin and nipple appear normal.\nbenign-looking axillary adenopathy."
+    },
+    {
+      "id": "Img470",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: about three well defined lobulated soft opacity seen in inner quadrant of breast suggest probably benign lesions (BIRADS 3)\n\nanother small well defined soft opacity with foci of microcalcification seen in posterior aspect of outer quadrant of breast suggest moderate suspiciois malignant lesion (BIRADS 4b)\n\nskin and nipple appear normal. \n\nBIRADS: 3, 4b",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 3\n\nFindings:\nA small well-defined soft opacity seen in the upper quadrant of the breast suggests a probably benign lesion (BIRADS 3).\nSkin and nipple appear normal.\nbenign-looking axillary adenopathy."
+    },
+    {
+      "id": "Img471",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a large well defined irregular soft opacity seen in lower quadrantof breast suggest low suspiciois malignant lesion (BIRADS 4a)\n\nskin, nipple and pectoral muscle appear normal. \n\nno significant axillary nodes seen. \n\nBIRADS: 4a",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img472",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a large well defined irregular soft opacity with few spiculations seen in inner quadrantof breast suggest moderate suspicious malignant lesion (BIRADS 4b)\n\nskin and nipple appear normal. \n\nBIRADS: 4b",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img473",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: an ill defined soft opacity seen in upper periareolar region of breast suggest low suspicious malignant lesion (BIRADS 4a)\n\nno abnormal microcalcification seen. \n\nskin, nipple and pectoral muscle appear normal. \n\nno significant axillary adenopathy seen. \n\nBIRADS: 4a",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img474",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: an irregular ill defined soft opacity seen in outer periareolar region of breast with overlying skin thickening suggest high suspicious malignant lesion (BIRADS 4c)\n\nno abnormal microcalcification seen. \n\nnipple appears normal. \n\nBIRADS: 4c",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img475",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a small well defined soft opacity seen involving nipple suggests\nmoderate suspicious malignant lesion (BIRADS 4b)\n\nbifid appearance of nipple seen.\n\nno abnormal microcalcification seen. \n\nskin and pectoral muscle appear normal. \n\nfew small benign-looking axillary nodes seen. \n\nBIRADS: 4b",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 3\n\nFindings:\na small well-defined soft opacity seen in the upper quadrant of the breast suggests a benign lesion (BIRADS 3).\nskin, nipple, and pectoral muscle appear normal.\nbenign-looking axillary adenopathy."
+    },
+    {
+      "id": "Img476",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a small well defined soft opacity seen in inner periareolar region\nof breast suggests low suspicious malignant lesion (BIRADS 4a)\n\nno abnormal microcalcification seen. \n\nskin and nipple appear normal. \n\nBIRADS: 4a",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img477",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a well defined soft opacity seen in upper quadrant of breast \nsuggest probably benign lesion (BIRADS 3)\n\nskin, nipple and pectoral muscle appear normal. \n\nno significant axillary nodes seen. \n\nBIRADS: 3",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img478",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a well defined soft opacity seen in outer quadrant of breast \nsuggest probably benign lesion (BIRADS 3).\nanother tiny well defined soft opacity seen in posterior central quadrant \nsuggest probably benign lesion (BIRADS 3).\n\nskin and nipple appear normal. \n\nno abnormal microcalcification seen. \n\nBIRADS: 3",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img479",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a well defined irregular soft opacity with spiculated margins seen in \nupper quadrant of breast suggest high suspicious malignant lesion (BIRADS 4c). \n\nskin, nipple and pectoral muscle appear normal. \n\nno significant axillary adenopathy seen. \n\nBIRADS: 4c",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img480",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: an ill defined soft opacity seen in outer quadrant of breast \nsuggest low suspicious malignant lesion (BIRADS 4a). \n\nbenign vascular calcification seen.\n\nskin and nipple appear normal. \n\nno abnormal microcalcification seen. \n\nBIRADS: 4a",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img481",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a small well defined soft opacity seen in the lower quadrant of the breast \nsuggest probably benign lesion (BIRADS 3). \n\nno abnormal microcalcification seen.\n\nskin, nipple, and pectoral muscle appear normal. \n\nfew small axillary adenopathy seen. \n\nBIRADS: 3",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img482",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a well defined soft opacity seen in the inner central quadrant of the breast \nsuggest probably benign lesion (BIRADS 3). \n\nno abnormal microcalcification seen.\n\nskin and nipple appear normal. \n\nBIRADS: 3",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img483",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a well defined soft opacity with spiculated margins seen in inner \nquadrant of breast suggests high suspicious malignant lesion (BIRADS 4c). \n\nno abnormal microcalcification seen.\n\nskin and nipple appear normal. \n\nBIRADS: 4c",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4a\n\nFindings:\nA well-defined irregular soft opacity with spiculated margin seen in the upper quadrant of the breast suggests a low suspicious malignant lesion (BIRADS 4a).\nNo abnormal microcalcification seen.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img484",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a well defined soft opacity with spiculated margins seen in lower \nquadrant of breast suggests high suspicious malignant lesion (BIRADS 4c). \n\nno abnormal microcalcification seen.\n\nskin, nipple and pectoral muscle appear normal. \n\nno significant axillary adenopathy seen. \n\nBIRADS: 4c",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4a\n\nFindings:\nA large well-defined soft opacity with a slightly irregular margin seen in the upper quadrant of the breast suggests a low suspicious lesion (BIRADS 4a).\nskin and nipple appear normal.\nbenign-looking axillary adenopathy."
+    },
+    {
+      "id": "Img485",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a well defined irregular soft opacity with spiculated margins \nand foci of microcalcifications seen in lower quadrant of breast causing \nmild nipple retraction suggests malignant lesion (BIRADS 5). \n\nskin and pectoral muscle appear normal. \n\nno significant axillary adenopathy seen. \n\nBIRADS: 5",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 3\n\nFindings:\nA small well-defined soft opacity seen in the upper quadrant of the breast suggests a benign lesion (BIRADS 3).\nskin, nipple, and pectoral muscle appear normal.\nbenign-looking axillary adenopathy."
+    },
+    {
+      "id": "Img486",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a well defined soft opacity with spiculated margins \nseen in inner quadrant of breast suggests high suspicious malignant lesion (BIRADS 4c). \n\nno abnormal microcalcification seen. \n\nskin and nipple appear normal. \n\nBIRADS: 4c",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4a\n\nFindings:\nA well-defined irregular soft opacity with spiculated margin seen in the upper quadrant of the breast suggests a low suspicious malignant lesion (BIRADS 4a).\nSkin and nipple appear normal.\nNo abnormal microcalcification seen."
+    },
+    {
+      "id": "Img487",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a well defined soft opacity with spiculated margins seen in lower quadrant of breast suggest high suspicious malignant lesion (BIRADS 4c)\n\nno abnormal microcalcification seen. \n\nskin, nipple and pectoral muscle appears normal. \n\nfew small benign looking axillary nodes seen.\n\nBIRADS: 4c",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 3\n\nFindings:\nA small well-defined soft opacity seen in the upper quadrant of the breast suggests a probably benign lesion (BIRADS 3).\nskin, nipple, and pectoral muscle appear normal.\nbenign-looking axillary adenopathy."
+    },
+    {
+      "id": "Img488",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a large irregular soft opacity with spiculated margins seen in the inner-outer quadrant of breast causing overlying skin and nipple retraction suggest malignant lesion (BIRADS 5)\n\nno abnormal microcalcification seen. \n\nBIRADS: 5",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 3\n\nFindings:\nA well-defined soft opacity seen in the inner quadrant of the breast suggests a benign lesion (BIRADS 3).\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img489",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a large irregular soft opacity with spiculations \nseen in the upper quadrant of the breast causing overlying skin and nipple retraction suggest a malignant lesion (BIRADS 5)\n\nno abnormal microcalcification seen. \n\nmultiple enlarged axillary nodes seen. \n\nBIRADS: 5",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img490",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a well defined irregular soft opacity with spiculated margins and multiple foci of microcalcifications seen in outer quadrant of breast suggest malignant lesion (BIRADS 5)\n\nskin and nipple appears normal. \n\nBIRADS: 5",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 3\n\nFindings:\nA small well-defined soft opacity seen in the upper quadrant of the breast suggests a probably benign lesion (BIRADS 3).\nSkin and nipple appear normal."
+    },
+    {
+      "id": "Img491",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a well defined irregular soft opacity with spiculated margins and multiple foci of microcalcifications seen in upper quadrant of breast extending upto retroareolar region suggest malignant lesion (BIRADS 5)\n\nskin, nipple and pectoral muscle appears normal. \n\nfew enlarged axillary nodes seen. \n\nBIRADS: 5",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4a\n\nFindings:\nA large well-defined irregular soft opacity with spiculated margin seen in the upper quadrant of the breast suggests a low suspicious malignant lesion (BIRADS 4a).\nNo abnormal microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img492",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a large well defined irregular soft opacity with spiculations seen in retroareolar region of breast involving nipple suggest high suspicious malignant lesion (BIRADS 4c)\n\nbenign vascular calcifications seen. \n\nBIRADS: 4c",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4a\n\nFindings:\nA large well-defined irregular soft opacity with spiculated margin seen in the upper quadrant of the breast suggests a low suspicious malignant lesion (BIRADS 4a).\nSkin and nipple appear normal.\nNo abnormal microcalcification seen."
+    },
+    {
+      "id": "Img493",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a large well-defined irregular soft opacity seen in retroareolar region of breast suggest high suspicious malignant lesion (BIRADS 4c)\n\nbenign vascular calcifications seen. \n\nskin and pectoral muscle appear normal.\n\nno significant axillary adenopathy seen. \n\nBIRADS: 4c",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4a\n\nFindings:\nA large well-defined irregular soft opacity seen in the upper quadrant of the breast suggests a low suspicious malignant lesion (BIRADS 4a).\nSkin and nipple appear normal.\nbenign-looking axillary adenopathy."
+    },
+    {
+      "id": "Img494",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a well defined soft opacity with foci of calcifications seen in inner quadrant of breast suggest benign lesion - calcified fibroadenoma most likely (BIRADS 2). \n\nskin and nipple appear normal. \n\nBIRADS: 2",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4a\n\nFindings:\nA well-defined soft opacity with internal calcifications seen in the upper quadrant of the breast suggests a low suspicious lesion (BIRADS 4a).\nSkin and nipple appear normal."
+    },
+    {
+      "id": "Img495",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: a well-defined soft opacity with foci of calcifications seen in the lower quadrant of breast suggest benign lesion - calcified fibroadenoma most likely (BIRADS 2). \n\nskin, nipple, and pectoral muscle appear normal. \n\nfew small benign-looking axillary nodes seen. \n\nBIRADS: 2",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4a\n\nFindings:\nA large well-defined soft opacity with internal calcifications seen in the upper quadrant of the breast suggests a benign lesion (BIRADS 4a).\nSkin, nipple, and pectoral muscle appear normal.\nBenign-looking axillary adenopathy."
+    },
+    {
+      "id": "Img496",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a well defined lobulated soft opacity  seen in the upper quadrant of the breast near axillary tail region suggest low\nsuspicious malignant lesion (BIRADS 4a). \n\nskin, nipple, and pectoral muscle appear normal. \n\nfew small axillary nodes seen. \n\nBIRADS: 4a",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img497",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a popcorn calcification seen in retroareolar region (BIRADS 2)\n\na small well defined soft opacity seen in outer quadrant of breast suggest probably benign lesion (BIRADS 3)\n\nskin and nipple appear normal. \n\nBIRADS: 2, 3",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img498",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a popcorn calcification seen in lower periareolar region (BIRADS 2)\n\na small well defined soft opacity seen in upper quadrant of breast suggest probably benign lesion (BIRADS 3)\n\nskin, nipple and pectoral muscle appear normal. \n\nno significant axillary adenopathy seen. \n\nBIRADS: 2, 3",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 3\n\nFindings:\nA small well-defined soft opacity seen in the upper quadrant of the breast suggests a benign lesion (BIRADS 3).\nNo abnormal microcalcification seen.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img499",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a small well defined soft opacity seen in outer periareolar region of breast suggest probably benign lesion (BIRADS 3)\n\nskin and nipple appear normal. \n\nBIRADS: 3",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img500",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a well defined soft opacity seen in the upper periareolar region of the breast suggest probably benign lesion (BIRADS 3)\n\nskin, nipple, and pectoral muscle appear normal. \n\nfew small benign-looking axillary nodes seen. \n\nBIRADS: 3",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img501",
+      "ref": "BREAST COMPOSITION: dense glandular breast parenchyma (ACR D)\n\nFINDINGS: a large well defined lobulated soft opacity with \nfoci of microcalcifications seen in posterior aspect of outer quadrant of breast suggest malignant lesion (BIRADS 5)\n\nBIRADS: 5",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img502",
+      "ref": "BREAST COMPOSITION: dense glandular breast parenchyma (ACR D)\n\nFINDINGS: a large diffuse soft opacity with foci of microcalcifications seen involving upper-lower quadrant of breast infiltration overlying skin and nipple suggest malignant lesion (BIRADS 5)\n\nfew enlarged axillary nodes seen. \n\nBIRADS: 5",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4a\n\nFindings:\na large well-defined irregular soft opacity with spiculated margin seen in the upper quadrant of the breast suggests a low suspicious malignant lesion (BIRADS 4a).\nNo abnormal microcalcification seen.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img503",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR D)\n\nFINDINGS: no abnormal soft opacity or microcalcification seen.\n\nskin, nipple and pectoral muscle appear normal. \n\nfew small benign looking axillary nodes seen. \n\nBIRADS: 1",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img504",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: no abnormal soft opacity or microcalcification seen.\n\nskin, nipple and pectoral muscle appear normal. \n\nfew small benign looking axillary nodes seen. \n\nBIRADS: 1",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img505",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: no abnormal soft opacity or microcalcification seen.\n\nskin, nipple, and pectoral muscle appear normal. \n\nfew small benign-looking axillary nodes seen. \n\nBIRADS: 1",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img506",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: no abnormal soft opacity or microcalcification seen.\n\nskin and nipple appear normal. \n\nBIRADS: 1",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img507",
+      "ref": "BREAST COMPOSITION: predominently fibro fatty breast parenchyma (ACR A)\n\nFINDINGS: no abnormal soft opacity or microcalcification seen.\n\nskin, nipple and pectoral muscle appear normal. \n\nno significant axillary adenopathy seen.\n\nBIRADS: 1",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    },
+    {
+      "id": "Img508",
+      "ref": "BREAST COMPOSITION: predominantly fibro fatty breast parenchyma (ACR A)\n\nFINDINGS: no abnormal soft opacity or microcalcification seen.\n\nskin, nipple, and pectoral muscle appear normal. \n\nfew enlarged axillary adenopathy seen.\n\nBIRADS: 2",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img509",
+      "ref": "BREAST COMPOSITION: predominently fibro fatty breast parenchyma (ACR A)\n\nFINDINGS: no abnormal soft opacity or microcalcification seen.\n\nskin and nipple appear normal. \n\nBIRADS: 1",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification.\nskin and nipple appear normal."
+    },
+    {
+      "id": "Img510",
+      "ref": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: no abnormal soft opacity or microcalcification seen.\n\nskin, nipple and pectoral muscle appear normal. \n\nno significant axillary nodes seen. \n\nBIRADS: 1",
+      "hyp": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+    }
+  ]
+}

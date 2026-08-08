@@ -1,0 +1,68 @@
+Сплит test: 52 случаев
+
+====================================================================
+  zero_shot → test
+====================================================================
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:01<19:32,  1.33s/it]/home/gani/miniconda3/envs/rag_mammo/lib/python3.13/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   0%|          | 3/883 [00:01<05:56,  2.47it/s]Loading weights:   1%|          | 5/883 [00:01<03:15,  4.48it/s]Loading weights:   2%|▏         | 17/883 [00:01<00:43, 19.90it/s]Loading weights:   3%|▎         | 29/883 [00:01<00:25, 33.64it/s]Loading weights:   4%|▍         | 35/883 [00:02<00:23, 36.32it/s]Loading weights:   5%|▍         | 42/883 [00:02<00:19, 42.39it/s]Loading weights:   5%|▌         | 48/883 [00:02<00:19, 43.19it/s]Loading weights:   6%|▌         | 55/883 [00:02<00:17, 48.11it/s]Loading weights:   7%|▋         | 61/883 [00:02<00:17, 47.95it/s]Loading weights:   8%|▊         | 68/883 [00:02<00:15, 52.35it/s]Loading weights:   8%|▊         | 74/883 [00:02<00:15, 50.62it/s]Loading weights:   9%|▉         | 81/883 [00:02<00:14, 54.92it/s]Loading weights:  10%|▉         | 87/883 [00:02<00:15, 51.74it/s]Loading weights:  11%|█         | 94/883 [00:03<00:14, 55.69it/s]Loading weights:  11%|█▏        | 100/883 [00:03<00:14, 53.26it/s]Loading weights:  12%|█▏        | 107/883 [00:03<00:13, 57.54it/s]Loading weights:  13%|█▎        | 114/883 [00:03<00:12, 60.78it/s]Loading weights:  14%|█▎        | 121/883 [00:03<00:12, 60.92it/s]Loading weights:  15%|█▌        | 133/883 [00:03<00:10, 72.63it/s]Loading weights:  16%|█▌        | 141/883 [00:03<00:10, 71.82it/s]Loading weights:  17%|█▋        | 149/883 [00:03<00:11, 61.44it/s]Loading weights:  18%|█▊        | 160/883 [00:04<00:11, 65.53it/s]Loading weights:  19%|█▉        | 172/883 [00:04<00:10, 70.46it/s]Loading weights:  20%|██        | 180/883 [00:04<00:10, 66.98it/s]Loading weights:  21%|██        | 187/883 [00:04<00:12, 57.47it/s]Loading weights:  23%|██▎       | 199/883 [00:04<00:10, 65.37it/s]Loading weights:  24%|██▍       | 211/883 [00:04<00:09, 70.49it/s]Loading weights:  25%|██▍       | 219/883 [00:04<00:09, 70.56it/s]Loading weights:  26%|██▌       | 227/883 [00:05<00:10, 63.30it/s]Loading weights:  27%|██▋       | 238/883 [00:05<00:09, 67.22it/s]Loading weights:  28%|██▊       | 250/883 [00:05<00:08, 75.26it/s]Loading weights:  37%|███▋      | 329/883 [00:05<00:02, 240.00it/s]Loading weights:  40%|████      | 357/883 [00:05<00:03, 132.81it/s]Loading weights:  43%|████▎     | 378/883 [00:06<00:04, 121.07it/s]Loading weights:  45%|████▍     | 396/883 [00:06<00:05, 93.88it/s] Loading weights:  46%|████▋     | 410/883 [00:06<00:05, 87.56it/s]Loading weights:  48%|████▊     | 422/883 [00:06<00:05, 82.16it/s]Loading weights:  49%|████▉     | 433/883 [00:07<00:05, 81.13it/s]Loading weights:  50%|█████     | 443/883 [00:07<00:05, 83.69it/s]Loading weights:  55%|█████▌    | 489/883 [00:07<00:02, 156.66it/s]Loading weights:  61%|██████    | 535/883 [00:07<00:01, 219.52it/s]Loading weights:  65%|██████▍   | 571/883 [00:07<00:01, 252.27it/s]Loading weights:  70%|██████▉   | 615/883 [00:07<00:00, 297.76it/s]Loading weights:  75%|███████▌  | 665/883 [00:07<00:00, 347.37it/s]Loading weights:  81%|████████  | 715/883 [00:07<00:00, 387.81it/s]Loading weights:  86%|████████▌ | 759/883 [00:07<00:00, 400.15it/s]Loading weights:  91%|█████████ | 805/883 [00:07<00:00, 417.08it/s]Loading weights:  96%|█████████▌| 849/883 [00:08<00:00, 403.92it/s]Loading weights: 100%|██████████| 883/883 [00:08<00:00, 108.49it/s]
+/home/gani/miniconda3/envs/rag_mammo/lib/python3.13/site-packages/bitsandbytes/backends/cuda/ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+    10/52
+    20/52
+    30/52
+    40/52
+    50/52
+  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/zero_shot__test.json
+  {'bleu1': 0.0609, 'bleu4': 0.0012, 'rouge1': 0.1505, 'rouge2': 0.0203, 'rougeL': 0.0975, 'meteor': 0.1921, 'cider': np.float64(0.0)}
+
+====================================================================
+  dmid_only_r16 → test
+====================================================================
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:  37%|███▋      | 330/883 [00:00<00:00, 1709.98it/s]Loading weights:  57%|█████▋    | 501/883 [00:00<00:00, 898.51it/s] Loading weights:  77%|███████▋  | 677/883 [00:00<00:00, 1106.85it/s]Loading weights:  97%|█████████▋| 855/883 [00:00<00:00, 1274.92it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 1222.57it/s]
+    10/52
+    20/52
+    30/52
+    40/52
+    50/52
+  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/dmid_only_r16__test.json
+  {'bleu1': 0.4418, 'bleu4': 0.2025, 'rouge1': 0.6755, 'rouge2': 0.4427, 'rougeL': 0.6008, 'meteor': 0.5967, 'cider': np.float64(0.4553)}
+
+====================================================================
+  two_stage_r16 → test
+====================================================================
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:00<01:42,  8.63it/s]Loading weights:   6%|▋         | 56/883 [00:00<00:02, 298.86it/s]Loading weights:  14%|█▎        | 120/883 [00:00<00:01, 437.81it/s]Loading weights:  20%|██        | 179/883 [00:00<00:01, 493.95it/s]Loading weights:  27%|██▋       | 237/883 [00:00<00:01, 521.92it/s]Loading weights:  33%|███▎      | 295/883 [00:00<00:01, 541.17it/s]Loading weights:  40%|███▉      | 350/883 [00:00<00:01, 367.02it/s]Loading weights:  46%|████▌     | 407/883 [00:00<00:01, 411.70it/s]Loading weights:  62%|██████▏   | 548/883 [00:01<00:00, 662.42it/s]Loading weights:  90%|████████▉ | 791/883 [00:01<00:00, 1126.66it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 723.43it/s] 
+    10/52
+    20/52
+    30/52
+    40/52
+    50/52
+  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/two_stage_r16__test.json
+  {'bleu1': 0.4975, 'bleu4': 0.2784, 'rouge1': 0.7193, 'rouge2': 0.5304, 'rougeL': 0.6587, 'meteor': 0.657, 'cider': np.float64(0.6392)}
+
+====================================================================
+  two_stage_r64 → test
+====================================================================
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:00<01:48,  8.14it/s]Loading weights:   6%|▋         | 56/883 [00:00<00:02, 291.72it/s]Loading weights:  14%|█▎        | 120/883 [00:00<00:01, 438.49it/s]Loading weights:  20%|█▉        | 174/883 [00:00<00:01, 469.68it/s]Loading weights:  27%|██▋       | 238/883 [00:00<00:01, 520.53it/s]Loading weights:  33%|███▎      | 293/883 [00:00<00:01, 530.01it/s]Loading weights:  39%|███▉      | 347/883 [00:00<00:01, 364.55it/s]Loading weights:  46%|████▌     | 406/883 [00:00<00:01, 413.56it/s]Loading weights:  61%|██████▏   | 543/883 [00:01<00:00, 653.40it/s]Loading weights:  87%|████████▋ | 764/883 [00:01<00:00, 1064.22it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 711.87it/s] 
+/home/gani/miniconda3/envs/rag_mammo/lib/python3.13/site-packages/peft/tuners/lora/bnb.py:397: UserWarning: Merge lora module to 4-bit linear may get different generations due to rounding errors.
+  warnings.warn(
+/home/gani/miniconda3/envs/rag_mammo/lib/python3.13/site-packages/peft/tuners/tuners_utils.py:285: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+    10/52
+    20/52
+    30/52
+    40/52
+    50/52
+  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/two_stage_r64__test.json
+  {'bleu1': 0.5298, 'bleu4': 0.312, 'rouge1': 0.7336, 'rouge2': 0.5506, 'rougeL': 0.6705, 'meteor': 0.6845, 'cider': np.float64(0.7291)}
+
+====================================================================
+  ИТОГ (test)
+====================================================================
+  model                      BLEU-4      R-1      R-L      MET    CIDEr
+  zero_shot                  0.0012   0.1505   0.0975   0.1921   0.0000
+  dmid_only_r16              0.2025   0.6755   0.6008   0.5967   0.4553
+  two_stage_r16              0.2784   0.7193   0.6587   0.6570   0.6392
+  two_stage_r64              0.3120   0.7336   0.6705   0.6845   0.7291
+
+  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/scores_test.json

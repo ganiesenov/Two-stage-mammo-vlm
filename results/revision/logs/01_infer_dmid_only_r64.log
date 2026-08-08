@@ -1,0 +1,29 @@
+Сплит test: 52 случаев
+
+====================================================================
+  dmid_only_r64 → test
+====================================================================
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:00<03:04,  4.78it/s]/home/gani/miniconda3/envs/rag_mammo/lib/python3.13/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   0%|          | 4/883 [00:00<00:59, 14.75it/s]Loading weights:   5%|▍         | 43/883 [00:00<00:05, 150.57it/s]Loading weights:   9%|▉         | 83/883 [00:00<00:03, 229.27it/s]Loading weights:  14%|█▍        | 122/883 [00:00<00:02, 275.74it/s]Loading weights:  18%|█▊        | 161/883 [00:00<00:02, 309.79it/s]Loading weights:  23%|██▎       | 200/883 [00:00<00:02, 333.14it/s]Loading weights:  27%|██▋       | 239/883 [00:00<00:01, 349.01it/s]Loading weights:  31%|███▏      | 278/883 [00:01<00:01, 357.18it/s]Loading weights:  36%|███▌      | 317/883 [00:01<00:01, 363.26it/s]Loading weights:  40%|████      | 356/883 [00:01<00:01, 366.91it/s]Loading weights:  45%|████▍     | 395/883 [00:01<00:01, 369.38it/s]Loading weights:  49%|████▉     | 434/883 [00:01<00:01, 370.68it/s]Loading weights:  69%|██████▊   | 606/883 [00:01<00:00, 766.42it/s]Loading weights:  89%|████████▉ | 784/883 [00:01<00:00, 1065.41it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 516.61it/s] 
+/home/gani/miniconda3/envs/rag_mammo/lib/python3.13/site-packages/bitsandbytes/backends/cuda/ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+    10/52
+    20/52
+    30/52
+    40/52
+    50/52
+  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/dmid_only_r64__test.json
+  {'bleu1': 0.5415, 'bleu4': 0.3149, 'rouge1': 0.7381, 'rouge2': 0.5511, 'rougeL': 0.6696, 'meteor': 0.6906, 'cider': np.float64(0.6925)}
+
+====================================================================
+  ИТОГ (test)
+====================================================================
+  model                      BLEU-4      R-1      R-L      MET    CIDEr
+  zero_shot                  0.0012   0.1505   0.0975   0.1921   0.0000
+  dmid_only_r16              0.2025   0.6755   0.6008   0.5967   0.4553
+  two_stage_r16              0.2784   0.7193   0.6587   0.6570   0.6392
+  two_stage_r64              0.3120   0.7336   0.6705   0.6845   0.7291
+  dmid_only_r64              0.3149   0.7381   0.6696   0.6906   0.6925
+
+  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/scores_test.json

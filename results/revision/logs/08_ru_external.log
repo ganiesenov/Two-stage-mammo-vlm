@@ -1,0 +1,54 @@
+Источник: локальные копии (validation_app/images + dmid_ru_eval.json)
+DMID-RU held-out: 22 исследований, по 4 проекции
+
+======================================================================
+  base → DMID-RU (БЕЗ дообучения)
+======================================================================
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:00<02:02,  7.19it/s]/home/gani/miniconda3/envs/rag_mammo/lib/python3.13/site-packages/bitsandbytes/backends/cuda/ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   0%|          | 4/883 [00:00<00:47, 18.59it/s]Loading weights:   6%|▋         | 57/883 [00:00<00:03, 229.30it/s]Loading weights:  14%|█▎        | 120/883 [00:00<00:02, 371.46it/s]Loading weights:  20%|█▉        | 173/883 [00:00<00:01, 425.50it/s]Loading weights:  26%|██▌       | 226/883 [00:00<00:01, 451.78it/s]Loading weights:  32%|███▏      | 286/883 [00:00<00:01, 497.04it/s]Loading weights:  39%|███▊      | 341/883 [00:00<00:01, 509.81it/s]Loading weights:  45%|████▍     | 394/883 [00:00<00:00, 511.89it/s]Loading weights:  55%|█████▌    | 487/883 [00:01<00:00, 636.41it/s]Loading weights:  83%|████████▎ | 729/883 [00:01<00:00, 1172.54it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 717.23it/s] 
+/home/gani/miniconda3/envs/rag_mammo/lib/python3.13/site-packages/bitsandbytes/backends/cuda/ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+    5/22
+    10/22
+    15/22
+    20/22
+  метрики: {'bleu1': 0.0676, 'bleu4': 0.0027, 'rouge1': 0.2631, 'rouge2': 0.059, 'rougeL': 0.2009, 'meteor': 0.1408, 'cider': np.float64(0.0008)}
+  русскоязычность: {'any_cyrillic': 1.0, 'majority_cyrillic': 1.0, 'mean_domain_terms': 6.59, 'has_birads': 0.0909, 'mean_words': 129.0}
+
+======================================================================
+  two_stage → DMID-RU (БЕЗ дообучения)
+======================================================================
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:00<01:55,  7.64it/s]Loading weights:   6%|▌         | 52/883 [00:00<00:03, 269.61it/s]Loading weights:  12%|█▏        | 107/883 [00:00<00:02, 382.65it/s]Loading weights:  18%|█▊        | 160/883 [00:00<00:01, 433.69it/s]Loading weights:  24%|██▍       | 213/883 [00:00<00:01, 465.06it/s]Loading weights:  31%|███       | 271/883 [00:00<00:01, 502.77it/s]Loading weights:  37%|███▋      | 328/883 [00:00<00:01, 518.22it/s]Loading weights:  43%|████▎     | 381/883 [00:00<00:00, 521.49it/s]Loading weights:  49%|████▉     | 434/883 [00:00<00:00, 519.73it/s]Loading weights:  75%|███████▌  | 665/883 [00:01<00:00, 1060.63it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 774.39it/s] 
+    5/22
+    10/22
+    15/22
+    20/22
+  метрики: {'bleu1': 0.1042, 'bleu4': 0.0134, 'rouge1': 0.1308, 'rouge2': 0.0045, 'rougeL': 0.1267, 'meteor': 0.1283, 'cider': np.float64(0.001)}
+  русскоязычность: {'any_cyrillic': 1.0, 'majority_cyrillic': 1.0, 'mean_domain_terms': 5.05, 'has_birads': 0.8636, 'mean_words': 102.9}
+
+======================================================================
+  dmid_only → DMID-RU (БЕЗ дообучения)
+======================================================================
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:00<02:03,  7.14it/s]Loading weights:   6%|▋         | 56/883 [00:00<00:02, 275.95it/s]Loading weights:  12%|█▏        | 109/883 [00:00<00:02, 372.69it/s]Loading weights:  19%|█▉        | 167/883 [00:00<00:01, 446.32it/s]Loading weights:  25%|██▌       | 221/883 [00:00<00:01, 476.76it/s]Loading weights:  31%|███▏      | 276/883 [00:00<00:01, 499.40it/s]Loading weights:  37%|███▋      | 329/883 [00:00<00:01, 501.16it/s]Loading weights:  43%|████▎     | 382/883 [00:00<00:00, 501.74it/s]Loading weights:  50%|████▉     | 439/883 [00:00<00:00, 522.31it/s]Loading weights:  74%|███████▍  | 653/883 [00:01<00:00, 1009.06it/s]Loading weights:  99%|█████████▊| 871/883 [00:01<00:00, 1359.96it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 755.25it/s] 
+    5/22
+    10/22
+    15/22
+    20/22
+  метрики: {'bleu1': 0.0968, 'bleu4': 0.0199, 'rouge1': 0.106, 'rouge2': 0.006, 'rougeL': 0.0965, 'meteor': 0.1436, 'cider': np.float64(0.009)}
+  русскоязычность: {'any_cyrillic': 1.0, 'majority_cyrillic': 0.9545, 'mean_domain_terms': 5.77, 'has_birads': 0.8182, 'mean_words': 73.2}
+
+======================================================================
+  ИТОГ
+======================================================================
+  ветвь            R-L BERTScore-нет   кириллица  термины  BI-RADS
+  base          0.2009               1.00     6.59     0.09
+  two_stage     0.1267               1.00     5.05     0.86
+  dmid_only     0.0965               0.95     5.77     0.82
+
+  Причинный тест контаминации:
+  Базовая модель БЕЗ Stage 1 уже выдаёт русский маммографический регистр →
+  вклад 21 контаминированного отчёта в языковую способность близок к нулю,
+  тревога о языковой форе снимается.
+
+  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/dmid_ru_external.json

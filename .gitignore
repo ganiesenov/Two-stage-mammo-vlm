@@ -39,3 +39,37 @@ __pycache__/
 !results/*.json
 .env
 lora_ablation/
+
+# ── Ревизия Scientific Reports ────────────────────────────────────
+# Адаптеры свипа и переобученного бейзлайна: 33 ГБ, веса живут вне git
+capacity_sweep/
+dmid_only_r64/
+
+# Локальные настройки агента
+.claude/
+
+# Снимки DMID не перевыкладываем (лицензия: research and education only),
+# но собственные рисунки статьи нужны для сборки
+!manuscript/fig_*.png
+!manuscript/fig_*.pdf
+
+# DMID-RU: частная клиническая коллекция без одобрения этического комитета.
+# Исключена из подачи целиком; снимки пациенток не публикуются ни при каких условиях.
+validation_app/
+dmid_ru/
+scripts/6_validation/
+DATASET_DMID_RU.md
+results/dmid_ru_eval*.json
+results/revision/dmid_ru_external.json
+
+# Материалы ревизии, не подлежащие публикации до решения редакции:
+# ответ рецензентам пересказывает их отзывы, а рецензирование конфиденциально
+submission/POINT_BY_POINT_RESPONSE_EN.md
+submission/CHANGES_APPLIED.md
+submission/manuscript_edits.md
+submission/changes_report.html
+manuscript/response_to_reviewers.tex
+POINT_BY_POINT_RESPONSE.md
+REVISION_PLAN.md
+HANDOFF_FOR_CLAUDE.md
+PRESENTATION_UPDATE_FOR_CLAUDE.md

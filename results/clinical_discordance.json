@@ -1,0 +1,271 @@
+{
+  "n_studies": 22,
+  "language_quality": {
+    "BLEU-4": 0.3045,
+    "ROUGE-L": 0.5538,
+    "METEOR": 0.4928,
+    "BERTScore": 0.8437,
+    "note": "report fluency/structure — high; this is what the generative model delivers"
+  },
+  "birads_diagnosis": {
+    "n_comparable": 22,
+    "exact_agreement": 0.409,
+    "cohen_kappa": 0.027,
+    "under_call_rate": 0.318,
+    "over_call_rate": 0.273,
+    "suspicious_cases_n": 6,
+    "suspicious_downgraded_to_benign": 6,
+    "confusion_ref_rows_gen_cols_0to6": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "acr_density": {
+    "n_comparable": 22,
+    "exact_agreement": 0.636,
+    "cohen_kappa": 0.238,
+    "confusion_ref_rows_gen_cols_AtoD": [
+      [
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        4,
+        0
+      ],
+      [
+        2,
+        0,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "per_study": [
+    {
+      "id": "P06",
+      "birads_ref": 1,
+      "birads_gen": 2,
+      "acr_ref": 1,
+      "acr_gen": 2
+    },
+    {
+      "id": "P14",
+      "birads_ref": 2,
+      "birads_gen": 2,
+      "acr_ref": 1,
+      "acr_gen": 0
+    },
+    {
+      "id": "P22",
+      "birads_ref": 1,
+      "birads_gen": 2,
+      "acr_ref": 2,
+      "acr_gen": 2
+    },
+    {
+      "id": "P31",
+      "birads_ref": 4,
+      "birads_gen": 2,
+      "acr_ref": 1,
+      "acr_gen": 2
+    },
+    {
+      "id": "P37",
+      "birads_ref": 4,
+      "birads_gen": 2,
+      "acr_ref": 0,
+      "acr_gen": 0
+    },
+    {
+      "id": "P46",
+      "birads_ref": 1,
+      "birads_gen": 2,
+      "acr_ref": 1,
+      "acr_gen": 2
+    },
+    {
+      "id": "P53",
+      "birads_ref": 2,
+      "birads_gen": 2,
+      "acr_ref": 1,
+      "acr_gen": 2
+    },
+    {
+      "id": "P67",
+      "birads_ref": 6,
+      "birads_gen": 2,
+      "acr_ref": 0,
+      "acr_gen": 2
+    },
+    {
+      "id": "P74",
+      "birads_ref": 2,
+      "birads_gen": 2,
+      "acr_ref": 2,
+      "acr_gen": 2
+    },
+    {
+      "id": "P80",
+      "birads_ref": 2,
+      "birads_gen": 2,
+      "acr_ref": 2,
+      "acr_gen": 2
+    },
+    {
+      "id": "P85",
+      "birads_ref": 2,
+      "birads_gen": 6,
+      "acr_ref": 2,
+      "acr_gen": 0
+    },
+    {
+      "id": "P90",
+      "birads_ref": 2,
+      "birads_gen": 2,
+      "acr_ref": 2,
+      "acr_gen": 2
+    },
+    {
+      "id": "P125",
+      "birads_ref": 3,
+      "birads_gen": 2,
+      "acr_ref": 2,
+      "acr_gen": 2
+    },
+    {
+      "id": "P127",
+      "birads_ref": 2,
+      "birads_gen": 2,
+      "acr_ref": 2,
+      "acr_gen": 0
+    },
+    {
+      "id": "P134",
+      "birads_ref": 2,
+      "birads_gen": 4,
+      "acr_ref": 2,
+      "acr_gen": 2
+    },
+    {
+      "id": "P147",
+      "birads_ref": 2,
+      "birads_gen": 2,
+      "acr_ref": 2,
+      "acr_gen": 2
+    },
+    {
+      "id": "P157",
+      "birads_ref": 6,
+      "birads_gen": 2,
+      "acr_ref": 2,
+      "acr_gen": 2
+    },
+    {
+      "id": "P169",
+      "birads_ref": 2,
+      "birads_gen": 2,
+      "acr_ref": 2,
+      "acr_gen": 2
+    },
+    {
+      "id": "P175",
+      "birads_ref": 0,
+      "birads_gen": 1,
+      "acr_ref": 0,
+      "acr_gen": 0
+    },
+    {
+      "id": "P178",
+      "birads_ref": 4,
+      "birads_gen": 2,
+      "acr_ref": 2,
+      "acr_gen": 2
+    },
+    {
+      "id": "P203",
+      "birads_ref": 3,
+      "birads_gen": 3,
+      "acr_ref": 2,
+      "acr_gen": 2
+    },
+    {
+      "id": "P211",
+      "birads_ref": 5,
+      "birads_gen": 2,
+      "acr_ref": 2,
+      "acr_gen": 2
+    }
+  ]
+}

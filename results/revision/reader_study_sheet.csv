@@ -1,0 +1,1388 @@
+image_id,reference_report,generated_report,density_correct,findings_correct,birads_correct,recommendation_correct,hallucination_present,clinically_acceptable,reader_comment
+Img459,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a small well defined soft opacity with internal popcorn calcifications seen in upper quadrant of breast suggest benign lesion - calcified fibroadenoma most likely (BIRADS 2). 
+
+few foci of microcalcifications seen anterior to above lesion. 
+
+skin, nipple, and pectoral muscle appear normal. 
+
+no significant axillary adenopathy seen. 
+
+BIRADS: 2","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Assume a patient name is provided)
+**Date:** (Assume a date is provided)
+**Exam:** Mammography
+**Indication:** (Assume the indication is provided, e.g., routine screening, follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a mix of densities.  The density is estimated to be **Heterogeneously Dense**.
+*   **Left Breast:** The left breast appears to have a mix of densities. The density is estimated to be **Heterogeneously Dense",,,,,,,
+Img460,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a small well defined soft opacity with internal popcorn and rim calcifications seen in inner quadrant of breast suggest benign lesion - calcified fibroadenoma most likely (BIRADS 2). 
+
+few foci of microcalcifications seen anterior to above lesion. 
+
+skin and nipple appear normal. 
+
+BIRADS: 2","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Hypothetical Patient Name)
+**Patient ID:** (Hypothetical Patient ID)
+**Date of Exam:** (Hypothetical Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Diagnostic (Please specify)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a mix of densities.  The density is estimated to be **35%** (Grade 2).
+*   **Left Breast:** The left breast appears to have a mix of densities. The density is estimated",,,,,,,
+Img461,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: No abnormal soft opacity or microcalcifications seen.
+
+skin, nipple and pectoral muscle appear normal. 
+
+few small benign looking axillary node seen. 
+
+BIRADS: 1","Okay, I will generate a structured mammography radiology report based on the provided image.  Please note that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for accurate interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date:** (Simulated Date)
+**Exam:** Mammography
+**Indication:** (Simulated Indication, e.g., Routine Screening, Follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a mix of densities.  The density is estimated to be **35%** (Grade 2).
+*   **Left Breast:** The left breast appears to have a mix of densities. The density is estimated to be **30%** (Grade",,,,,,,
+Img462,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: No abnormal soft opacity or microcalcifications seen.
+
+skin and nipple appear normal. 
+
+BIRADS: 1","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** (Simulated Indication, e.g., Routine Screening, Follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition with some areas of increased density.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *",,,,,,,
+Img463,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: No abnormal soft opacity or microcalcifications seen.
+
+skin, nipple and pectoral muscle appear normal. 
+
+no significant axillary adenopathy seen. 
+
+BIRADS: 1","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for accurate interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** (Simulated Indication, e.g., Routine Screening, Follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition with some areas of increased density.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *",,,,,,,
+Img464,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: No abnormal soft opacity or microcalcifications seen.
+
+skin and nipple appear normal. 
+
+BIRADS: 1","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for accurate interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+*   **Right Breast:**  The right breast appears to have a relatively homogeneous density.  The ACR density is estimated to be **3** (based on the image).
+*   **Left Breast:** The left breast appears to have a relatively homogeneous density. The ACR density is estimated to be **3** (based on the image).
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No suspicious masses, architectural",,,,,,,
+Img465,"BREAST COMPOSITION: dense fibro glandular breast parenchyma (ACR D)
+
+FINDINGS: a large well defined soft opacity seen in upper periareolar region of breast suggest probably benign lesion (BIRADS 3)
+
+skin, nipple and pectoral muscle appear normal. 
+
+few small benign looking axillary nodes seen. 
+
+BIRADS: 3","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for accurate interpretation.
+
+**Mammography Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Evaluation of Breast Density
+**Technique:** Digital Mammography (Whole Breast, Craniocaudal and Oblique Views)
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast is predominantly heterogeneously dense.  The density is estimated to be **ACR 3** (Heterogeneously Dense).
+*   **Left Breast:** The left breast is predominantly heterogeneously dense. The density is estimated to be **ACR 3** (Heterogeneously Dense).",,,,,,,
+Img466,"BREAST COMPOSITION: dense fibro glandular breast parenchyma (ACR D)
+
+FINDINGS: a large well defined soft opacity seen in outer quadrant of breast suggest probably benign lesion (BIRADS 3)
+
+skin and nipple appear normal. 
+
+BIRADS: 3","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for accurate interpretation.
+
+**Mammography Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** (Simulated Indication, e.g., Routine Screening, Follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition with some areas of increased density.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   A",,,,,,,
+Img467,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a well defined lobulated soft opacity seen in upper quadrant of breast suggest probably benign lesion (BIRADS 3)
+
+skin, nipple and pectoral muscle appear normal. 
+
+few small benign looking axillary nodes seen. 
+
+BIRADS: 3","Okay, I will generate a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for accurate interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date:** (Simulated Date)
+**Exam:** Mammography
+**Indication:** (Simulated Indication, e.g., Routine Screening, Follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a mix of dense and non-dense tissue.  The density is estimated to be **ACR 3** (Dense).
+*   **Left Breast:** The left breast appears to have a mix of dense and non-dense tissue. The density is estimated",,,,,,,
+Img468,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a well defined lobulated soft opacity seen in outer quadrant of breast suggest probably benign lesion (BIRADS 3)
+
+skin and nipple appear normal. 
+
+BIRADS: 3","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for accurate interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+*   **Right Breast:**  The right breast appears to have a relatively homogeneous density.  The ACR density is estimated to be **3** (based on the image).
+*   **Left Breast:** The left breast appears to have a relatively homogeneous density. The ACR density is estimated to be **3** (based on the image).
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No suspicious masses or architectural",,,,,,,
+Img469,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: about two well defined lobulated soft opacity seen in lower quadrant of breast suggest probably benign lesions (BIRADS 3)
+
+another small well defined soft opacity with foci of microcalcification seen in posterior aspect of lower quadrant of breast suggest moderate suspiciois malignant lesion (BIRADS 4b)
+
+skin, nipple and pectoral muscle appear normal. 
+
+few small benign looking axillary nodes seen. 
+
+BIRADS: 3, 4b","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for accurate interpretation.
+
+**Mammography Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Evaluation
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be of intermediate density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   A well-defined, round mass is seen in the upper outer quadrant of the right breast. The mass is approximately 1.2 cm in diameter.
+    *   The mass has a slightly irregular border.
+    *   The mass is not calcified.
+    *   The mass is not associated with skin",,,,,,,
+Img470,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: about three well defined lobulated soft opacity seen in inner quadrant of breast suggest probably benign lesions (BIRADS 3)
+
+another small well defined soft opacity with foci of microcalcification seen in posterior aspect of outer quadrant of breast suggest moderate suspiciois malignant lesion (BIRADS 4b)
+
+skin and nipple appear normal. 
+
+BIRADS: 3, 4b","Okay, here's a structured mammography radiology report based on the provided image.  Please remember that this is a *sample* report and should be reviewed and modified by a qualified radiologist.  A real report would include a full patient history, clinical context, and potentially additional images.
+
+**Patient:** (Assume a patient name is available)
+**Date:** (Assume a date is available)
+**Exam:** Mammography
+**Indication:** (Assume the indication is routine screening or follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a mix of densities.  The density is estimated to be **35%** (Grade 2).
+*   **Left Breast:** The left breast appears to have a mix of densities. The density is estimated to be **30%** (Grade",,,,,,,
+Img471,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a large well defined irregular soft opacity seen in lower quadrantof breast suggest low suspiciois malignant lesion (BIRADS 4a)
+
+skin, nipple and pectoral muscle appear normal. 
+
+no significant axillary nodes seen. 
+
+BIRADS: 4a","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Assume a patient name is provided)
+**Date:** (Assume a date is provided)
+**Exam:** Mammography
+**Indication:** (Assume the indication is provided, e.g., routine screening, follow-up)
+**Technique:** Digital Mammography (Digital Breast Tomosynthesis (DBT) or 2D)
+
+**Image Quality:** (Based on the image, I would assess the image quality as good, with adequate visualization of the breast tissue.  The image is clear and shows the expected structures.)
+
+**Breast Composition (ACR Density):** (Based on the image, I would estimate the breast density as *heterogeneously dense",,,,,,,
+Img472,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a large well defined irregular soft opacity with few spiculations seen in inner quadrantof breast suggest moderate suspicious malignant lesion (BIRADS 4b)
+
+skin and nipple appear normal. 
+
+BIRADS: 4b","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Report**
+
+**Patient:** (Simulated Patient Name)
+**Date:** (Simulated Date)
+**Exam:** Mammography
+**Indication:** Screening/Routine
+
+**Image:** (Image ID - e.g., 12345)
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition with some areas of increased density.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No suspicious masses or architectural distortions are identified.
+    *   The nipple is",,,,,,,
+Img473,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: an ill defined soft opacity seen in upper periareolar region of breast suggest low suspicious malignant lesion (BIRADS 4a)
+
+no abnormal microcalcification seen. 
+
+skin, nipple and pectoral muscle appear normal. 
+
+no significant axillary adenopathy seen. 
+
+BIRADS: 4a","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition with some areas of increased density.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   There is a suspicious mass in the upper outer quadrant of the right breast. The mass is approximately 1.5 cm in size",,,,,,,
+Img474,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: an irregular ill defined soft opacity seen in outer periareolar region of breast with overlying skin thickening suggest high suspicious malignant lesion (BIRADS 4c)
+
+no abnormal microcalcification seen. 
+
+nipple appears normal. 
+
+BIRADS: 4c","Okay, here's a structured mammography radiology report based on the provided image.  Please remember that this is a *sample* report and should not be used for actual medical diagnosis. A qualified radiologist must interpret the image and provide a complete and accurate report.
+
+**Mammography Report**
+
+**Patient:** (Patient Name - *Not Available*)
+**Date of Exam:** (Date - *Not Available*)
+**Exam Type:** Mammography
+**Indication:** (Indication - *Not Available*)
+**Technique:** Digital Mammography
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition with some areas of increased density.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No suspicious masses or architectural distortion are",,,,,,,
+Img475,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a small well defined soft opacity seen involving nipple suggests
+moderate suspicious malignant lesion (BIRADS 4b)
+
+bifid appearance of nipple seen.
+
+no abnormal microcalcification seen. 
+
+skin and pectoral muscle appear normal. 
+
+few small benign-looking axillary nodes seen. 
+
+BIRADS: 4b","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Report**
+
+**Patient:** (Assume a patient name is provided)
+**Date:** (Assume a date is provided)
+**Exam:** Mammography
+**Indication:** (Assume the indication is provided, e.g., routine screening, follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a mix of densities.  The density is estimated to be **35%** (Grade 2).
+*   **Left Breast:** The left breast appears to have a mix of densities. The density is estimated to be **3",,,,,,,
+Img476,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a small well defined soft opacity seen in inner periareolar region
+of breast suggests low suspicious malignant lesion (BIRADS 4a)
+
+no abnormal microcalcification seen. 
+
+skin and nipple appear normal. 
+
+BIRADS: 4a","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for accurate interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition with some areas of increased density.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No suspicious masses or architectural distortions are identified.
+    *   The right breast appears to have a normal pattern of tissue.",,,,,,,
+Img477,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a well defined soft opacity seen in upper quadrant of breast 
+suggest probably benign lesion (BIRADS 3)
+
+skin, nipple and pectoral muscle appear normal. 
+
+no significant axillary nodes seen. 
+
+BIRADS: 3","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be predominantly fatty, with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No obvious masses are identified.
+    *   There are some areas of increased density, which could be due to fibroglandular tissue or other normal variations.
+    *   No suspicious calcifications are seen.
+*   **Left Breast:**
+    *   No obvious",,,,,,,
+Img478,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a well defined soft opacity seen in outer quadrant of breast 
+suggest probably benign lesion (BIRADS 3).
+another tiny well defined soft opacity seen in posterior central quadrant 
+suggest probably benign lesion (BIRADS 3).
+
+skin and nipple appear normal. 
+
+no abnormal microcalcification seen. 
+
+BIRADS: 3","Okay, I will generate a structured mammography radiology report based on the provided image.  Please remember that I am an AI and cannot provide medical diagnoses. This report is for informational purposes only and should be reviewed and interpreted by a qualified radiologist.
+
+**Mammography Radiology Report**
+
+**Patient:** (Assume a patient name is provided)
+**Date:** (Assume a date is provided)
+**Exam:** Mammography
+**Indication:** (Assume the indication is provided, e.g., routine screening, follow-up)
+**Technique:** Digital Mammography
+
+**Image Quality:** (Assess image quality based on the provided image.  For example: ""Good quality images were obtained."")
+
+**Breast Composition (ACR Density):** (Based on the image, estimate the breast density.  This is a crucial part of the report.)
+*   **Overall:**  The breast tissue appears to be predominantly *heterogeneously dense*.  (This is a general",,,,,,,
+Img479,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a well defined irregular soft opacity with spiculated margins seen in 
+upper quadrant of breast suggest high suspicious malignant lesion (BIRADS 4c). 
+
+skin, nipple and pectoral muscle appear normal. 
+
+no significant axillary adenopathy seen. 
+
+BIRADS: 4c","Here's a structured mammography radiology report based on the provided image:
+
+**Patient:** (Assume a patient name or ID is available)
+**Date:** (Assume the date of the exam)
+**Exam:** Mammography
+**Indication:** (Assume the reason for the exam, e.g., routine screening, follow-up)
+
+**Breast Composition:**
+
+*   **ACR Density:**  The breast tissue appears to be of average density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   A 1.0 cm mass is seen in the upper outer quadrant of the right breast. The mass is slightly radiopaque.
+*   **Left Breast:**
+    *   The left breast appears normal.
+
+**BI-RADS Category:**
+
+*   **Right Breast Mass:** BI-RADS 4 (Suspicious)
+
+**Recommendation:**
+
+*   **Right Breast Mass:**  A follow-up ultrasound is recommended to",,,,,,,
+Img480,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: an ill defined soft opacity seen in outer quadrant of breast 
+suggest low suspicious malignant lesion (BIRADS 4a). 
+
+benign vascular calcification seen.
+
+skin and nipple appear normal. 
+
+no abnormal microcalcification seen. 
+
+BIRADS: 4a","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be of average density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No suspicious masses or architectural distortions are identified.
+    *   No calcifications are seen.
+    *   The breast tissue appears to be of average density.
+*   **Left Breast:**
+    *   No suspicious masses or architectural distortions are identified.
+    *   No calcifications are seen.",,,,,,,
+Img481,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a small well defined soft opacity seen in the lower quadrant of the breast 
+suggest probably benign lesion (BIRADS 3). 
+
+no abnormal microcalcification seen.
+
+skin, nipple, and pectoral muscle appear normal. 
+
+few small axillary adenopathy seen. 
+
+BIRADS: 3","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for accurate interpretation.
+
+**Mammography Report**
+
+**Patient:** (Hypothetical Patient Name)
+**Patient ID:** (Hypothetical Patient ID)
+**Date of Exam:** (Hypothetical Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Diagnostic (Please specify)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a higher proportion of dense tissue.  The ACR density is estimated to be **ACR 3 (Heterogeneously Dense)**.
+*   **Left Breast:** The left breast appears to have a lower proportion of dense tissue",,,,,,,
+Img482,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a well defined soft opacity seen in the inner central quadrant of the breast 
+suggest probably benign lesion (BIRADS 3). 
+
+no abnormal microcalcification seen.
+
+skin and nipple appear normal. 
+
+BIRADS: 3","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be of normal density.
+
+**Findings:**
+
+*   **Left Breast:** No suspicious masses, architectural distortion, or other abnormalities are identified.
+*   **Right Breast:** No suspicious masses, architectural distortion, or other abnormalities are identified.
+
+**BI-RADS Category:** 1
+
+**Recommendation:**
+
+*   No further imaging is recommended at this time.
+
+**Radiologist:** (Simulated",,,,,,,
+Img483,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a well defined soft opacity with spiculated margins seen in inner 
+quadrant of breast suggests high suspicious malignant lesion (BIRADS 4c). 
+
+no abnormal microcalcification seen.
+
+skin and nipple appear normal. 
+
+BIRADS: 4c","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Diagnostic (Please specify)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a mix of densities.  The density is estimated to be **35%** (Grade 2).
+*   **Left Breast:** The left breast appears to have a mix of densities. The density is estimated to be **30%** (Grade 2).
+
+**Findings",,,,,,,
+Img484,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a well defined soft opacity with spiculated margins seen in lower 
+quadrant of breast suggests high suspicious malignant lesion (BIRADS 4c). 
+
+no abnormal microcalcification seen.
+
+skin, nipple and pectoral muscle appear normal. 
+
+no significant axillary adenopathy seen. 
+
+BIRADS: 4c","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Assume a patient name is available)
+**Date of Exam:** (Assume a date is available)
+**Exam Type:** Mammography
+**Indication:** (Assume the indication is a routine screening or follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a mix of densities.  The density is estimated to be **35%** (Grade 2).
+*   **Left Breast:** The left breast appears to have a mix of densities. The density is estimated to be **30",,,,,,,
+Img485,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a well defined irregular soft opacity with spiculated margins 
+and foci of microcalcifications seen in lower quadrant of breast causing 
+mild nipple retraction suggests malignant lesion (BIRADS 5). 
+
+skin and pectoral muscle appear normal. 
+
+no significant axillary adenopathy seen. 
+
+BIRADS: 5","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required to interpret medical images.
+
+**Mammography Radiology Report**
+
+**Patient:** (Hypothetical Patient Name)
+**Patient ID:** (Hypothetical Patient ID)
+**Date of Exam:** (Hypothetical Date)
+**Referring Physician:** (Hypothetical Physician Name)
+**Exam Type:** Mammography
+**Indication:** Screening/Evaluation of Breast Concerns
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be of average density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   A suspicious mass is identified in the upper outer quadrant of the right breast. The mass is approximately 1.5 cm in size.
+    *   The mass",,,,,,,
+Img486,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a well defined soft opacity with spiculated margins 
+seen in inner quadrant of breast suggests high suspicious malignant lesion (BIRADS 4c). 
+
+no abnormal microcalcification seen. 
+
+skin and nipple appear normal. 
+
+BIRADS: 4c","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be predominantly fatty with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   There is a cluster of microcalcifications in the upper outer quadrant of the right breast.
+    *   There is a small, well-defined mass in the lower outer quadrant of the right breast.
+*   **Left Breast:**
+    *   The left breast appears relatively normal",,,,,,,
+Img487,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a well defined soft opacity with spiculated margins seen in lower quadrant of breast suggest high suspicious malignant lesion (BIRADS 4c)
+
+no abnormal microcalcification seen. 
+
+skin, nipple and pectoral muscle appears normal. 
+
+few small benign looking axillary nodes seen.
+
+BIRADS: 4c","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for accurate interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Hypothetical Patient Name)
+**Patient ID:** (Hypothetical Patient ID)
+**Date of Exam:** (Hypothetical Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Evaluation of Breast Concerns
+
+**Technique:** Digital Mammography (2D)
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be predominantly fatty, with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   There is a cluster of microcalcifications in the upper outer quadrant of the right breast.
+    *   The density of the breast tissue",,,,,,,
+Img488,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a large irregular soft opacity with spiculated margins seen in the inner-outer quadrant of breast causing overlying skin and nipple retraction suggest malignant lesion (BIRADS 5)
+
+no abnormal microcalcification seen. 
+
+BIRADS: 5","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+*   **Right Breast:**  The right breast appears to have a relatively homogeneous density.  The ACR density is estimated to be **3** (based on the image).
+*   **Left Breast:** The left breast appears to have a relatively homogeneous density. The ACR density is estimated to be **3** (based on the image).
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No obvious masses or",,,,,,,
+Img489,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a large irregular soft opacity with spiculations 
+seen in the upper quadrant of the breast causing overlying skin and nipple retraction suggest a malignant lesion (BIRADS 5)
+
+no abnormal microcalcification seen. 
+
+multiple enlarged axillary nodes seen. 
+
+BIRADS: 5","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required to interpret medical images.
+
+**Mammography Radiology Report**
+
+**Patient:** (Hypothetical Patient Name)
+**Patient ID:** (Hypothetical Patient ID)
+**Date of Exam:** (Hypothetical Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Technique:** Digital Mammography (2D)
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be predominantly *heterogeneously dense*.  There are areas of increased density, and some areas of decreased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No obvious masses are identified.
+    *   There are some areas of increased density,",,,,,,,
+Img490,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a well defined irregular soft opacity with spiculated margins and multiple foci of microcalcifications seen in outer quadrant of breast suggest malignant lesion (BIRADS 5)
+
+skin and nipple appears normal. 
+
+BIRADS: 5","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required to interpret medical images.
+
+**Mammography Radiology Report**
+
+**Patient:** (Hypothetical Patient Name)
+**Patient ID:** (Hypothetical Patient ID)
+**Date of Exam:** (Hypothetical Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Evaluation
+
+**Technique:** Digital Mammography (2D)
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be predominantly *heterogeneously dense*.  There are areas of increased density and areas of decreased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   A small, well-defined, rounded opacity is seen in the upper outer quadrant of the right breast",,,,,,,
+Img491,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a well defined irregular soft opacity with spiculated margins and multiple foci of microcalcifications seen in upper quadrant of breast extending upto retroareolar region suggest malignant lesion (BIRADS 5)
+
+skin, nipple and pectoral muscle appears normal. 
+
+few enlarged axillary nodes seen. 
+
+BIRADS: 5","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Report**
+
+**Patient:** (Assume a patient name is available)
+**Date of Exam:** (Assume a date is available)
+**Exam Type:** Mammography
+**Indication:** (Assume the indication is a routine screening or follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+*   **Right Breast:**  The right breast appears to have a mix of densities.  The density is estimated to be **35%** (Grade 2).
+*   **Left Breast:** The left breast appears to have a mix of densities. The density is estimated to be **30",,,,,,,
+Img492,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a large well defined irregular soft opacity with spiculations seen in retroareolar region of breast involving nipple suggest high suspicious malignant lesion (BIRADS 4c)
+
+benign vascular calcifications seen. 
+
+BIRADS: 4c","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required to interpret medical images.
+
+**Mammography Radiology Report**
+
+**Patient:** (Hypothetical Patient Name)
+**Patient ID:** (Hypothetical Patient ID)
+**Date of Exam:** (Hypothetical Date)
+**Referring Physician:** (Hypothetical Physician Name)
+**Exam Type:** Mammography
+**Indication:** Screening/Diagnostic (Please specify)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  Heterogeneously Dense (ACR Category 3)
+*   **Left Breast:**  Heterogeneously Dense (ACR Category 3)
+
+**Findings:**
+
+*   **",,,,,,,
+Img493,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a large well-defined irregular soft opacity seen in retroareolar region of breast suggest high suspicious malignant lesion (BIRADS 4c)
+
+benign vascular calcifications seen. 
+
+skin and pectoral muscle appear normal.
+
+no significant axillary adenopathy seen. 
+
+BIRADS: 4c","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should *not* be used for actual medical diagnosis or treatment. A qualified radiologist is required to interpret medical images and provide a definitive diagnosis.
+
+**Mammography Radiology Report**
+
+**Patient:** (Hypothetical Patient Name)
+**Patient ID:** (Hypothetical Patient ID)
+**Date of Exam:** (Hypothetical Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Diagnostic (Please specify)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  Heterogeneously Dense (ACR Category 3)
+*   **Left Breast:**  Heterogeneously Dense (ACR Category 3)
+
+**Findings:**
+
+*   **Right Breast:**",,,,,,,
+Img494,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a well defined soft opacity with foci of calcifications seen in inner quadrant of breast suggest benign lesion - calcified fibroadenoma most likely (BIRADS 2). 
+
+skin and nipple appear normal. 
+
+BIRADS: 2","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required to interpret medical images.
+
+**Mammography Report**
+
+**Patient:** (Hypothetical Patient Name)
+**Patient ID:** (Hypothetical Patient ID)
+**Date of Exam:** (Hypothetical Date)
+**Referring Physician:** (Hypothetical Physician Name)
+**Exam Type:** Mammography
+**Exam Modality:** Digital Mammography
+**Indication:** Screening/Diagnostic
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be heterogeneous, with areas of increased density (likely fibroglandular tissue) and areas of decreased density (likely fat).  The overall density is likely to be intermediate.
+
+**Findings:**
+
+*   **Right Breast:**",,,,,,,
+Img495,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: a well-defined soft opacity with foci of calcifications seen in the lower quadrant of breast suggest benign lesion - calcified fibroadenoma most likely (BIRADS 2). 
+
+skin, nipple, and pectoral muscle appear normal. 
+
+few small benign-looking axillary nodes seen. 
+
+BIRADS: 2","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Assume a patient name is available)
+**Date of Exam:** (Assume a date is available)
+**Exam Type:** Mammography
+**Indication:** (Assume the indication is a routine screening or follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a higher density, with a prominent mass.
+*   **Left Breast:** The left breast appears to have a lower density.
+
+**Findings:**
+
+*   **Right Breast:** A well-defined, round mass is identified in the",,,,,,,
+Img496,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a well defined lobulated soft opacity  seen in the upper quadrant of the breast near axillary tail region suggest low
+suspicious malignant lesion (BIRADS 4a). 
+
+skin, nipple, and pectoral muscle appear normal. 
+
+few small axillary nodes seen. 
+
+BIRADS: 4a","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *sample* report and should be reviewed and modified by a qualified radiologist.  A real report would include a full patient history, clinical context, and potentially additional imaging.
+
+**Patient:** (Assume a patient name is available)
+**Date of Exam:** (Assume a date is available)
+**Exam Type:** Mammography
+**Indication:** (Assume the indication is a routine screening or follow-up)
+**Technique:** Digital Mammography
+
+**Findings:**
+
+*   **Breasts:** The breasts appear to be well-positioned and adequately imaged.
+*   **Density:** The breast tissue appears to be of intermediate density.
+*   **Mass:** A small, round, well-defined mass is seen in the right breast, approximately 1 cm in diameter. The mass is located in the upper outer quadrant.
+*   **Other",,,,,,,
+Img497,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a popcorn calcification seen in retroareolar region (BIRADS 2)
+
+a small well defined soft opacity seen in outer quadrant of breast suggest probably benign lesion (BIRADS 3)
+
+skin and nipple appear normal. 
+
+BIRADS: 2, 3","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required to interpret medical images.
+
+**Mammography Radiology Report**
+
+**Patient:** (Assume a patient name is available)
+**Date of Exam:** (Assume a date is available)
+**Exam Type:** Mammography
+**Indication:** (Assume the indication is for screening or follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+*   **Right Breast:**  The right breast appears to have a mix of densities.  The density is estimated to be **ACR 3** (Heterogeneously Dense).
+*   **Left Breast:** The left breast appears to have a mix of densities. The density is estimated to be **",,,,,,,
+Img498,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a popcorn calcification seen in lower periareolar region (BIRADS 2)
+
+a small well defined soft opacity seen in upper quadrant of breast suggest probably benign lesion (BIRADS 3)
+
+skin, nipple and pectoral muscle appear normal. 
+
+no significant axillary adenopathy seen. 
+
+BIRADS: 2, 3","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required to interpret medical images.
+
+**Mammography Radiology Report**
+
+**Patient:** (Hypothetical Patient Name)
+**Patient ID:** (Hypothetical Patient ID)
+**Date of Exam:** (Hypothetical Date)
+**Referring Physician:** (Hypothetical Physician Name)
+**Exam Type:** Mammography
+**Indication:** Screening/Evaluation
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be heterogeneous, with areas of increased density and areas of decreased density.  The overall density is likely to be at least *intermediate*.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   A well-defined, round mass is seen in the upper outer quadrant",,,,,,,
+Img499,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a small well defined soft opacity seen in outer periareolar region of breast suggest probably benign lesion (BIRADS 3)
+
+skin and nipple appear normal. 
+
+BIRADS: 3","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be of average density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No obvious masses or suspicious lesions are identified.
+    *   The breast tissue appears relatively uniform in density.
+    *   No calcifications are readily apparent.
+*   **Left Breast:**
+    *   No obvious masses or suspicious lesions are identified.
+    *   The breast tissue appears relatively uniform",,,,,,,
+Img500,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: a well defined soft opacity seen in the upper periareolar region of the breast suggest probably benign lesion (BIRADS 3)
+
+skin, nipple, and pectoral muscle appear normal. 
+
+few small benign-looking axillary nodes seen. 
+
+BIRADS: 3","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**  The breast tissue appears to be predominantly fatty with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   There is a cluster of microcalcifications in the upper outer quadrant of the right breast.
+    *   There is a small, well-defined, non-mass lesion in the lower outer quadrant of the right breast.
+*   **Left Breast:**
+    *   The left breast",,,,,,,
+Img501,"BREAST COMPOSITION: dense glandular breast parenchyma (ACR D)
+
+FINDINGS: a large well defined lobulated soft opacity with 
+foci of microcalcifications seen in posterior aspect of outer quadrant of breast suggest malignant lesion (BIRADS 5)
+
+BIRADS: 5","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+*   **Right Breast:**  The right breast appears to have a relatively uniform density.  The ACR density is estimated to be **3** (based on the image).
+*   **Left Breast:** The left breast appears to have a relatively uniform density. The ACR density is estimated to be **3** (based on the image).
+
+**Findings:**
+
+*   **Right Breast:** No suspicious masses, architectural distortions, or",,,,,,,
+Img502,"BREAST COMPOSITION: dense glandular breast parenchyma (ACR D)
+
+FINDINGS: a large diffuse soft opacity with foci of microcalcifications seen involving upper-lower quadrant of breast infiltration overlying skin and nipple suggest malignant lesion (BIRADS 5)
+
+few enlarged axillary nodes seen. 
+
+BIRADS: 5","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *hypothetical* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Report**
+
+**Patient:** (Hypothetical Patient Name)
+**Date of Exam:** (Hypothetical Date)
+**Exam Type:** Mammography
+**Indication:** (Hypothetical Indication, e.g., Routine Screening, Follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Left Breast:**  The left breast appears to have a higher proportion of dense tissue.
+*   **Right Breast:** The right breast appears to have a lower proportion of dense tissue.
+
+**Findings:**
+
+*   **Left Breast:**  There is a suspicious mass/density",,,,,,,
+Img503,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR D)
+
+FINDINGS: no abnormal soft opacity or microcalcification seen.
+
+skin, nipple and pectoral muscle appear normal. 
+
+few small benign looking axillary nodes seen. 
+
+BIRADS: 1","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Technique:** Digital Mammography (2D)
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition with some areas of increased density.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No suspicious masses or architectural distortion are identified.
+    *   The",,,,,,,
+Img504,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: no abnormal soft opacity or microcalcification seen.
+
+skin, nipple and pectoral muscle appear normal. 
+
+few small benign looking axillary nodes seen. 
+
+BIRADS: 1","Okay, here's a structured mammography radiology report based on the provided image.  Please remember that this is a *sample* report and should be reviewed and modified by a qualified radiologist.  A real report would include a full patient history, clinical context, and potentially more detailed findings.
+
+**Patient:** (Assume a patient name is available)
+**Date:** (Assume a date is available)
+**Exam:** Mammography
+**Indication:** (Assume the indication is routine screening or follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a mix of densities.  The density is estimated to be **35%** (Grade 2).
+*   **Left Breast:** The left breast appears to have a mix of densities. The density is estimated to be **30%** (",,,,,,,
+Img505,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)
+
+FINDINGS: no abnormal soft opacity or microcalcification seen.
+
+skin, nipple, and pectoral muscle appear normal. 
+
+few small benign-looking axillary nodes seen. 
+
+BIRADS: 1","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition with some areas of increased density.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No suspicious masses or architectural distortions are identified.
+    *   The breast tissue appears relatively uniform in density.
+*",,,,,,,
+Img506,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: no abnormal soft opacity or microcalcification seen.
+
+skin and nipple appear normal. 
+
+BIRADS: 1","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** Screening/Routine
+
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+*   **Right Breast:**  The right breast appears to have a relatively uniform density.  The ACR density is estimated to be **3** (Normal).
+*   **Left Breast:** The left breast appears to have a relatively uniform density. The ACR density is estimated to be **3** (Normal).
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No obvious masses or suspicious lesions are identified.",,,,,,,
+Img507,"BREAST COMPOSITION: predominently fibro fatty breast parenchyma (ACR A)
+
+FINDINGS: no abnormal soft opacity or microcalcification seen.
+
+skin, nipple and pectoral muscle appear normal. 
+
+no significant axillary adenopathy seen.
+
+BIRADS: 1","Okay, here's a structured mammography radiology report based on the provided image.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Assume a patient name is provided)
+**Date of Exam:** (Assume a date is provided)
+**Exam Type:** Mammography
+**Indication:** (Assume the indication is provided, e.g., routine screening, follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition with some areas of increased density.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition with some areas of increased density.
+
+**Findings:**
+
+*   **Right",,,,,,,
+Img508,"BREAST COMPOSITION: predominantly fibro fatty breast parenchyma (ACR A)
+
+FINDINGS: no abnormal soft opacity or microcalcification seen.
+
+skin, nipple, and pectoral muscle appear normal. 
+
+few enlarged axillary adenopathy seen.
+
+BIRADS: 2","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Report**
+
+**Patient:** (Simulated Patient Name)
+**Date of Exam:** (Simulated Date)
+**Exam Type:** Mammography
+**Indication:** (Simulated Indication, e.g., Routine Screening, Follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition with some areas of increased density.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *",,,,,,,
+Img509,"BREAST COMPOSITION: predominently fibro fatty breast parenchyma (ACR A)
+
+FINDINGS: no abnormal soft opacity or microcalcification seen.
+
+skin and nipple appear normal. 
+
+BIRADS: 1","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Radiology Report**
+
+**Patient:** (Assume a patient name is provided)
+**Date of Exam:** (Assume a date is provided)
+**Exam Type:** Mammography
+**Indication:** (Assume the indication is provided, e.g., routine screening, follow-up)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition.
+
+**Findings:**
+
+*   **Right Breast:** No suspicious masses, architectural distortion, or other concerning",,,,,,,
+Img510,"BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)
+
+FINDINGS: no abnormal soft opacity or microcalcification seen.
+
+skin, nipple and pectoral muscle appear normal. 
+
+no significant axillary nodes seen. 
+
+BIRADS: 1","Okay, here's a structured mammography radiology report based on the image provided.  Please remember that this is a *simulated* report and should not be used for actual medical diagnosis or treatment. A qualified radiologist is required for a proper interpretation.
+
+**Mammography Report**
+
+**Patient:** (Assume a patient name is available)
+**Date:** (Assume a date is available)
+**Exam:** Mammography
+**Indication:** (Assume the indication is a routine screening exam)
+**Technique:** Digital Mammography (2D)
+**Image Quality:** Good
+
+**Breast Composition (ACR Density):**
+
+*   **Right Breast:**  The right breast appears to have a predominantly fatty composition with some areas of increased density.
+*   **Left Breast:** The left breast appears to have a predominantly fatty composition with some areas of increased density.
+
+**Findings:**
+
+*   **Right Breast:**
+    *   No suspicious masses or architectural distortion",,,,,,,

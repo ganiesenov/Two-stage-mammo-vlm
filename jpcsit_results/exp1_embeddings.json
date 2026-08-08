@@ -1,0 +1,58 @@
+{
+  "all-MiniLM-L6-v2": {
+    "bleu1": 0.2135,
+    "bleu4": 0.0621,
+    "rouge1": 0.4114,
+    "rouge2": 0.1851,
+    "rougeL": 0.2822,
+    "bertscore": 0.876,
+    "hallucination_rate": 0.7,
+    "retrieve_latency_ms_mean": 17.223,
+    "retrieve_latency_ms_p95": 20.195,
+    "refine_latency_s_mean": 8.228,
+    "embedding_dim": 384,
+    "index_build_seconds": 6.22
+  },
+  "all-mpnet-base-v2": {
+    "bleu1": 0.2143,
+    "bleu4": 0.0632,
+    "rouge1": 0.4115,
+    "rouge2": 0.1893,
+    "rougeL": 0.2849,
+    "bertscore": 0.8773,
+    "hallucination_rate": 0.7333,
+    "retrieve_latency_ms_mean": 34.04,
+    "retrieve_latency_ms_p95": 37.544,
+    "refine_latency_s_mean": 6.932,
+    "embedding_dim": 768,
+    "index_build_seconds": 51.76
+  },
+  "S-PubMedBert": {
+    "bleu1": 0.2408,
+    "bleu4": 0.0754,
+    "rouge1": 0.4517,
+    "rouge2": 0.2073,
+    "rougeL": 0.318,
+    "bertscore": 0.8838,
+    "hallucination_rate": 0.6667,
+    "retrieve_latency_ms_mean": 21.932,
+    "retrieve_latency_ms_p95": 29.895,
+    "refine_latency_s_mean": 5.279,
+    "embedding_dim": 768,
+    "index_build_seconds": 52.65
+  },
+  "PubMedBert-base": {
+    "bleu1": 0.2298,
+    "bleu4": 0.069,
+    "rouge1": 0.4422,
+    "rouge2": 0.2015,
+    "rougeL": 0.3089,
+    "bertscore": 0.8814,
+    "hallucination_rate": 0.8333,
+    "retrieve_latency_ms_mean": 26.436,
+    "retrieve_latency_ms_p95": 31.128,
+    "refine_latency_s_mean": 6.132,
+    "embedding_dim": 768,
+    "index_build_seconds": 53.1
+  }
+}

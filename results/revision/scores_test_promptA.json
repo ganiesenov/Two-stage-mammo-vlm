@@ -1,0 +1,20 @@
+{
+  "dmid_only_r16_promptA": {
+    "bleu1": 0.4569,
+    "bleu4": 0.2205,
+    "rouge1": 0.6858,
+    "rouge2": 0.466,
+    "rougeL": 0.6148,
+    "meteor": 0.6182,
+    "cider": 0.5295
+  },
+  "two_stage_r16_promptA": {
+    "bleu1": 0.5204,
+    "bleu4": 0.3065,
+    "rouge1": 0.7241,
+    "rouge2": 0.5413,
+    "rougeL": 0.662,
+    "meteor": 0.6717,
+    "cider": 0.7303
+  }
+}

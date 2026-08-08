@@ -1,0 +1,56 @@
+{
+  "zero_shot": {
+    "bleu1": 0.0609,
+    "bleu4": 0.0012,
+    "rouge1": 0.1505,
+    "rouge2": 0.0203,
+    "rougeL": 0.0975,
+    "meteor": 0.1921,
+    "cider": 0.0
+  },
+  "dmid_only_r16": {
+    "bleu1": 0.4418,
+    "bleu4": 0.2025,
+    "rouge1": 0.6755,
+    "rouge2": 0.4427,
+    "rougeL": 0.6008,
+    "meteor": 0.5967,
+    "cider": 0.4553
+  },
+  "two_stage_r16": {
+    "bleu1": 0.4975,
+    "bleu4": 0.2784,
+    "rouge1": 0.7193,
+    "rouge2": 0.5304,
+    "rougeL": 0.6587,
+    "meteor": 0.657,
+    "cider": 0.6392
+  },
+  "two_stage_r64": {
+    "bleu1": 0.5298,
+    "bleu4": 0.312,
+    "rouge1": 0.7336,
+    "rouge2": 0.5506,
+    "rougeL": 0.6705,
+    "meteor": 0.6845,
+    "cider": 0.7291
+  },
+  "dmid_only_r64": {
+    "bleu1": 0.5415,
+    "bleu4": 0.3149,
+    "rouge1": 0.7381,
+    "rouge2": 0.5511,
+    "rougeL": 0.6696,
+    "meteor": 0.6906,
+    "cider": 0.6925
+  },
+  "two_stage_r16_a32": {
+    "bleu1": 0.5088,
+    "bleu4": 0.2848,
+    "rouge1": 0.7157,
+    "rouge2": 0.5199,
+    "rougeL": 0.6475,
+    "meteor": 0.6561,
+    "cider": 0.5913
+  }
+}

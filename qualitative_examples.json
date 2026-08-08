@@ -1,0 +1,50 @@
+[
+  {
+    "img_id": "Img462",
+    "img_path": "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/IMG462.tif",
+    "gt": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: No abnormal soft opacity or microcalcifications seen.\n\nskin and nipple appear normal. \n\nBIRADS: 1",
+    "ours": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+  },
+  {
+    "img_id": "Img461",
+    "img_path": "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/IMG461.tif",
+    "gt": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: No abnormal soft opacity or microcalcifications seen.\n\nskin, nipple and pectoral muscle appear normal. \n\nfew small benign looking axillary node seen. \n\nBIRADS: 1",
+    "ours": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4a\n\nFindings:\na large well-defined soft opacity seen in the upper quadrant of the breast suggests a low suspicious lesion (BIRADS 4a).\nNo abnormal microcalcification seen.\nskin, nipple, and pectoral muscle appear normal.\nbenign-looking axillary adenopathy."
+  },
+  {
+    "img_id": "Img463",
+    "img_path": "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/IMG463.tif",
+    "gt": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: No abnormal soft opacity or microcalcifications seen.\n\nskin, nipple and pectoral muscle appear normal. \n\nno significant axillary adenopathy seen. \n\nBIRADS: 1",
+    "ours": "Breast Composition:\nfibro glandular breast parenchyma (ACR C).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin, nipple, and pectoral muscle appear normal.\nNo significant axillary adenopathy."
+  },
+  {
+    "img_id": "Img470",
+    "img_path": "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/IMG470.tif",
+    "gt": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: about three well defined lobulated soft opacity seen in inner quadrant of breast suggest probably benign lesions (BIRADS 3)\n\nanother small well defined soft opacity with foci of microcalcification seen in posterior aspect of outer quadrant of breast suggest moderate suspiciois malignant lesion (BIRADS 4b)\n\nskin and nipple appear normal. \n\nBIRADS: 3, 4b",
+    "ours": "Breast Composition:\nfibro glandular breast parenchyma (ACR C).\n\nBIRADS: 4c\n\nFindings:\nA large irregular soft opacity seen in the inner quadrant of the breast with overlying skin thickening suggests a high suspicious malignant \nlesion (BIRADS 4c). \nNo abnormal microcalcification is seen. \nNipple is not seen."
+  },
+  {
+    "img_id": "Img475",
+    "img_path": "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/IMG475.tif",
+    "gt": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR C)\n\nFINDINGS: a small well defined soft opacity seen involving nipple suggests\nmoderate suspicious malignant lesion (BIRADS 4b)\n\nbifid appearance of nipple seen.\n\nno abnormal microcalcification seen. \n\nskin and pectoral muscle appear normal. \n\nfew small benign-looking axillary nodes seen. \n\nBIRADS: 4b",
+    "ours": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 3\n\nFindings:\nfew small well-defined soft opacities seen in the lower quadrant of the breast suggest probably benign lesions (BIRADS 3)\nNo abnormal microcalcification seen. \nskin, pectoral muscle, and pectoral nipple appear normal.\nNo significant axillary adenopathy."
+  },
+  {
+    "img_id": "Img480",
+    "img_path": "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/IMG480.tif",
+    "gt": "BREAST COMPOSITION: fibro fatty and glandular breast parenchyma (ACR B)\n\nFINDINGS: an ill defined soft opacity seen in outer quadrant of breast \nsuggest low suspicious malignant lesion (BIRADS 4a). \n\nbenign vascular calcification seen.\n\nskin and nipple appear normal. \n\nno abnormal microcalcification seen. \n\nBIRADS: 4a",
+    "ours": "Breast Composition:\nfibro glandular breast parenchyma (ACR C).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+  },
+  {
+    "img_id": "Img294",
+    "img_path": "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/IMG294.tif",
+    "gt": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4c\n\nFindings:\na well-defined soft opacity with spiculated margins seen in the outer quadrant of the breast causing overlying skin \nand nipple retraction suggests high suspicious malignant lesion (BIRADS 4c).\nno abnormal microcalcification seen.",
+    "ours": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 1\n\nFindings:\nNo abnormal soft opacity or microcalcification seen. \nskin and nipple appear normal."
+  },
+  {
+    "img_id": "Img295",
+    "img_path": "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/IMG295.tif",
+    "gt": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4c\n\nFindings:\na well-defined irregular soft opacity with spiculated margins seen in the upper quadrant of the breast causing overlying \nskin and nipple retraction suggest high suspicious malignant lesion (BIRADS 4c).\nno abnormal microcalcification seen.\npectoral muscle appears normal.\nno significant axillary adenopathy.",
+    "ours": "Breast Composition:\nfibro fatty and glandular breast parenchyma (ACR B).\n\nBIRADS: 4c\n\nFindings:\nA large irregular soft opacity seen in the upper quadrant of the breast with overlying skin thickening suggests a high suspicious malignant lesion (BIRADS 4c).\nNo abnormal microcalcification seen.\nMultiple enlarged axillary nodes seen."
+  }
+]

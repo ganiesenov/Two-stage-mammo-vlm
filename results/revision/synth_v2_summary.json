@@ -1,0 +1,27 @@
+{
+  "generator": "llama3.1:8b",
+  "n_total": 1444,
+  "n_vindr": 722,
+  "n_cbis": 722,
+  "n_russian_remaining": 0,
+  "regenerations_language": 0,
+  "regenerations_validity": 24,
+  "dropped_after_retries": 0,
+  "doses": {
+    "369": {
+      "n": 369,
+      "vindr": 185,
+      "cbis": 184
+    },
+    "800": {
+      "n": 800,
+      "vindr": 400,
+      "cbis": 400
+    },
+    "1444": {
+      "n": 1444,
+      "vindr": 722,
+      "cbis": 722
+    }
+  }
+}

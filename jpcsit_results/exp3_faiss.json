@@ -1,0 +1,69 @@
+{
+  "index_performance": {
+    "FlatIP": {
+      "build_seconds": 0.0016,
+      "n_vectors": 39,
+      "embedding_dim": 384,
+      "recall_at_k=2": 1.0,
+      "mean_ms": 0.002,
+      "p50_ms": 0.0019,
+      "p95_ms": 0.0021,
+      "p99_ms": 0.0035
+    },
+    "IVFFlat": {
+      "build_seconds": 0.004,
+      "n_vectors": 39,
+      "embedding_dim": 384,
+      "recall_at_k=2": 0.9755,
+      "mean_ms": 0.0026,
+      "p50_ms": 0.0025,
+      "p95_ms": 0.0026,
+      "p99_ms": 0.003
+    },
+    "HNSWFlat": {
+      "build_seconds": 0.0006,
+      "n_vectors": 39,
+      "embedding_dim": 384,
+      "recall_at_k=2": 1.0,
+      "mean_ms": 0.0033,
+      "p50_ms": 0.0032,
+      "p95_ms": 0.0037,
+      "p99_ms": 0.0041
+    }
+  },
+  "end_to_end_nlg": {
+    "FlatIP": {
+      "bleu1": 0.2272,
+      "bleu4": 0.0693,
+      "rouge1": 0.4333,
+      "rouge2": 0.2043,
+      "rougeL": 0.298,
+      "bertscore": 0.8814,
+      "hallucination_rate": 0.7333,
+      "retrieve_latency_ms_mean": 14.633,
+      "refine_latency_s_mean": 6.527
+    },
+    "IVFFlat": {
+      "bleu1": 0.2358,
+      "bleu4": 0.0711,
+      "rouge1": 0.4416,
+      "rouge2": 0.1997,
+      "rougeL": 0.3036,
+      "bertscore": 0.8812,
+      "hallucination_rate": 0.8,
+      "retrieve_latency_ms_mean": 16.107,
+      "refine_latency_s_mean": 6.377
+    },
+    "HNSWFlat": {
+      "bleu1": 0.2156,
+      "bleu4": 0.0627,
+      "rouge1": 0.4183,
+      "rouge2": 0.1894,
+      "rougeL": 0.2894,
+      "bertscore": 0.8775,
+      "hallucination_rate": 0.6,
+      "retrieve_latency_ms_mean": 17.33,
+      "refine_latency_s_mean": 6.767
+    }
+  }
+}

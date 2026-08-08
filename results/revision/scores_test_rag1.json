@@ -1,0 +1,11 @@
+{
+  "two_stage_r64_rag1": {
+    "bleu1": 0.5287,
+    "bleu4": 0.275,
+    "rouge1": 0.7237,
+    "rouge2": 0.504,
+    "rougeL": 0.6492,
+    "meteor": 0.6692,
+    "cider": 0.505
+  }
+}

@@ -4,10 +4,10 @@ from transformers import AutoProcessor, AutoModelForImageTextToText
 from peft import PeftModel
 
 MODEL_ID   = "google/medgemma-4b-it"
-MM_LORA    = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_multimodal"
-DMID_LORA  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid"
-IMGS_DIR   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/"
-REPS_DIR   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Reports/Reports/"
+MM_LORA    = "./medgemma_multimodal"
+DMID_LORA  = "./medgemma_dmid"
+IMGS_DIR   = "./dmid/TIFF Images/TIFF Images/"
+REPS_DIR   = "./dmid/Reports/Reports/"
 
 # Выбери нужные изображения из тест сета (последние 52)
 TEST_IMAGES = ["Img462", "Img461", "Img463", "Img470", "Img475", "Img480", "Img294", "Img295"]
@@ -66,7 +66,7 @@ def main():
             "ours": our,
         })
 
-    with open("/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/qualitative_examples.json", "w") as f:
+    with open("./qualitative_examples.json", "w") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     print("\nСохранено в qualitative_examples.json")
 

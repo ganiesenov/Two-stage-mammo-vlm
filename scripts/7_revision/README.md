@@ -11,7 +11,7 @@ transformers 5.5.0, peft 0.18.1). Все зависимости проверен
 ## Порядок запуска
 
 ```bash
-cd /mnt/c/Users/juman/hard_ml/rag_mammo/new_article
+cd .
 PY=/home/gani/miniconda3/envs/rag_mammo/bin/python
 
 # 0. Манифест сплита и утечки — CPU, уже выполнено

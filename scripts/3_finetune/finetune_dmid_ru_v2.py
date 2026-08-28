@@ -22,11 +22,11 @@ from transformers import (AutoProcessor, AutoModelForImageTextToText,
 from peft import PeftModel
 
 MODEL_ID  = "google/medgemma-4b-it"
-BASE_LORA = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid"   # Stage 2 (English)
-OUTPUT    = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid_ru_v2"
+BASE_LORA = "./medgemma_dmid"   # Stage 2 (English)
+OUTPUT    = "./medgemma_dmid_ru_v2"
 DATA_DIR  = "/mnt/d/dmid_ru"
 PAIRS     = os.path.join(DATA_DIR, "pairs_study.json")
-SPLIT     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/scripts/3_finetune/split_ru.json"
+SPLIT     = "./scripts/3_finetune/split_ru.json"
 
 SEED = 42
 CAT_WEIGHT      = 6.0   # loss multiplier on BI-RADS / ACR category tokens

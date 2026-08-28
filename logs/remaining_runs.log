@@ -31,7 +31,7 @@ Notes:
     30/52
     40/52
     50/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/two_stage_r64_rag1__test.json
+  → ./results/revision/predictions/two_stage_r64_rag1__test.json
   {'bleu1': 0.5287, 'bleu4': 0.275, 'rouge1': 0.7237, 'rouge2': 0.504, 'rougeL': 0.6492, 'meteor': 0.6692, 'cider': np.float64(0.505)}
 
 ====================================================================
@@ -40,7 +40,7 @@ Notes:
   model                      BLEU-4      R-1      R-L      MET    CIDEr
   two_stage_r64_rag1         0.2750   0.7237   0.6492   0.6692   0.5050
 
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/scores_test_rag1.json
+  → ./results/revision/scores_test_rag1.json
 
 
 ##### --split val --models ablation_all #####
@@ -65,7 +65,7 @@ Notes:
     30/51
     40/51
     50/51
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/two_stage_r8_a16__val.json
+  → ./results/revision/predictions/two_stage_r8_a16__val.json
   {'bleu1': 0.3848, 'bleu4': 0.22, 'rouge1': 0.6073, 'rouge2': 0.4125, 'rougeL': 0.5502, 'meteor': 0.5428, 'cider': np.float64(0.2107)}
 
 ====================================================================
@@ -77,7 +77,7 @@ Notes:
     30/51
     40/51
     50/51
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/two_stage_r8_a32__val.json
+  → ./results/revision/predictions/two_stage_r8_a32__val.json
   {'bleu1': 0.4495, 'bleu4': 0.258, 'rouge1': 0.6404, 'rouge2': 0.4403, 'rougeL': 0.5757, 'meteor': 0.5918, 'cider': np.float64(0.345)}
 
 ====================================================================
@@ -89,7 +89,7 @@ Notes:
     30/51
     40/51
     50/51
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/two_stage_r32_a32__val.json
+  → ./results/revision/predictions/two_stage_r32_a32__val.json
   {'bleu1': 0.4491, 'bleu4': 0.2579, 'rouge1': 0.6403, 'rouge2': 0.446, 'rougeL': 0.5776, 'meteor': 0.5929, 'cider': np.float64(0.3059)}
 
 ====================================================================
@@ -101,7 +101,7 @@ Notes:
     30/51
     40/51
     50/51
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/two_stage_r32_a64__val.json
+  → ./results/revision/predictions/two_stage_r32_a64__val.json
   {'bleu1': 0.4714, 'bleu4': 0.2697, 'rouge1': 0.6578, 'rouge2': 0.4587, 'rougeL': 0.5913, 'meteor': 0.6082, 'cider': np.float64(0.3886)}
 
 ====================================================================
@@ -113,7 +113,7 @@ Notes:
     30/51
     40/51
     50/51
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/two_stage_r64__val.json
+  → ./results/revision/predictions/two_stage_r64__val.json
   {'bleu1': 0.4686, 'bleu4': 0.2702, 'rouge1': 0.659, 'rouge2': 0.4617, 'rougeL': 0.5915, 'meteor': 0.6101, 'cider': np.float64(0.4108)}
 
 ====================================================================
@@ -125,7 +125,7 @@ Notes:
     30/51
     40/51
     50/51
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/two_stage_r64_a128__val.json
+  → ./results/revision/predictions/two_stage_r64_a128__val.json
   {'bleu1': 0.441, 'bleu4': 0.2289, 'rouge1': 0.6412, 'rouge2': 0.4279, 'rougeL': 0.5766, 'meteor': 0.5929, 'cider': np.float64(0.2544)}
 
 ====================================================================
@@ -139,7 +139,7 @@ Notes:
   two_stage_r64              0.2702   0.6590   0.5915   0.6101   0.4108
   two_stage_r64_a128         0.2289   0.6412   0.5766   0.5929   0.2544
 
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/scores_val.json
+  → ./results/revision/scores_val.json
 
 
 ===== ОСТАВШИЕСЯ ПРОГОНЫ ЗАВЕРШЕНЫ =====

@@ -2,7 +2,7 @@
 # Дообучение r=16 α=32 единым механизмом слияния + оценка на валидации и тесте.
 # Закрывает последнюю неравномерность условий в Table 8 (см. R1.13, R3.2, R3.3).
 set -u
-cd /mnt/c/Users/juman/hard_ml/rag_mammo/new_article
+cd .
 PY=/home/gani/miniconda3/envs/rag_mammo/bin/python
 
 echo -e "\n##### обучение r16_a32 (механизм слияния) #####\n"

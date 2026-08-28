@@ -4,7 +4,7 @@
   "meta": {
     "spec": {
       "stage1": false,
-      "adapter": "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid"
+      "adapter": "./medgemma_dmid"
     },
     "rag": false,
     "rag_k": null,

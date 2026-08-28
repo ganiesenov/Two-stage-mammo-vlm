@@ -24,7 +24,7 @@ def preprocess_mammogram(img_path, target_size=448):
     img = cv2.resize(img, (target_size, target_size), interpolation=cv2.INTER_LANCZOS4)
     return cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
 
-BASE = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article"
+BASE = "."
 
 # 1. VinDr-Mammo
 print("="*50)

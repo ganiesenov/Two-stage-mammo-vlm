@@ -35,6 +35,6 @@ for url in URLS:
         print(f"  ОШИБКА: {e}")
 
 print(f"\nВсего чанков: {len(chunks)}")
-with open("/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_chunks.json", "w") as f:
+with open("./birads_chunks.json", "w") as f:
     json.dump(chunks, f, ensure_ascii=False, indent=2)
 print("Сохранено в birads_chunks.json")

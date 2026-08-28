@@ -17,11 +17,11 @@ from transformers import (AutoProcessor, AutoModelForImageTextToText,
 from peft import PeftModel
 
 MODEL_ID  = "google/medgemma-4b-it"
-BASE_LORA = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid"   # Stage 2 (English)
-OUTPUT    = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid_ru"
+BASE_LORA = "./medgemma_dmid"   # Stage 2 (English)
+OUTPUT    = "./medgemma_dmid_ru"
 DATA_DIR  = "/mnt/d/dmid_ru"
 PAIRS     = os.path.join(DATA_DIR, "pairs_study.json")
-SPLIT_OUT = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/scripts/3_finetune/split_ru.json"
+SPLIT_OUT = "./scripts/3_finetune/split_ru.json"
 
 SEED = 42
 VIEW_RU = {"RCC": "Правая КК", "LCC": "Левая КК", "RMLO": "Правая МЛК", "LMLO": "Левая МЛК"}

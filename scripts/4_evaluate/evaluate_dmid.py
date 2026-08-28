@@ -12,10 +12,10 @@ import nltk
 nltk.download('punkt', quiet=True)
 
 MODEL_ID   = "google/medgemma-4b-it"
-MM_LORA    = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_multimodal"
-DMID_IMGS  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/"
-DMID_REPS  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Reports/Reports/"
-DMID_META  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Metadata.xlsx"
+MM_LORA    = "./medgemma_multimodal"
+DMID_IMGS  = "./dmid/TIFF Images/TIFF Images/"
+DMID_REPS  = "./dmid/Reports/Reports/"
+DMID_META  = "./dmid/Metadata.xlsx"
 
 def load_dmid_pairs(n=52):
     """Загружаем пары изображение-отчёт из DMID (тест сет AMRG: последние 52)"""
@@ -148,7 +148,7 @@ def main():
         "baseline": m1,
         "multimodal_ft": m2
     }
-    out = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/eval_dmid.json"
+    out = "./results/eval_dmid.json"
     with open(out, "w") as f:
         json.dump(results, f, indent=2)
     print(f"\nСохранено в {out}")

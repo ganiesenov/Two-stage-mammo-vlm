@@ -5,8 +5,8 @@ report length analysis — computed from existing predictions
 import os, json, re
 import numpy as np
 
-RESULTS = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/eval_dmid_full.json"
-DMID_REPS = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Reports/Reports/"
+RESULTS = "./results/eval_dmid_full.json"
+DMID_REPS = "./dmid/Reports/Reports/"
 
 def extract_birads(text):
     patterns = [r'BI-?RADS[\s:]*(\d)', r'BIRADS[\s:]*(\d)', r'CATEGORY\s*(\d)']
@@ -144,7 +144,7 @@ def main():
         "report_length_real": {"mean": round(np.mean(ref_lens), 1), "std": round(np.std(ref_lens), 1)},
     }
     
-    out = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/extended_analysis.json"
+    out = "./results/extended_analysis.json"
     with open(out, "w") as f:
         json.dump(extended, f, indent=2)
     print(f"\nСохранено в {out}")

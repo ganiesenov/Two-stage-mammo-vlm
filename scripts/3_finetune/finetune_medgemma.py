@@ -6,9 +6,9 @@ from transformers import (AutoTokenizer, AutoModelForCausalLM,
                           DataCollatorForLanguageModeling)
 from peft import LoraConfig, get_peft_model
 
-VINDR_JSONL = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr/synthetic_reports.jsonl"
-CBIS_JSONL  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/cbis-ddsm/synthetic_reports_cbis.jsonl"
-OUTPUT_DIR  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_finetuned"
+VINDR_JSONL = "./vindr/synthetic_reports.jsonl"
+CBIS_JSONL  = "./cbis-ddsm/synthetic_reports_cbis.jsonl"
+OUTPUT_DIR  = "./medgemma_finetuned"
 MODEL_ID    = "google/medgemma-4b-it"
 MAX_LENGTH  = 512
 

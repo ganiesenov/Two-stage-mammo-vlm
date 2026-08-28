@@ -10,9 +10,9 @@ from peft import PeftModel
 nltk.download('punkt', quiet=True)
 
 MODEL_ID   = "google/medgemma-4b-it"
-LORA_DIR   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_finetuned"
-VINDR_JSONL = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr/synthetic_reports.jsonl"
-CBIS_JSONL  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/cbis-ddsm/synthetic_reports_cbis.jsonl"
+LORA_DIR   = "./medgemma_finetuned"
+VINDR_JSONL = "./vindr/synthetic_reports.jsonl"
+CBIS_JSONL  = "./cbis-ddsm/synthetic_reports_cbis.jsonl"
 
 def load_test_reports(*paths, n=40):
     data = []
@@ -116,7 +116,7 @@ def main():
 
     # Сохраняем результаты
     results = {"baseline": baseline_metrics, "finetuned": ft_metrics}
-    with open("/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/eval_results.json", "w") as f:
+    with open("./eval_results.json", "w") as f:
         json.dump(results, f, indent=2)
     print("\nРезультаты сохранены в eval_results.json")
 

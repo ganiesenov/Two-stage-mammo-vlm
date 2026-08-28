@@ -5,8 +5,8 @@ import ast
 import requests
 from pathlib import Path
 
-FINDING_CSV = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr/finding_annotations.csv"
-OUTPUT_FILE = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr/synthetic_reports.jsonl"
+FINDING_CSV = "./vindr/finding_annotations.csv"
+OUTPUT_FILE = "./vindr/synthetic_reports.jsonl"
 MAX_REPORTS = 200
 OLLAMA_MODEL = "llama3.1:8b"
 

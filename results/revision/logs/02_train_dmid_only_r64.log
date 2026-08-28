@@ -73,5 +73,5 @@ Trainable params: 131,153,920
 {'eval_loss': '0.711', 'eval_runtime': '24.08', 'eval_samples_per_second': '2.118', 'eval_steps_per_second': '0.291', 'epoch': '5'}
 {'train_runtime': '1621', 'train_samples_per_second': '1.255', 'train_steps_per_second': '0.157', 'train_loss': '0.5947', 'epoch': '5'}
 
-Готово → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid_only_r64
+Готово → ./dmid_only_r64
 Дальше: python 01_infer.py --split test --models dmid_only_r64

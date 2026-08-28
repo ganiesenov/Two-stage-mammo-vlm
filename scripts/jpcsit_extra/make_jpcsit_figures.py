@@ -19,7 +19,7 @@ mpl.rcParams.update({
     "ytick.labelsize": 10,
 })
 
-BASE = Path("/mnt/c/Users/juman/hard_ml/rag_mammo/new_article")
+BASE = Path(".")
 RESULTS = BASE / "jpcsit_results"
 FIGS = BASE / "jpcsit_results" / "figures"
 FIGS.mkdir(exist_ok=True, parents=True)

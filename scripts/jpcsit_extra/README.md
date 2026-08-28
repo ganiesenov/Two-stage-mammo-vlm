@@ -36,7 +36,7 @@ pip install sentence-transformers faiss-gpu transformers peft \
 ## Запуск (последовательно)
 
 ```bash
-cd /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/scripts/jpcsit_extra
+cd ./scripts/jpcsit_extra
 
 # Эксперимент 1: ~40-80 минут
 python exp1_embeddings.py

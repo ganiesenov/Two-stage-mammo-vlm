@@ -10,10 +10,10 @@ from transformers import (AutoProcessor, AutoModelForImageTextToText,
 from peft import PeftModel
 
 MODEL_ID  = "google/medgemma-4b-it"
-BASE_LORA = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_multimodal"
-OUTPUT    = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid_preprocessed"
-IMGS_DIR  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/preprocessed/"
-REPS_DIR  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Reports/Reports/"
+BASE_LORA = "./medgemma_multimodal"
+OUTPUT    = "./medgemma_dmid_preprocessed"
+IMGS_DIR  = "./dmid/preprocessed/"
+REPS_DIR  = "./dmid/Reports/Reports/"
 PROMPT_TEXT = "Generate a structured mammography report with breast composition, findings, BI-RADS category and recommendation."
 
 def find_image(img_id):

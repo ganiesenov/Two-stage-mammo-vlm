@@ -78,10 +78,10 @@ DMID train 407 / test 52   синтетика 390
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_dmid_only_r16_a32_seed42__test.json
+  → ./results/revision/predictions/sweep_dmid_only_r16_a32_seed42__test.json
   {'bleu1': 0.5114, 'bleu4': 0.2949, 'rouge1': 0.7195, 'rouge2': 0.5363, 'rougeL': 0.6546, 'meteor': 0.6661, 'cider': np.float64(0.5841)}
 
   >>> r=16 α=32: two-stage 0.6509 (n=2)  dmid-only 0.6553 (n=2)  Δ=-0.0044
 
-Готово за 32 мин → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/capacity_sweep.json
+Готово за 32 мин → ./results/revision/capacity_sweep.json
 Дальше: 06_equivalence.py — TOST по заранее объявленному порогу

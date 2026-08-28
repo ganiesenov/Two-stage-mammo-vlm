@@ -9,7 +9,7 @@
 #
 # Прогон возобновляемый: готовые ячейки пропускаются по ключу в capacity_sweep.json.
 set -u
-cd /mnt/c/Users/juman/hard_ml/rag_mammo/new_article
+cd .
 # Интерпретатор окружения rag_mammo: в базовом python3 нет torch, и весь свип
 # падал на import (см. logs/dose_sweep.log от 2026-08-03).
 PY=/home/gani/miniconda3/envs/rag_mammo/bin/python

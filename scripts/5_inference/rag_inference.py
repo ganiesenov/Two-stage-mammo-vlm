@@ -8,9 +8,9 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
 
 MODEL_ID  = "google/medgemma-4b-it"
-LORA_DIR  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_finetuned"
-INDEX_FILE = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_faiss.index"
-META_FILE  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_meta.pkl"
+LORA_DIR  = "./medgemma_finetuned"
+INDEX_FILE = "./birads_faiss.index"
+META_FILE  = "./birads_meta.pkl"
 
 # RAG retriever
 index = faiss.read_index(INDEX_FILE)

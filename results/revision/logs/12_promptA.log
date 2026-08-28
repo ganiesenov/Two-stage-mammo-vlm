@@ -14,7 +14,7 @@
     30/52
     40/52
     50/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/dmid_only_r16_promptA__test.json
+  → ./results/revision/predictions/dmid_only_r16_promptA__test.json
   {'bleu1': 0.4569, 'bleu4': 0.2205, 'rouge1': 0.6858, 'rouge2': 0.466, 'rougeL': 0.6148, 'meteor': 0.6182, 'cider': np.float64(0.5295)}
 
 ====================================================================
@@ -26,7 +26,7 @@
     30/52
     40/52
     50/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/two_stage_r16_promptA__test.json
+  → ./results/revision/predictions/two_stage_r16_promptA__test.json
   {'bleu1': 0.5204, 'bleu4': 0.3065, 'rouge1': 0.7241, 'rouge2': 0.5413, 'rougeL': 0.662, 'meteor': 0.6717, 'cider': np.float64(0.7303)}
 
 ====================================================================
@@ -36,4 +36,4 @@
   dmid_only_r16_promptA      0.2205   0.6858   0.6148   0.6182   0.5295
   two_stage_r16_promptA      0.3065   0.7241   0.6620   0.6717   0.7303
 
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/scores_test_promptA.json
+  → ./results/revision/scores_test_promptA.json

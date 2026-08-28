@@ -18,11 +18,11 @@ nltk.download('punkt_tab', quiet=True)
 nltk.download('wordnet', quiet=True)
 
 MODEL_ID   = "google/medgemma-4b-it"
-SYNTH_LORA = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_multimodal"
-IMGS_DIR   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/"
-REPS_DIR   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Reports/Reports/"
-BASE_OUT   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/lora_ablation"
-RESULTS    = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/lora_ablation.json"
+SYNTH_LORA = "./medgemma_multimodal"
+IMGS_DIR   = "./dmid/TIFF Images/TIFF Images/"
+REPS_DIR   = "./dmid/Reports/Reports/"
+BASE_OUT   = "./lora_ablation"
+RESULTS    = "./results/lora_ablation.json"
 PROMPT_TEXT = "Generate a structured mammography radiology report with breast composition (ACR density), findings, BI-RADS category, and recommendation."
 
 os.makedirs(BASE_OUT, exist_ok=True)

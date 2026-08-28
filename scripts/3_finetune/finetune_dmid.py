@@ -7,10 +7,10 @@ from peft import LoraConfig, get_peft_model, PeftModel
 from transformers import BitsAndBytesConfig
 
 MODEL_ID  = "google/medgemma-4b-it"
-BASE_LORA = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_multimodal"
-OUTPUT    = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid"
-IMGS_DIR  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/"
-REPS_DIR  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Reports/Reports/"
+BASE_LORA = "./medgemma_multimodal"
+OUTPUT    = "./medgemma_dmid"
+IMGS_DIR  = "./dmid/TIFF Images/TIFF Images/"
+REPS_DIR  = "./dmid/Reports/Reports/"
 
 def find_image(img_id):
     img_num = img_id.replace('Img','').replace('IMG','')

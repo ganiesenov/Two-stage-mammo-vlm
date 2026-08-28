@@ -10,11 +10,11 @@ from transformers import AutoProcessor, AutoModelForImageTextToText
 from peft import PeftModel
 
 MODEL_ID    = "google/medgemma-4b-it"
-MM_LORA     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_multimodal"
-INDEX_FILE  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_faiss.index"
-META_FILE   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_meta.pkl"
-VINDR_JSONL = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr/synthetic_reports.jsonl"
-VINDR_IMG   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr"
+MM_LORA     = "./medgemma_multimodal"
+INDEX_FILE  = "./birads_faiss.index"
+META_FILE   = "./birads_meta.pkl"
+VINDR_JSONL = "./vindr/synthetic_reports.jsonl"
+VINDR_IMG   = "./vindr"
 
 index = faiss.read_index(INDEX_FILE)
 with open(META_FILE, "rb") as f:
@@ -115,7 +115,7 @@ def main():
     print(f"  Multimodal FT:      {s2:.4f}")
     print(f"  Multimodal FT+RAG:  {s3:.4f}")
 
-    out = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/eval_radgraph.json"
+    out = "./eval_radgraph.json"
     with open(out, "w") as f:
         json.dump(results, f, indent=2)
     print(f"\nСохранено в {out}")

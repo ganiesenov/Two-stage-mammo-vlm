@@ -13,7 +13,7 @@ import os, json, re, gc
 # torch/PIL импортируются лениво: CPU-скрипты (манифест сплита, bootstrap,
 # клинические метрики) должны работать и без GPU-окружения.
 
-ROOT       = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article"
+ROOT       = "."
 MODEL_ID   = "google/medgemma-4b-it"
 STAGE1     = f"{ROOT}/medgemma_multimodal"
 IMGS_DIR   = f"{ROOT}/dmid/TIFF Images/TIFF Images/"

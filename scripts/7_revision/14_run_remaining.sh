@@ -3,7 +3,7 @@
 # Порядок: сначала короткая абляция RAG (падает быстро, если индекс или faiss не на месте),
 # затем длинный проход по валидации.
 set -u
-cd /mnt/c/Users/juman/hard_ml/rag_mammo/new_article
+cd .
 PY=/home/gani/miniconda3/envs/rag_mammo/bin/python
 S=scripts/7_revision/01_infer.py
 

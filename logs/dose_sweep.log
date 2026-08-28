@@ -138,7 +138,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d1444_r64_a64_seed42__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d1444_r64_a64_seed42__test.json
   {'bleu1': 0.5193, 'bleu4': 0.3083, 'rouge1': 0.7312, 'rouge2': 0.5492, 'rougeL': 0.6702, 'meteor': 0.6771, 'cider': np.float64(0.6897)}
 
 ======================================================================
@@ -215,7 +215,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_dmid_only_r64_a64_seed42__test.json
+  → ./results/revision/predictions/sweep_dmid_only_r64_a64_seed42__test.json
   {'bleu1': 0.5311, 'bleu4': 0.3133, 'rouge1': 0.7332, 'rouge2': 0.5507, 'rougeL': 0.6671, 'meteor': 0.683, 'cider': np.float64(0.6862)}
 
 ======================================================================
@@ -300,7 +300,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d1444_r64_a64_seed43__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d1444_r64_a64_seed43__test.json
   {'bleu1': 0.5275, 'bleu4': 0.3116, 'rouge1': 0.7453, 'rouge2': 0.5699, 'rougeL': 0.6826, 'meteor': 0.6913, 'cider': np.float64(0.7149)}
 
 ======================================================================
@@ -377,7 +377,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_dmid_only_r64_a64_seed43__test.json
+  → ./results/revision/predictions/sweep_dmid_only_r64_a64_seed43__test.json
   {'bleu1': 0.5191, 'bleu4': 0.302, 'rouge1': 0.741, 'rouge2': 0.5601, 'rougeL': 0.6775, 'meteor': 0.6836, 'cider': np.float64(0.6439)}
 
 ======================================================================
@@ -462,7 +462,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d1444_r64_a64_seed44__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d1444_r64_a64_seed44__test.json
   {'bleu1': 0.4618, 'bleu4': 0.2516, 'rouge1': 0.7104, 'rouge2': 0.5095, 'rougeL': 0.6429, 'meteor': 0.6292, 'cider': np.float64(0.4196)}
 
 ======================================================================
@@ -539,7 +539,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_dmid_only_r64_a64_seed44__test.json
+  → ./results/revision/predictions/sweep_dmid_only_r64_a64_seed44__test.json
   {'bleu1': 0.4278, 'bleu4': 0.2151, 'rouge1': 0.6921, 'rouge2': 0.4667, 'rougeL': 0.6183, 'meteor': 0.6031, 'cider': np.float64(0.2999)}
 
   >>> r=64 α=64: two-stage 0.6652 (n=3)  dmid-only 0.6543 (n=3)  Δ=+0.0109
@@ -626,7 +626,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d1444_r16_a32_seed42__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d1444_r16_a32_seed42__test.json
   {'bleu1': 0.5124, 'bleu4': 0.2999, 'rouge1': 0.7139, 'rouge2': 0.5321, 'rougeL': 0.651, 'meteor': 0.6623, 'cider': np.float64(0.643)}
 [dmid_only_r16_a32_seed42] готово, пропуск
 
@@ -708,7 +708,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d1444_r16_a32_seed43__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d1444_r16_a32_seed43__test.json
   {'bleu1': 0.4931, 'bleu4': 0.2863, 'rouge1': 0.7255, 'rouge2': 0.5438, 'rougeL': 0.6631, 'meteor': 0.6643, 'cider': np.float64(0.6217)}
 [dmid_only_r16_a32_seed43] готово, пропуск
 
@@ -790,13 +790,13 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d1444_r16_a32_seed44__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d1444_r16_a32_seed44__test.json
   {'bleu1': 0.4134, 'bleu4': 0.2113, 'rouge1': 0.6675, 'rouge2': 0.4486, 'rougeL': 0.5905, 'meteor': 0.5743, 'cider': np.float64(0.3967)}
 [dmid_only_r16_a32_seed44] готово, пропуск
 
   >>> r=16 α=32: two-stage 0.6317 (n=6)  dmid-only 0.6378 (n=4)  Δ=-0.0060
 
-Готово за 292 мин → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/capacity_sweep.json
+Готово за 292 мин → ./results/revision/capacity_sweep.json
 Дальше: 06_equivalence.py — TOST по заранее объявленному порогу
 
 
@@ -926,7 +926,7 @@ DMID train 407 / test 52   синтетика 800
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d800_r64_a64_seed42__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d800_r64_a64_seed42__test.json
   {'bleu1': 0.5216, 'bleu4': 0.2979, 'rouge1': 0.73, 'rouge2': 0.5438, 'rougeL': 0.6662, 'meteor': 0.6836, 'cider': np.float64(0.6496)}
 
 ======================================================================
@@ -1007,7 +1007,7 @@ DMID train 407 / test 52   синтетика 800
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d800_r64_a64_seed43__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d800_r64_a64_seed43__test.json
   {'bleu1': 0.5163, 'bleu4': 0.3031, 'rouge1': 0.7367, 'rouge2': 0.5554, 'rougeL': 0.6748, 'meteor': 0.6816, 'cider': np.float64(0.6727)}
 
 ======================================================================
@@ -1088,7 +1088,7 @@ DMID train 407 / test 52   синтетика 800
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d800_r64_a64_seed44__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d800_r64_a64_seed44__test.json
   {'bleu1': 0.4236, 'bleu4': 0.2249, 'rouge1': 0.6899, 'rouge2': 0.4755, 'rougeL': 0.6194, 'meteor': 0.597, 'cider': np.float64(0.2965)}
 
   >>> r=64 α=64: two-stage 0.6593 (n=6)  dmid-only 0.6543 (n=3)  Δ=+0.0050
@@ -1171,7 +1171,7 @@ DMID train 407 / test 52   синтетика 800
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d800_r16_a32_seed42__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d800_r16_a32_seed42__test.json
   {'bleu1': 0.5177, 'bleu4': 0.3039, 'rouge1': 0.722, 'rouge2': 0.5396, 'rougeL': 0.6583, 'meteor': 0.6702, 'cider': np.float64(0.6694)}
 
 ======================================================================
@@ -1252,7 +1252,7 @@ DMID train 407 / test 52   синтетика 800
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d800_r16_a32_seed43__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d800_r16_a32_seed43__test.json
   {'bleu1': 0.4962, 'bleu4': 0.2838, 'rouge1': 0.7223, 'rouge2': 0.5363, 'rougeL': 0.6593, 'meteor': 0.6643, 'cider': np.float64(0.586)}
 
 ======================================================================
@@ -1333,12 +1333,12 @@ DMID train 407 / test 52   синтетика 800
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d800_r16_a32_seed44__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d800_r16_a32_seed44__test.json
   {'bleu1': 0.4172, 'bleu4': 0.2118, 'rouge1': 0.6675, 'rouge2': 0.4448, 'rougeL': 0.5879, 'meteor': 0.5748, 'cider': np.float64(0.4021)}
 
   >>> r=16 α=32: two-stage 0.6329 (n=9)  dmid-only 0.6378 (n=4)  Δ=-0.0049
 
-Готово за 202 мин → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/capacity_sweep.json
+Готово за 202 мин → ./results/revision/capacity_sweep.json
 Дальше: 06_equivalence.py — TOST по заранее объявленному порогу
 
 
@@ -1378,7 +1378,7 @@ DMID train 407 / test 52   синтетика 1444
 
   >>> r=16 α=32: two-stage 0.6329 (n=9)  dmid-only 0.6378 (n=4)  Δ=-0.0049
 
-Готово за 0 мин → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/capacity_sweep.json
+Готово за 0 мин → ./results/revision/capacity_sweep.json
 Дальше: 06_equivalence.py — TOST по заранее объявленному порогу
 
 
@@ -1401,7 +1401,7 @@ DMID train 407 / test 52   синтетика 800
 
   >>> r=16 α=32: two-stage 0.6329 (n=9)  dmid-only 0.6378 (n=4)  Δ=-0.0049
 
-Готово за 0 мин → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/capacity_sweep.json
+Готово за 0 мин → ./results/revision/capacity_sweep.json
 Дальше: 06_equivalence.py — TOST по заранее объявленному порогу
 
 
@@ -1519,7 +1519,7 @@ DMID train 407 / test 52   синтетика 369
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d369_r64_a64_seed42__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d369_r64_a64_seed42__test.json
   {'bleu1': 0.5239, 'bleu4': 0.3036, 'rouge1': 0.734, 'rouge2': 0.5471, 'rougeL': 0.6718, 'meteor': 0.6816, 'cider': np.float64(0.6761)}
 
 ======================================================================
@@ -1600,7 +1600,7 @@ DMID train 407 / test 52   синтетика 369
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d369_r64_a64_seed43__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d369_r64_a64_seed43__test.json
   {'bleu1': 0.5079, 'bleu4': 0.2974, 'rouge1': 0.7284, 'rouge2': 0.5467, 'rougeL': 0.666, 'meteor': 0.6722, 'cider': np.float64(0.6243)}
 
 ======================================================================
@@ -1681,7 +1681,7 @@ DMID train 407 / test 52   синтетика 369
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d369_r64_a64_seed44__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d369_r64_a64_seed44__test.json
   {'bleu1': 0.4737, 'bleu4': 0.2609, 'rouge1': 0.7191, 'rouge2': 0.5196, 'rougeL': 0.652, 'meteor': 0.6394, 'cider': np.float64(0.4712)}
 
   >>> r=64 α=64: two-stage 0.6607 (n=9)  dmid-only 0.6543 (n=3)  Δ=+0.0064
@@ -1763,7 +1763,7 @@ DMID train 407 / test 52   синтетика 369
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d369_r16_a32_seed42__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d369_r16_a32_seed42__test.json
   {'bleu1': 0.523, 'bleu4': 0.3009, 'rouge1': 0.7222, 'rouge2': 0.5324, 'rougeL': 0.6552, 'meteor': 0.6713, 'cider': np.float64(0.6856)}
 
 ======================================================================
@@ -1844,7 +1844,7 @@ DMID train 407 / test 52   синтетика 369
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d369_r16_a32_seed43__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d369_r16_a32_seed43__test.json
   {'bleu1': 0.4933, 'bleu4': 0.2834, 'rouge1': 0.7197, 'rouge2': 0.5329, 'rougeL': 0.6538, 'meteor': 0.6596, 'cider': np.float64(0.6038)}
 
 ======================================================================
@@ -1925,12 +1925,12 @@ DMID train 407 / test 52   синтетика 369
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d369_r16_a32_seed44__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d369_r16_a32_seed44__test.json
   {'bleu1': 0.433, 'bleu4': 0.2272, 'rouge1': 0.6759, 'rouge2': 0.4582, 'rougeL': 0.597, 'meteor': 0.5881, 'cider': np.float64(0.4075)}
 
   >>> r=16 α=32: two-stage 0.6335 (n=12)  dmid-only 0.6378 (n=4)  Δ=-0.0043
 
-Готово за 217 мин → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/capacity_sweep.json
+Готово за 217 мин → ./results/revision/capacity_sweep.json
 Дальше: 06_equivalence.py — TOST по заранее объявленному порогу
 
 
@@ -2027,7 +2027,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d1444_r32_a64_seed42__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d1444_r32_a64_seed42__test.json
   {'bleu1': 0.5118, 'bleu4': 0.3028, 'rouge1': 0.7343, 'rouge2': 0.556, 'rougeL': 0.6745, 'meteor': 0.6793, 'cider': np.float64(0.6483)}
 
 ======================================================================
@@ -2104,7 +2104,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_dmid_only_r32_a64_seed42__test.json
+  → ./results/revision/predictions/sweep_dmid_only_r32_a64_seed42__test.json
   {'bleu1': 0.5289, 'bleu4': 0.3098, 'rouge1': 0.7323, 'rouge2': 0.5491, 'rougeL': 0.6652, 'meteor': 0.6788, 'cider': np.float64(0.6867)}
 
 ======================================================================
@@ -2189,7 +2189,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d1444_r32_a64_seed43__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d1444_r32_a64_seed43__test.json
   {'bleu1': 0.517, 'bleu4': 0.3018, 'rouge1': 0.7303, 'rouge2': 0.5484, 'rougeL': 0.6662, 'meteor': 0.6771, 'cider': np.float64(0.6343)}
 
 ======================================================================
@@ -2266,7 +2266,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_dmid_only_r32_a64_seed43__test.json
+  → ./results/revision/predictions/sweep_dmid_only_r32_a64_seed43__test.json
   {'bleu1': 0.5203, 'bleu4': 0.3033, 'rouge1': 0.7356, 'rouge2': 0.5527, 'rougeL': 0.6718, 'meteor': 0.6807, 'cider': np.float64(0.6483)}
 
 ======================================================================
@@ -2351,7 +2351,7 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d1444_r32_a64_seed44__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d1444_r32_a64_seed44__test.json
   {'bleu1': 0.4564, 'bleu4': 0.2497, 'rouge1': 0.6939, 'rouge2': 0.4984, 'rougeL': 0.6292, 'meteor': 0.6235, 'cider': np.float64(0.572)}
 
 ======================================================================
@@ -2428,12 +2428,12 @@ DMID train 407 / test 52   синтетика 1444
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_dmid_only_r32_a64_seed44__test.json
+  → ./results/revision/predictions/sweep_dmid_only_r32_a64_seed44__test.json
   {'bleu1': 0.4549, 'bleu4': 0.249, 'rouge1': 0.7079, 'rouge2': 0.5075, 'rougeL': 0.6398, 'meteor': 0.6301, 'cider': np.float64(0.4008)}
 
   >>> r=32 α=64: two-stage 0.6566 (n=3)  dmid-only 0.6589 (n=3)  Δ=-0.0023
 
-Готово за 196 мин → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/capacity_sweep.json
+Готово за 196 мин → ./results/revision/capacity_sweep.json
 Дальше: 06_equivalence.py — TOST по заранее объявленному порогу
 
 
@@ -2530,7 +2530,7 @@ DMID train 407 / test 52   синтетика 800
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d800_r32_a64_seed42__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d800_r32_a64_seed42__test.json
   {'bleu1': 0.5204, 'bleu4': 0.308, 'rouge1': 0.7284, 'rouge2': 0.5488, 'rougeL': 0.665, 'meteor': 0.676, 'cider': np.float64(0.6709)}
 
 ======================================================================
@@ -2611,7 +2611,7 @@ DMID train 407 / test 52   синтетика 800
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d800_r32_a64_seed43__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d800_r32_a64_seed43__test.json
   {'bleu1': 0.5183, 'bleu4': 0.3037, 'rouge1': 0.7416, 'rouge2': 0.5602, 'rougeL': 0.6771, 'meteor': 0.684, 'cider': np.float64(0.6766)}
 
 ======================================================================
@@ -2692,12 +2692,12 @@ DMID train 407 / test 52   синтетика 800
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d800_r32_a64_seed44__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d800_r32_a64_seed44__test.json
   {'bleu1': 0.4281, 'bleu4': 0.2268, 'rouge1': 0.6902, 'rouge2': 0.4744, 'rougeL': 0.6169, 'meteor': 0.6025, 'cider': np.float64(0.3018)}
 
   >>> r=32 α=64: two-stage 0.6548 (n=6)  dmid-only 0.6589 (n=3)  Δ=-0.0041
 
-Готово за 103 мин → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/capacity_sweep.json
+Готово за 103 мин → ./results/revision/capacity_sweep.json
 Дальше: 06_equivalence.py — TOST по заранее объявленному порогу
 
 
@@ -2794,7 +2794,7 @@ DMID train 407 / test 52   синтетика 369
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d369_r32_a64_seed42__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d369_r32_a64_seed42__test.json
   {'bleu1': 0.5214, 'bleu4': 0.3053, 'rouge1': 0.7274, 'rouge2': 0.5438, 'rougeL': 0.6632, 'meteor': 0.674, 'cider': np.float64(0.6918)}
 
 ======================================================================
@@ -2875,7 +2875,7 @@ DMID train 407 / test 52   синтетика 369
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d369_r32_a64_seed43__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d369_r32_a64_seed43__test.json
   {'bleu1': 0.5148, 'bleu4': 0.3028, 'rouge1': 0.7342, 'rouge2': 0.5519, 'rougeL': 0.6708, 'meteor': 0.6776, 'cider': np.float64(0.6536)}
 
 ======================================================================
@@ -2955,12 +2955,12 @@ DMID train 407 / test 52   синтетика 369
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_v2d369_r32_a64_seed44__test.json
+  → ./results/revision/predictions/sweep_two_stage_v2d369_r32_a64_seed44__test.json
   {'bleu1': 0.4258, 'bleu4': 0.2269, 'rouge1': 0.6922, 'rouge2': 0.4827, 'rougeL': 0.6224, 'meteor': 0.6051, 'cider': np.float64(0.3142)}
 
   >>> r=32 α=64: two-stage 0.6539 (n=9)  dmid-only 0.6589 (n=3)  Δ=-0.0050
 
-Готово за 108 мин → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/capacity_sweep.json
+Готово за 108 мин → ./results/revision/capacity_sweep.json
 Дальше: 06_equivalence.py — TOST по заранее объявленному порогу
 
 

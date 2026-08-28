@@ -4,7 +4,7 @@
   "meta": {
     "spec": {
       "stage1": true,
-      "adapter": "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/lora_ablation/r64_a64/checkpoint-204"
+      "adapter": "./lora_ablation/r64_a64/checkpoint-204"
     },
     "rag": false,
     "rag_k": null,

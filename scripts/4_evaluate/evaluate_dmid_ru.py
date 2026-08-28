@@ -19,8 +19,8 @@ nltk.download('punkt', quiet=True); nltk.download('wordnet', quiet=True)
 MODEL_ID  = "google/medgemma-4b-it"
 DATA_DIR  = "/mnt/d/dmid_ru"
 PAIRS     = os.path.join(DATA_DIR, "pairs_study.json")
-SPLIT     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/scripts/3_finetune/split_ru.json"
-DEFAULT_LORA = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid_ru"
+SPLIT     = "./scripts/3_finetune/split_ru.json"
+DEFAULT_LORA = "./medgemma_dmid_ru"
 
 VIEW_RU = {"RCC": "Правая КК", "LCC": "Левая КК", "RMLO": "Правая МЛК", "LMLO": "Левая МЛК"}
 INSTRUCTION = ("Составь структурированное заключение по маммографии обеих молочных желёз "
@@ -56,7 +56,7 @@ def generate(model, processor, pair):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--lora", default=DEFAULT_LORA)
-    ap.add_argument("--out",  default="/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/dmid_ru_eval.json")
+    ap.add_argument("--out",  default="./results/dmid_ru_eval.json")
     args = ap.parse_args()
 
     split = json.load(open(SPLIT, encoding="utf-8"))

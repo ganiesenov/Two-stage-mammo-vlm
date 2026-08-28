@@ -51,4 +51,4 @@ DMID-RU held-out: 22 исследований, по 4 проекции
   вклад 21 контаминированного отчёта в языковую способность близок к нулю,
   тревога о языковой форе снимается.
 
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/dmid_ru_external.json
+  → ./results/revision/dmid_ru_external.json

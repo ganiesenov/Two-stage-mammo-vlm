@@ -20,7 +20,7 @@ from transformers import AutoProcessor, AutoModelForImageTextToText, BitsAndByte
 from peft import PeftModel
 
 MODEL_ID = "google/medgemma-4b-it"
-LORA     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid_ru"
+LORA     = "./medgemma_dmid_ru"
 
 VIEW_RU = {"RCC": "Правая КК", "LCC": "Левая КК", "RMLO": "Правая МЛК", "LMLO": "Левая МЛК"}
 VIEW_ORDER = ["RCC", "LCC", "RMLO", "LMLO"]

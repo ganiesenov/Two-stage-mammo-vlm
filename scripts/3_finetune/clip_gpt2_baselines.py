@@ -18,10 +18,10 @@ nltk.download('punkt', quiet=True)
 nltk.download('punkt_tab', quiet=True)
 nltk.download('wordnet', quiet=True)
 
-IMGS_DIR  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/"
-REPS_DIR  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Reports/Reports/"
-OUT_DIR   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/clip_gpt2_models"
-RESULTS   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/clip_gpt2_results.json"
+IMGS_DIR  = "./dmid/TIFF Images/TIFF Images/"
+REPS_DIR  = "./dmid/Reports/Reports/"
+OUT_DIR   = "./clip_gpt2_models"
+RESULTS   = "./results/clip_gpt2_results.json"
 
 os.makedirs(OUT_DIR, exist_ok=True)
 

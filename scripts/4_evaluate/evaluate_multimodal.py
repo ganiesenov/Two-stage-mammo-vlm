@@ -16,12 +16,12 @@ import nltk
 nltk.download('punkt', quiet=True)
 
 MODEL_ID      = "google/medgemma-4b-it"
-TEXT_LORA     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_finetuned"
-MM_LORA       = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_multimodal"
-INDEX_FILE    = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_faiss.index"
-META_FILE     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_meta.pkl"
-VINDR_JSONL   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr/synthetic_reports.jsonl"
-VINDR_IMG     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr"
+TEXT_LORA     = "./medgemma_finetuned"
+MM_LORA       = "./medgemma_multimodal"
+INDEX_FILE    = "./birads_faiss.index"
+META_FILE     = "./birads_meta.pkl"
+VINDR_JSONL   = "./vindr/synthetic_reports.jsonl"
+VINDR_IMG     = "./vindr"
 
 # RAG
 index = faiss.read_index(INDEX_FILE)
@@ -141,7 +141,7 @@ def main():
     m4 = compute_metrics(refs, hyps4, "4. Multimodal FT + RAG (ours)")
 
     results = {"baseline": m1, "text_ft_rag": m2, "multimodal_ft": m3, "multimodal_ft_rag": m4}
-    out = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/eval_results_multimodal.json"
+    out = "./eval_results_multimodal.json"
     with open(out, "w") as f:
         json.dump(results, f, indent=2)
     print(f"\nРезультаты сохранены в {out}")

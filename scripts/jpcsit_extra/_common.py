@@ -27,7 +27,7 @@ nltk.download('punkt_tab', quiet=True)
 # ============================================================
 # Paths (match your existing project structure)
 # ============================================================
-BASE = Path("/mnt/c/Users/juman/hard_ml/rag_mammo/new_article")
+BASE = Path(".")
 
 MODEL_ID = "google/medgemma-4b-it"
 MM_LORA = BASE / "medgemma_multimodal"

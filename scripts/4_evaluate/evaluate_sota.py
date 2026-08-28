@@ -8,8 +8,8 @@ from bert_score import score as bert_score
 import nltk
 nltk.download('punkt', quiet=True)
 
-VINDR_JSONL = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr/synthetic_reports.jsonl"
-VINDR_IMG   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr"
+VINDR_JSONL = "./vindr/synthetic_reports.jsonl"
+VINDR_IMG   = "./vindr"
 
 def load_test(n=30):
     data = []
@@ -112,7 +112,7 @@ def main():
     hyps_llava = run_llava(test)
     results["llava-1.6-7b"] = compute_metrics(refs, hyps_llava, "LLaVA-1.6-Mistral-7B (zero-shot)")
 
-    out = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/eval_results_sota.json"
+    out = "./eval_results_sota.json"
     with open(out, "w") as f:
         json.dump(results, f, indent=2)
     print(f"\nГотово! Результаты в {out}")

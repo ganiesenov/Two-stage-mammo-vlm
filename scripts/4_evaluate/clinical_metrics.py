@@ -7,9 +7,9 @@ from transformers import AutoProcessor, AutoModelForImageTextToText
 from peft import PeftModel
 
 MODEL_ID    = "google/medgemma-4b-it"
-MM_LORA     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_multimodal"
-VINDR_JSONL = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr/synthetic_reports.jsonl"
-VINDR_IMG   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr"
+MM_LORA     = "./medgemma_multimodal"
+VINDR_JSONL = "./vindr/synthetic_reports.jsonl"
+VINDR_IMG   = "./vindr"
 
 # BI-RADS → правильные рекомендации
 BIRADS_RECS = {
@@ -105,7 +105,7 @@ def main():
     m2 = evaluate_clinical(test, hyps_mm, "Multimodal FT (ours)")
 
     results = {"baseline": m1, "multimodal_ft": m2}
-    out = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/clinical_metrics.json"
+    out = "./clinical_metrics.json"
     with open(out, "w") as f:
         json.dump(results, f, indent=2)
     print(f"\nСохранено в {out}")

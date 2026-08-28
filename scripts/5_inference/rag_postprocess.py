@@ -15,11 +15,11 @@ import nltk
 nltk.download('punkt', quiet=True)
 
 MODEL_ID    = "google/medgemma-4b-it"
-MM_LORA     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_multimodal"
-INDEX_FILE  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_faiss.index"
-META_FILE   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_meta.pkl"
-VINDR_JSONL = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr/synthetic_reports.jsonl"
-VINDR_IMG   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr"
+MM_LORA     = "./medgemma_multimodal"
+INDEX_FILE  = "./birads_faiss.index"
+META_FILE   = "./birads_meta.pkl"
+VINDR_JSONL = "./vindr/synthetic_reports.jsonl"
+VINDR_IMG   = "./vindr"
 OLLAMA_MODEL = "llama3.1:8b"
 
 index = faiss.read_index(INDEX_FILE)
@@ -131,7 +131,7 @@ def main():
     m2 = compute_metrics(refs, hyps_rag, "Multimodal FT + Post-hoc RAG (ours)")
 
     results = {"multimodal_ft": m1, "multimodal_ft_posthoc_rag": m2}
-    out = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/eval_rag_posthoc.json"
+    out = "./eval_rag_posthoc.json"
     with open(out, "w") as f:
         json.dump(results, f, indent=2)
     print(f"\nСохранено в {out}")

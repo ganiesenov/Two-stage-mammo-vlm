@@ -1,7 +1,7 @@
 {
   "best_global_step": 153,
   "best_metric": 0.7056857943534851,
-  "best_model_checkpoint": "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/lora_ablation/r8_a16/checkpoint-153",
+  "best_model_checkpoint": "./lora_ablation/r8_a16/checkpoint-153",
   "epoch": 3.0,
   "eval_steps": 500,
   "global_step": 153,

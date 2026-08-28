@@ -15,10 +15,10 @@ import nltk
 nltk.download('punkt', quiet=True)
 
 MODEL_ID      = "google/medgemma-4b-it"
-DMID_ONLY     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid_only"
-TWO_STAGE     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid"
-DMID_IMGS     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/"
-DMID_REPS     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Reports/Reports/"
+DMID_ONLY     = "./medgemma_dmid_only"
+TWO_STAGE     = "./medgemma_dmid"
+DMID_IMGS     = "./dmid/TIFF Images/TIFF Images/"
+DMID_REPS     = "./dmid/Reports/Reports/"
 
 def load_test_pairs(n=52):
     pairs = []
@@ -117,7 +117,7 @@ def main():
     # Save
     results["meta"] = {"dataset": "DMID", "n_test": len(pairs),
                        "note": "Real radiologist reports, AMRG test split"}
-    out = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/eval_dmid_ablation.json"
+    out = "./results/eval_dmid_ablation.json"
     with open(out, "w") as f:
         json.dump(results, f, indent=2)
     print(f"\n\nСохранено в {out}")

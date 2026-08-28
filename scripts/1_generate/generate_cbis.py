@@ -3,9 +3,9 @@ import json
 import requests
 from pathlib import Path
 
-MASS_CSV = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/cbis-ddsm/csv/mass_case_description_train_set.csv"
-CALC_CSV = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/cbis-ddsm/csv/calc_case_description_train_set.csv"
-OUTPUT_FILE = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/cbis-ddsm/synthetic_reports_cbis.jsonl"
+MASS_CSV = "./cbis-ddsm/csv/mass_case_description_train_set.csv"
+CALC_CSV = "./cbis-ddsm/csv/calc_case_description_train_set.csv"
+OUTPUT_FILE = "./cbis-ddsm/synthetic_reports_cbis.jsonl"
 OLLAMA_MODEL = "llama3.1:8b"
 MAX_REPORTS = 200
 

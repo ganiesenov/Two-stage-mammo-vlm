@@ -4,9 +4,9 @@ import faiss
 import pickle
 from sentence_transformers import SentenceTransformer
 
-CHUNKS_FILE = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_chunks.json"
-INDEX_FILE  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_faiss.index"
-META_FILE   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_meta.pkl"
+CHUNKS_FILE = "./birads_chunks.json"
+INDEX_FILE  = "./birads_faiss.index"
+META_FILE   = "./birads_meta.pkl"
 
 print("Загружаю чанки...")
 with open(CHUNKS_FILE) as f:

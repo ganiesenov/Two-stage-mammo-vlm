@@ -26,13 +26,13 @@ birads_knowledge = [
 ]
 
 # Загружаем скрейпнутые чанки
-with open("/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_chunks.json") as f:
+with open("./birads_chunks.json") as f:
     scraped = json.load(f)
 
 # Объединяем
 all_chunks = birads_knowledge + scraped
 print(f"Итого чанков: {len(all_chunks)}")
 
-with open("/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_chunks.json", "w") as f:
+with open("./birads_chunks.json", "w") as f:
     json.dump(all_chunks, f, ensure_ascii=False, indent=2)
 print("Сохранено!")

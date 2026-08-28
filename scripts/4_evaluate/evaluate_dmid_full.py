@@ -14,11 +14,11 @@ import nltk
 nltk.download('punkt', quiet=True)
 
 MODEL_ID   = "google/medgemma-4b-it"
-DMID_ONLY  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid_only"
-TWO_STAGE  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid"
-DMID_IMGS  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/"
-DMID_REPS  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Reports/Reports/"
-OUT_DIR    = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results"
+DMID_ONLY  = "./medgemma_dmid_only"
+TWO_STAGE  = "./medgemma_dmid"
+DMID_IMGS  = "./dmid/TIFF Images/TIFF Images/"
+DMID_REPS  = "./dmid/Reports/Reports/"
+OUT_DIR    = "./results"
 
 # ── Data loading ──
 def load_test_pairs(n=52):

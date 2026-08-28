@@ -15,12 +15,12 @@ nltk.download('punkt_tab', quiet=True)
 nltk.download('wordnet', quiet=True)
 
 MODEL_ID  = "google/medgemma-4b-it"
-PREPROC   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid_preprocessed"
-ORIG      = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/lora_ablation/r64_a64"
-IMGS_RAW  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/"
-IMGS_PREP = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/preprocessed/"
-REPS_DIR  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Reports/Reports/"
-RESULTS   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/eval_preprocessed.json"
+PREPROC   = "./medgemma_dmid_preprocessed"
+ORIG      = "./lora_ablation/r64_a64"
+IMGS_RAW  = "./dmid/TIFF Images/TIFF Images/"
+IMGS_PREP = "./dmid/preprocessed/"
+REPS_DIR  = "./dmid/Reports/Reports/"
+RESULTS   = "./results/eval_preprocessed.json"
 PROMPT    = "Generate a structured mammography report with breast composition, findings, BI-RADS category and recommendation."
 
 def load_test(n=52):

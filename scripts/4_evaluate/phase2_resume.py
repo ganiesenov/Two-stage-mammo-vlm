@@ -12,9 +12,9 @@ nltk.download('punkt', quiet=True)
 nltk.download('punkt_tab', quiet=True)
 nltk.download('wordnet', quiet=True)
 
-DMID_IMGS = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/"
-DMID_REPS = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Reports/Reports/"
-RESULTS   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/phase2_full.json"
+DMID_IMGS = "./dmid/TIFF Images/TIFF Images/"
+DMID_REPS = "./dmid/Reports/Reports/"
+RESULTS   = "./results/phase2_full.json"
 PROMPT_TEXT = "Generate a structured mammography radiology report with breast composition (ACR density), findings, BI-RADS category, and recommendation."
 
 def load_test_pairs(n=52):
@@ -218,7 +218,7 @@ def main():
 
         if "dmid_only" not in results:
             print("\n[6/7] MedGemma DMID-only...")
-            mdl = PeftModel.from_pretrained(base, "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid_only"); mdl.eval()
+            mdl = PeftModel.from_pretrained(base, "./medgemma_dmid_only"); mdl.eval()
             hyps = []
             for i, pr in enumerate(pairs): hyps.append(gen(mdl, pr)); print(f"\r  {i+1}/{len(pairs)}", end="", flush=True)
             print()
@@ -228,7 +228,7 @@ def main():
 
         if "two_stage" not in results:
             print("\n[7/7] MedGemma Two-stage...")
-            mdl = PeftModel.from_pretrained(base, "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_dmid"); mdl.eval()
+            mdl = PeftModel.from_pretrained(base, "./medgemma_dmid"); mdl.eval()
             hyps = []
             for i, pr in enumerate(pairs): hyps.append(gen(mdl, pr)); print(f"\r  {i+1}/{len(pairs)}", end="", flush=True)
             print()

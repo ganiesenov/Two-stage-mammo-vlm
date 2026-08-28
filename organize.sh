@@ -1,5 +1,5 @@
 #!/bin/bash
-BASE="/mnt/c/Users/juman/hard_ml/rag_mammo/new_article"
+BASE="."
 cd $BASE
 
 # Создаём папки

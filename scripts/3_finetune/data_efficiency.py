@@ -16,11 +16,11 @@ import nltk
 nltk.download('punkt', quiet=True)
 
 MODEL_ID   = "google/medgemma-4b-it"
-SYNTH_LORA = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_multimodal"
-IMGS_DIR   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/"
-REPS_DIR   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/Reports/Reports/"
-BASE_OUT   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/data_efficiency"
-RESULTS    = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/data_efficiency.json"
+SYNTH_LORA = "./medgemma_multimodal"
+IMGS_DIR   = "./dmid/TIFF Images/TIFF Images/"
+REPS_DIR   = "./dmid/Reports/Reports/"
+BASE_OUT   = "./data_efficiency"
+RESULTS    = "./results/data_efficiency.json"
 
 def find_image(img_id):
     img_num = img_id.replace('Img','').replace('IMG','')

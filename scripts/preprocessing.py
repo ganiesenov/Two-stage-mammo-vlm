@@ -74,8 +74,8 @@ def preprocess_dmid(input_dir, output_dir, target_size=448):
     print(f"Preprocessed {count} images → {output_dir}")
 
 if __name__ == "__main__":
-    DMID_IMGS = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/TIFF Images/TIFF Images/"
-    OUT_DIR = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/dmid/preprocessed/"
+    DMID_IMGS = "./dmid/TIFF Images/TIFF Images/"
+    OUT_DIR = "./dmid/preprocessed/"
     
     preprocess_dmid(DMID_IMGS, OUT_DIR, target_size=448)
     
@@ -96,6 +96,6 @@ if __name__ == "__main__":
     ax2.set_title('Preprocessed (448x448)')
     ax2.axis('off')
     plt.tight_layout()
-    plt.savefig('/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/paper/figures/fig_preprocessing.png', 
+    plt.savefig('./paper/figures/fig_preprocessing.png', 
                 dpi=300, bbox_inches='tight')
     print("Preprocessing figure saved!")

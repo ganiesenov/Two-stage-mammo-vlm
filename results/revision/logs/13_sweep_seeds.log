@@ -83,7 +83,7 @@ DMID train 407 / test 52   синтетика 390
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_dmid_only_r16_a32_seed43__test.json
+  → ./results/revision/predictions/sweep_dmid_only_r16_a32_seed43__test.json
   {'bleu1': 0.5001, 'bleu4': 0.2891, 'rouge1': 0.7236, 'rouge2': 0.5406, 'rougeL': 0.6602, 'meteor': 0.6683, 'cider': np.float64(0.626)}
 
 ======================================================================
@@ -168,7 +168,7 @@ DMID train 407 / test 52   синтетика 390
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_two_stage_r16_a32_seed44__test.json
+  → ./results/revision/predictions/sweep_two_stage_r16_a32_seed44__test.json
   {'bleu1': 0.4165, 'bleu4': 0.2067, 'rouge1': 0.6639, 'rouge2': 0.4366, 'rougeL': 0.5841, 'meteor': 0.5715, 'cider': np.float64(0.3844)}
 
 ======================================================================
@@ -310,12 +310,12 @@ DMID train 407 / test 52   синтетика 390
   torch._check_is_size(blocksize)
     26/52
     52/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/sweep_dmid_only_r16_a32_seed44__test.json
+  → ./results/revision/predictions/sweep_dmid_only_r16_a32_seed44__test.json
   {'bleu1': 0.4202, 'bleu4': 0.197, 'rouge1': 0.66, 'rouge2': 0.4267, 'rougeL': 0.5803, 'meteor': 0.5688, 'cider': np.float64(0.4037)}
 
   >>> r=16 α=32: two-stage 0.6286 (n=3)  dmid-only 0.6378 (n=4)  Δ=-0.0091
 
-Готово за 42 мин → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/capacity_sweep.json
+Готово за 42 мин → ./results/revision/capacity_sweep.json
 Дальше: 06_equivalence.py — TOST по заранее объявленному порогу
 ==============================================================================
   TOST: two-stage vs DMID-only,  метрика rougeL,  Δ_eq = 0.02
@@ -328,4 +328,4 @@ DMID train 407 / test 52   синтетика 390
     Δ = -0.0031   90% CI [-0.0133, +0.0072]   → ЭКВИВАЛЕНТНОСТЬ
     внутрипрогонная парная разность по случаям: -0.0031 (n=156)
 
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/equivalence.json
+  → ./results/revision/equivalence.json

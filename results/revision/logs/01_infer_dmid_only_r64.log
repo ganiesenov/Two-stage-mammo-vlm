@@ -13,7 +13,7 @@
     30/52
     40/52
     50/52
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/predictions/dmid_only_r64__test.json
+  → ./results/revision/predictions/dmid_only_r64__test.json
   {'bleu1': 0.5415, 'bleu4': 0.3149, 'rouge1': 0.7381, 'rouge2': 0.5511, 'rougeL': 0.6696, 'meteor': 0.6906, 'cider': np.float64(0.6925)}
 
 ====================================================================
@@ -26,4 +26,4 @@
   two_stage_r64              0.3120   0.7336   0.6705   0.6845   0.7291
   dmid_only_r64              0.3149   0.7381   0.6696   0.6906   0.6925
 
-  → /mnt/c/Users/juman/hard_ml/rag_mammo/new_article/results/revision/scores_test.json
+  → ./results/revision/scores_test.json

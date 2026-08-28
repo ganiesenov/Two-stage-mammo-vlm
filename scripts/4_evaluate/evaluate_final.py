@@ -13,11 +13,11 @@ import nltk
 nltk.download('punkt', quiet=True)
 
 MODEL_ID   = "google/medgemma-4b-it"
-LORA_DIR   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_finetuned"
-INDEX_FILE = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_faiss.index"
-META_FILE  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/birads_meta.pkl"
-VINDR_JSONL = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr/synthetic_reports.jsonl"
-CBIS_JSONL  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/cbis-ddsm/synthetic_reports_cbis.jsonl"
+LORA_DIR   = "./medgemma_finetuned"
+INDEX_FILE = "./birads_faiss.index"
+META_FILE  = "./birads_meta.pkl"
+VINDR_JSONL = "./vindr/synthetic_reports.jsonl"
+CBIS_JSONL  = "./cbis-ddsm/synthetic_reports_cbis.jsonl"
 
 # RAG
 index = faiss.read_index(INDEX_FILE)
@@ -119,7 +119,7 @@ def main():
 
     # Сохраняем
     results = {"baseline": m1, "finetuned": m2, "finetuned_rag": m3}
-    out_path = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/eval_results_final.json"
+    out_path = "./eval_results_final.json"
     with open(out_path, "w") as f:
         json.dump(results, f, indent=2)
     print(f"\nРезультаты сохранены в {out_path}")

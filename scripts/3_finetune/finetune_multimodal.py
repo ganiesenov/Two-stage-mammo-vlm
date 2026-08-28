@@ -8,11 +8,11 @@ from transformers import AutoProcessor, AutoModelForImageTextToText, BitsAndByte
 from peft import LoraConfig, get_peft_model
 
 MODEL_ID   = "google/medgemma-4b-it"
-VINDR_JSONL = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr/synthetic_reports.jsonl"
-CBIS_JSONL  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/cbis-ddsm/synthetic_reports_cbis.jsonl"
-CBIS_MAP   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/cbis-ddsm/image_mapping.csv"
-VINDR_IMG  = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr"
-OUTPUT_DIR = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_multimodal"
+VINDR_JSONL = "./vindr/synthetic_reports.jsonl"
+CBIS_JSONL  = "./cbis-ddsm/synthetic_reports_cbis.jsonl"
+CBIS_MAP   = "./cbis-ddsm/image_mapping.csv"
+VINDR_IMG  = "./vindr"
+OUTPUT_DIR = "./medgemma_multimodal"
 
 def load_paired_data():
     pairs = []

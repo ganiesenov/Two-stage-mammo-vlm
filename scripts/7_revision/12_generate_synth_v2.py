@@ -37,7 +37,7 @@ import os, sys, json, re, time, argparse
 import pandas as pd
 import requests
 
-ROOT = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article"
+ROOT = "."
 OUT = f"{ROOT}/data/synthetic_v2.jsonl"
 OLLAMA_MODEL = "llama3.1:8b"
 OLLAMA_URL = "http://localhost:11434/api/generate"

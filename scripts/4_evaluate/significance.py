@@ -3,9 +3,9 @@ import numpy as np
 from scipy import stats
 
 # Загружаем все результаты
-with open("/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/eval_results_multimodal.json") as f:
+with open("./eval_results_multimodal.json") as f:
     mm = json.load(f)
-with open("/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/eval_results_sota.json") as f:
+with open("./eval_results_sota.json") as f:
     sota = json.load(f)
 
 # Для bootstrap p-value нужны individual scores
@@ -20,10 +20,10 @@ import torch
 import faiss, pickle
 from sentence_transformers import SentenceTransformer
 
-VINDR_JSONL = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr/synthetic_reports.jsonl"
-VINDR_IMG   = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/vindr"
+VINDR_JSONL = "./vindr/synthetic_reports.jsonl"
+VINDR_IMG   = "./vindr"
 MODEL_ID    = "google/medgemma-4b-it"
-MM_LORA     = "/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/medgemma_multimodal"
+MM_LORA     = "./medgemma_multimodal"
 
 def load_test(n=30):
     data = []
@@ -108,7 +108,7 @@ def main():
         "ttest_pvalue": float(p_ttest),
         "significant": bool(p < 0.05)
     }
-    with open("/mnt/c/Users/juman/hard_ml/rag_mammo/new_article/significance_results.json", "w") as f:
+    with open("./significance_results.json", "w") as f:
         json.dump(results, f, indent=2)
     print("Сохранено в significance_results.json")
 

@@ -6,8 +6,13 @@ fig_dmid_ablation.png в исходной версии сравнивал DMID-o
 с ёмкостью адаптера — то же, что исправлено в Table 4. Здесь обе схемы
 показаны при обоих рангах, парами.
 
-BERTScore берётся из bertscore_test.json (единый протокол, roberta-large),
-остальные метрики — из scores_test.json.
+BERTScore берётся из bertscore_test_clean.json (единый протокол, roberta-large),
+остальные метрики — из clean_primary.json.
+
+Второй раунд ревизии (R1.2): основная оценка перенесена на чистое подмножество
+теста (n=49) — без трёх случаев, чей референсный отчёт дословно встречается
+в train. AMRG остаётся на своём опубликованном сплите (52 изображения) и помечен
+в подписи как несопоставимый напрямую.
 """
 import os, sys, json
 import matplotlib
@@ -21,7 +26,8 @@ from _common import ROOT
 OUT = f"{ROOT}/manuscript/fig_dmid_ablation.png"
 RES = f"{ROOT}/results/revision"
 
-# AMRG приводится по первоисточнику (arXiv:2508.09225); BLEU-4 там не сообщается
+# AMRG приводится по первоисточнику (arXiv:2508.09225) на полном сплите из 52
+# изображений; BLEU-4 там не сообщается
 AMRG = {"bleu4": None, "rouge1": 0.575, "rougeL": 0.5691, "bertscore": None}
 
 GROUPS = [
@@ -30,7 +36,7 @@ GROUPS = [
     ("Two-stage\n$r$=16",            "two_stage_r16"),
     ("DMID-only\n$r$=64",            "dmid_only_r64"),
     ("Two-stage\n$r$=64",            "two_stage_r64"),
-    ("AMRG\n(Sung et al.)",          "__amrg"),
+    ("AMRG$^{\\ddag}$\n(Sung et al.)",     "__amrg"),
 ]
 METRICS = [("bleu4", "BLEU-4"), ("rouge1", "ROUGE-1"),
            ("rougeL", "ROUGE-L"), ("bertscore", "BERTScore")]
@@ -38,8 +44,8 @@ COLORS = ["#4C72B0", "#55A868", "#C44E52", "#8172B2"]
 
 
 def main():
-    scores = json.load(open(f"{RES}/scores_test.json"))
-    bert = json.load(open(f"{RES}/bertscore_test.json"))["scores"]
+    scores = json.load(open(f"{RES}/clean_primary.json"))["clean"]
+    bert = json.load(open(f"{RES}/bertscore_test_clean.json"))["scores"]
 
     def val(key, metric):
         if key == "__amrg":
@@ -76,15 +82,15 @@ def main():
         ax.text((x[lo] + x[hi]) / 2, y + 0.035, label, ha="center",
                 va="bottom", fontsize=9.5, style="italic", color="0.25")
 
-    ax.text(x[-1], 0.72, "BLEU-4 and BERTScore\nnot reported by AMRG",
+    ax.text(x[-1], 0.72, "BLEU-4 and BERTScore\nnot reported by AMRG;\n$\\ddag$ quoted on the full\n52-image split",
             ha="center", va="bottom", fontsize=8.5, style="italic", color="0.45")
 
     ax.set_xticks(x)
     ax.set_xticklabels([g for g, _ in GROUPS], fontsize=11)
     ax.set_ylabel("Score", fontsize=13)
     ax.set_ylim(0, 1.12)
-    ax.set_title("DMID test set evaluation ($n$=52, real radiologist reports)",
-                 fontsize=14, pad=26)
+    ax.set_title("DMID test set evaluation ($n$=49 leak-free subset, "
+                 "real radiologist reports)", fontsize=14, pad=26)
     ax.legend(loc="upper left", fontsize=10, framealpha=0.95)
     fig.tight_layout()
     fig.savefig(OUT, dpi=200)

@@ -36,13 +36,37 @@ def cell_name(arm, r, alpha, seed, tag=""):
     return f"{arm}{tag if arm == 'two_stage' else ''}_r{r}_a{alpha}_seed{seed}"
 
 
+KEEP_IDS = None      # None — весь тест; множество id — чистое подмножество
+CLEAN_TAG = ""       # суффикс имени выходного файла
+
+
 def per_case(arm, r, alpha, seed, tag=""):
     p = f"{PRED_DIR}/sweep_{cell_name(arm, r, alpha, seed, tag)}__test.json"
     if not os.path.exists(p):
         return None
     preds = json.load(open(p, encoding="utf-8"))["predictions"]
+    if KEEP_IDS is not None:
+        preds = [x for x in preds if x["id"] in KEEP_IDS]
     rows = per_sample_scores(preds)
     return {row["id"]: row[METRIC] for row in rows}
+
+
+def cell_metric(res, arm, r, alpha, seed, tag=""):
+    """Значение метрики ячейки.
+
+    На полном тесте берётся готовое из capacity_sweep.json; на чистом подмножестве
+    пересчитывается из сохранённых генераций (ROUGE-L корпуса — это среднее
+    по-сэмпловых значений, поэтому фильтрация по id корректна).
+    """
+    key = cell_name(arm, r, alpha, seed, tag)
+    if KEEP_IDS is None:
+        return res[key][METRIC] if key in res else None
+    if key not in res:
+        return None
+    pc = per_case(arm, r, alpha, seed, tag)
+    if not pc:
+        return None
+    return sum(pc.values()) / len(pc)
 
 
 def tost(deltas, delta_eq=DELTA_EQ, conf=CONF):
@@ -69,12 +93,25 @@ def tost(deltas, delta_eq=DELTA_EQ, conf=CONF):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--delta-eq", type=float, default=DELTA_EQ)
+    ap.add_argument("--clean-only", action="store_true",
+                    help="считать метрику ячеек на чистом подмножестве теста (n=49), "
+                         "то есть без трёх случаев с дословным дубликатом в train")
     ap.add_argument("--corpus-tag", default="",
                     help="ветка корпуса Stage 1: '' — пререгистрированный v1, "
                          "'_v2d1444' / '_v2d800' / '_v2d369' — дозы корпуса v2 (EXPLORATORY), "
                          "'_clean' — v1 без русскоязычных отчётов")
     args = ap.parse_args()
     TAG = args.corpus_tag
+
+    # На чистом подмножестве корпусные значения из capacity_sweep.json (n=52)
+    # непригодны: метрику ячейки надо пересобрать из по-сэмпловых генераций.
+    global KEEP_IDS, CLEAN_TAG
+    if args.clean_only:
+        man = json.load(open(f"{ROOT}/results/revision/split_manifest.json"))
+        KEEP_IDS = set(man["clean_test_ids"])
+        CLEAN_TAG = "_clean49"
+        print(f"Чистое подмножество: {len(KEEP_IDS)} кейсов "
+              f"(исключены {man['verbatim_duplicate_leakage']['test_ids']})")
 
     if not os.path.exists(SWEEP):
         sys.exit(f"Нет {SWEEP} — сначала 05_capacity_sweep.py")
@@ -83,6 +120,7 @@ def main():
     configs = sorted({(v["r"], v["alpha"]) for v in res.values()})
     out = {"delta_eq": args.delta_eq, "metric": METRIC, "confidence": CONF,
            "corpus_tag": TAG or "v1",
+           "test_subset": "clean49" if KEEP_IDS is not None else "full52",
            "preregistered": "results/revision/PREREGISTRATION.md", "by_config": {}}
 
     print("=" * 78)
@@ -97,11 +135,11 @@ def main():
                         if v["r"] == r and v["alpha"] == alpha})
         per_seed_delta, paired_all = [], []
         for s in seeds:
-            ts = res.get(cell_name("two_stage", r, alpha, s, TAG))
-            do = res.get(cell_name("dmid_only", r, alpha, s, TAG))
-            if not (ts and do):
+            ts = cell_metric(res, "two_stage", r, alpha, s, TAG)
+            do = cell_metric(res, "dmid_only", r, alpha, s, TAG)
+            if ts is None or do is None:
                 continue
-            per_seed_delta.append(ts[METRIC] - do[METRIC])
+            per_seed_delta.append(ts - do)
             a = per_case("two_stage", r, alpha, s, TAG)
             b = per_case("dmid_only", r, alpha, s, TAG)
             if a and b:
@@ -115,10 +153,10 @@ def main():
             continue
 
         m, lo, hi, verdict = tost(per_seed_delta, args.delta_eq)
-        ts_vals = [res[cell_name("two_stage", r, alpha, s, TAG)][METRIC] for s in seeds
-                   if cell_name("two_stage", r, alpha, s, TAG) in res]
-        do_vals = [res[cell_name("dmid_only", r, alpha, s, TAG)][METRIC] for s in seeds
-                   if cell_name("dmid_only", r, alpha, s, TAG) in res]
+        ts_vals = [v for v in (cell_metric(res, "two_stage", r, alpha, s, TAG)
+                               for s in seeds) if v is not None]
+        do_vals = [v for v in (cell_metric(res, "dmid_only", r, alpha, s, TAG)
+                               for s in seeds) if v is not None]
 
         print(f"\n  r = {r}, α = {alpha}   (прогонов на ветвь: {len(per_seed_delta)})")
         print(f"    two-stage  {np.mean(ts_vals):.4f} ± {np.std(ts_vals, ddof=1) if len(ts_vals)>1 else 0:.4f}"
@@ -172,7 +210,8 @@ def main():
               f"'{TAG or 'v1'}'): {', '.join(f'r{r} α{a}' for r, a in skipped)}")
 
     # Результаты по разным корпусам не должны затирать друг друга.
-    out_path = OUT if not TAG else OUT.replace(".json", f"{TAG}.json")
+    out_path = (OUT if not TAG else OUT.replace(".json", f"{TAG}.json"))
+    out_path = out_path.replace(".json", f"{CLEAN_TAG}.json")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w") as f:
         json.dump(out, f, indent=2)

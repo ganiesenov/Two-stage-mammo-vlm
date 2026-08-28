@@ -37,6 +37,16 @@ __pycache__/
 !*.bib
 !*.json
 !results/*.json
+
+# ── Перекрытия блока «Keep» ───────────────────────────────────────
+# !*.json выше возвращает в индекс всё подряд, поэтому исключения,
+# которые обязаны пережить его, стоят ПОСЛЕ него.
+# Генерации на DMID-RU: в predictions[*].ref лежат настоящие протоколы
+# частной клинической коллекции без одобрения этического комитета.
+results/revision/predictions/ru_external_*
+# Ответ рецензентам: рецензирование конфиденциально (как в раунде 1)
+manuscript/response_round2.tex
+submission/build/response_round2.pdf
 .env
 lora_ablation/
 

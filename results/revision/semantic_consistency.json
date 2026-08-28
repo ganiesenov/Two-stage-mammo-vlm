@@ -1,0 +1,48 @@
+{
+  "corpus": "Stage 1 v1 (390 retained reports)",
+  "note": "post-hoc проверка, отчёты по её итогу не отбраковывались; лексический валидатор Eq. (1) её не содержит",
+  "by_source": [
+    {
+      "source": "VinDr-Mammo",
+      "n_valid": 196,
+      "birads": {
+        "n_comparable": 196,
+        "n_agree": 196,
+        "agreement": 1.0,
+        "n_mismatch": 0
+      },
+      "laterality": {
+        "n_comparable": 170,
+        "n_agree": 170,
+        "agreement": 1.0,
+        "n_mismatch": 0,
+        "n_both_sides_mentioned": 1
+      }
+    },
+    {
+      "source": "CBIS-DDSM",
+      "n_valid": 194,
+      "birads": {
+        "n_comparable": 192,
+        "n_agree": 192,
+        "agreement": 1.0,
+        "n_mismatch": 0
+      },
+      "laterality": {
+        "n_comparable": 186,
+        "n_agree": 186,
+        "agreement": 1.0,
+        "n_mismatch": 0,
+        "n_both_sides_mentioned": 1
+      }
+    }
+  ],
+  "total": {
+    "birads_agreement": 1.0,
+    "birads_n": 388,
+    "birads_agree": 388,
+    "laterality_agreement": 1.0,
+    "laterality_n": 356,
+    "laterality_agree": 356
+  }
+}

@@ -25,6 +25,11 @@ PREAMBLE = r"""\documentclass[11pt]{article}
 \usepackage[colorlinks=true,allcolors=blue]{hyperref}
 \usepackage{titlesec}
 \usepackage{framed}
+% changebar подключён намеренно, хотя разметки правок здесь нет:
+% Overleaf держит один output.aux на проект, и при переключении главного
+% документа с main.tex (где changebar есть) на этот файл в .aux остаётся
+% команда \cb@pdfxy, которую иначе нечем разобрать
+\usepackage{changebar}
 
 \definecolor{rvhead}{RGB}{20,60,110}
 \definecolor{rvnote}{RGB}{170,40,30}
@@ -39,8 +44,10 @@ PREAMBLE = r"""\documentclass[11pt]{article}
 \renewcommand{\arraystretch}{1.15}
 \pagestyle{plain}
 
-\newenvironment{ednote}%
-  {\par\color{rvnote}\begin{leftbar}\small\textbf{EDITORIAL NOTE --- delete before submission.}\par}%
+% Цитаты из отзывов и определений набираются отступом, без всяких пометок:
+% ничего внутреннего в подаваемый PDF попадать не должно.
+\newenvironment{mdquote}%
+  {\par\begin{leftbar}\itshape}%
   {\end{leftbar}\par}
 
 \begin{document}
@@ -103,8 +110,7 @@ def main():
 
         if first.startswith("> "):
             txt = " ".join(l[2:].strip() if l.startswith("> ") else l.strip() for l in lines)
-            txt = re.sub(r"^\*\*EDITORIAL NOTE[^*]*\*\*\s*", "", txt)
-            out.append(r"\begin{ednote}" + "\n" + inline(txt) + "\n" + r"\end{ednote}")
+            out.append(r"\begin{mdquote}" + "\n" + inline(txt) + "\n" + r"\end{mdquote}")
             continue
 
         if first.startswith("|"):

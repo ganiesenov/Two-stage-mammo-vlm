@@ -56,7 +56,9 @@ KINDS = {
 
 
 def main():
-    src = open(SRC, encoding="utf-8").read()
+    # комментарии не считаем: описание макросов в преамбуле — не правка
+    src = "\n".join(l for l in open(SRC, encoding="utf-8").read().split("\n")
+                    if not l.lstrip().startswith("%"))
 
     section = "Преамбула"
     items, i = [], 0

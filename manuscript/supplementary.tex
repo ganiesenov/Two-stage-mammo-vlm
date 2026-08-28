@@ -4,6 +4,11 @@
 \usepackage[left=2cm,right=2cm,top=2.2cm,bottom=2.2cm]{geometry}
 \usepackage{graphicx,booktabs,longtable,amsmath,array}
 \usepackage[labelfont=bf]{caption}
+% changebar подключён намеренно, хотя разметки правок здесь нет:
+% Overleaf держит один output.aux на проект, и при переключении главного
+% документа с main.tex (где changebar есть) на этот файл в .aux остаётся
+% команда \cb@pdfxy, которую иначе нечем разобрать
+\usepackage{changebar}
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\thefigure}{S\arabic{figure}}
 \setlength{\parindent}{0pt}
@@ -43,7 +48,7 @@ $^{*}$Corresponding author: m.nurtas@iitu.edu.kz}
 
 \begin{table}[t]
 \centering
-\caption{Data efficiency: performance as a function of real training examples $N$. $\Delta$ denotes relative improvement of two-stage over DMID-only. {\textbf{Protocol note.} This experiment was run under its own protocol---adapter rank $r=16$, the training-matched prompt, and a single random initialisation---and per-sample generations were not retained, so confidence intervals cannot be computed for these rows and they are \emph{not} comparable row-by-row with Table~4 of the main text. The table is internally consistent and is reported as a separate experiment. Reconciling it with Table~4 of the main text would require 18 further training runs (3 data volumes $\times$ 2 schemes $\times$ 3 initialisations), which we have not carried out.}}
+\caption{Data efficiency: performance as a function of real training examples $N$. $\Delta$ denotes relative improvement of two-stage over DMID-only. {\textbf{Protocol note.} This experiment was run under its own protocol---adapter rank $r=16$, the training-matched prompt, and a single random initialisation---and per-sample generations were not retained, so confidence intervals cannot be computed for these rows, they cannot be recomputed on the leak-free test subset used elsewhere, and they are \emph{not} comparable row-by-row with Table~4 of the main text. The table is internally consistent and is reported as a separate experiment. Reconciling it with Table~4 of the main text would require 18 further training runs (3 data volumes $\times$ 2 schemes $\times$ 3 initialisations), which we have not carried out.}}
 \label{stab:efficiency}
 \begin{tabular}{rcccccc}
 \toprule
@@ -64,8 +69,10 @@ $N$ & DMID-only & Two-stage & DMID-only & Two-stage & DMID-only & Two-stage \\
 
 Each entry gives the image number and the split it belongs to. Entries marked
 $^{\dagger}$ are the three test images whose reference report also occurs verbatim
-in the training split; results excluding them are reported alongside the full
-test set throughout the paper. Totals: 407 train, 51 validation, 52 test.
+in the training split; they are excluded from the primary evaluation throughout
+the paper, which is reported on the remaining 49 test images, and the full
+52-image split is retained as a sensitivity analysis.
+Totals: 407 train, 51 validation, 52 test (49 after exclusion).
 
 \vspace{6pt}
 {\footnotesize

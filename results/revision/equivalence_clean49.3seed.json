@@ -1,0 +1,28 @@
+{
+  "delta_eq": 0.02,
+  "metric": "rougeL",
+  "confidence": 0.9,
+  "corpus_tag": "v1",
+  "test_subset": "clean49",
+  "preregistered": "results/revision/PREREGISTRATION.md",
+  "by_config": {
+    "r16_a32": {
+      "r": 16,
+      "alpha": 32,
+      "n_runs": 3,
+      "two_stage_mean": 0.6128,
+      "two_stage_sd": 0.0388,
+      "dmid_only_mean": 0.6161,
+      "dmid_only_sd": 0.0453,
+      "delta_mean": -0.0033,
+      "ci_low": -0.0143,
+      "ci_high": 0.0077,
+      "verdict": "\u042d\u041a\u0412\u0418\u0412\u0410\u041b\u0415\u041d\u0422\u041d\u041e\u0421\u0422\u042c",
+      "per_seed_deltas": [
+        -0.0056,
+        -0.0084,
+        0.0041
+      ]
+    }
+  }
+}

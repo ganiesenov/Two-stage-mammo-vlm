@@ -21,6 +21,28 @@
       "ours=True/context=True": 149
     }
   },
+  "clean49": {
+    "mention_level": {
+      "n": 705,
+      "agreement": 0.973,
+      "kappa": 0.9461,
+      "table": {
+        "ours=False/context=False": 345,
+        "ours=True/context=False": 19,
+        "ours=True/context=True": 341
+      }
+    },
+    "report_level": {
+      "n": 294,
+      "agreement": 0.9694,
+      "kappa": 0.9387,
+      "table": {
+        "ours=False/context=False": 136,
+        "ours=False/context=True": 9,
+        "ours=True/context=True": 149
+      }
+    }
+  },
   "disagreements": [
     {
       "src": "ref",

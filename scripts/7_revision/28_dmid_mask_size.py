@@ -10,6 +10,8 @@ R3.3: 448-px ресайз снимка 3500–4500 px уменьшает чис�
 в Metadata.xlsx (массы всех типов, кальцинаты, дисторсии, асимметрии), нормам маска
 не положена. Маска бинарная, разрешение как у исходного TIFF.
 
+Второй срез — тип аномалии из Metadata.xlsx: содержит ли кейс кальцинаты (CALC).
+
 Пропуск/заявление определяются тем же правилом, что и в Table 6
 (04_clinical_metrics.asserts_finding, окно отрицания 45 символов).
 """
@@ -29,6 +31,15 @@ MASK_DIR = f"{ROOT}/dmid/ROI Masks/ROI Masks"
 IMG_SIZE = 448
 OUT = f"{ROOT}/results/revision/dmid_mask_size.json"
 MODEL = "dmid_only_r64"
+
+
+def abnormality_types():
+    """Тип аномалии по Metadata.xlsx (4-я колонка), все строки изображения через «+»."""
+    import pandas as pd
+    x = pd.read_excel(f"{ROOT}/dmid/Metadata.xlsx", header=None)
+    x = x[x[0].astype(str).str.strip().str.upper().str.match(r"^IMG\d+$")]
+    ids = x[0].astype(str).str.strip().str.upper()
+    return x.groupby(ids)[3].apply(lambda s: "+".join(str(v).strip() for v in s)).to_dict()
 
 
 def mask_stats(img_id):
@@ -71,6 +82,7 @@ def main():
     leaked = set(man["verbatim_duplicate_leakage"]["test_ids"])
     preds = [p for p in load_preds(MODEL, "test") if p["id"] not in leaked]
 
+    types = abnormality_types()
     rows = []
     for p in preds:
         ref_a, _ = clin.asserts_finding(p["ref"])
@@ -78,7 +90,9 @@ def main():
             continue
         hyp_a, _ = clin.asserts_finding(p["hyp"])
         st = mask_stats(p["id"])
+        t = types.get(p["id"].upper(), "")
         rows.append({"id": p["id"], "status": "reported" if hyp_a else "missed",
+                     "abnormality": t, "has_calc": "CALC" in t.upper(),
                      **(st or {"area_px": None})})
 
     def summ(status):
@@ -96,7 +110,12 @@ def main():
     s_miss, pm = summ("missed")
     s_rep, pr = summ("reported")
     u, p = mann_whitney_u(pm, pr)
-    out = {"model": MODEL, "n_cases": len(preds), "n_ref_positive": len(rows),
+    by_type = {}
+    for st in ("missed", "reported"):
+        v = [r for r in rows if r["status"] == st]
+        by_type[st] = {"with_calcification": sum(r["has_calc"] for r in v),
+                       "without_calcification": sum(not r["has_calc"] for r in v)}
+    out = {"model": MODEL, "by_calcification": by_type, "n_cases": len(preds), "n_ref_positive": len(rows),
            "missed": s_miss, "reported": s_rep,
            "mann_whitney_one_sided": {"U": u, "p": p, "h1": "missed < reported"},
            "cases": rows}
@@ -108,6 +127,7 @@ def main():
               f"{s['median_area_pct']:.3f}% [{s['iqr_area_pct'][0]:.3f}–{s['iqr_area_pct'][1]:.3f}]  "
               f"@448: {s['median_area_px_448']:.0f} px [{s['iqr_area_px_448'][0]:.0f}–{s['iqr_area_px_448'][1]:.0f}]")
     print(f"U={u:.1f}  p(односторонний)={p:.3f}")
+    print(f"по кальцинатам: {by_type}")
 
 
 if __name__ == "__main__":

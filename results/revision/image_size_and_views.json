@@ -1,0 +1,47 @@
+{
+  "image_size": {
+    "n_images": 510,
+    "n_main_group": 498,
+    "main_group_min": [
+      4784,
+      3512
+    ],
+    "main_group_max": [
+      6000,
+      4754
+    ],
+    "fold_main_group": [
+      83.7,
+      142.1
+    ],
+    "fold_all": [
+      11.0,
+      142.1
+    ],
+    "fold_median": 141.9
+  },
+  "view_pairing": {
+    "n_blocks": 127,
+    "n_complete_blocks": 59,
+    "normal_in_complete": [
+      125,
+      236
+    ],
+    "normal_elsewhere": [
+      75,
+      274
+    ],
+    "text_groups": 435,
+    "text_group_sizes": {
+      "1": 399,
+      "2": 22,
+      "3": 6,
+      "4": 3,
+      "5": 2,
+      "7": 1,
+      "8": 1,
+      "12": 1
+    },
+    "text_groups_complete_4view": 0
+  }
+}

@@ -1,5 +1,15 @@
 {
   "model": "dmid_only_r64",
+  "by_calcification": {
+    "missed": {
+      "with_calcification": 1,
+      "without_calcification": 12
+    },
+    "reported": {
+      "with_calcification": 12,
+      "without_calcification": 15
+    }
+  },
   "n_cases": 49,
   "n_ref_positive": 40,
   "missed": {
@@ -49,6 +59,8 @@
     {
       "id": "Img459",
       "status": "reported",
+      "abnormality": "CIRC+CALC",
+      "has_calc": true,
       "h": 6000,
       "w": 4736,
       "area_px": 165400,
@@ -58,6 +70,8 @@
     {
       "id": "Img460",
       "status": "reported",
+      "abnormality": "CIRC+CALC",
+      "has_calc": true,
       "h": 6000,
       "w": 4744,
       "area_px": 142353,
@@ -67,6 +81,8 @@
     {
       "id": "Img465",
       "status": "reported",
+      "abnormality": "CIRC",
+      "has_calc": false,
       "h": 6000,
       "w": 4736,
       "area_px": 357033,
@@ -76,6 +92,8 @@
     {
       "id": "Img466",
       "status": "missed",
+      "abnormality": "CIRC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 311421,
@@ -85,6 +103,8 @@
     {
       "id": "Img467",
       "status": "missed",
+      "abnormality": "CIRC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 270758,
@@ -94,6 +114,8 @@
     {
       "id": "Img468",
       "status": "reported",
+      "abnormality": "CIRC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 274881,
@@ -103,6 +125,8 @@
     {
       "id": "Img469",
       "status": "reported",
+      "abnormality": "CIRC+CIRC+CALC",
+      "has_calc": true,
       "h": 6000,
       "w": 4744,
       "area_px": 305134,
@@ -112,6 +136,8 @@
     {
       "id": "Img470",
       "status": "reported",
+      "abnormality": "CIRC+CIRC+CIRC+CALC",
+      "has_calc": true,
       "h": 6000,
       "w": 4744,
       "area_px": 311126,
@@ -121,6 +147,8 @@
     {
       "id": "Img471",
       "status": "missed",
+      "abnormality": "SPIC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 248515,
@@ -130,6 +158,8 @@
     {
       "id": "Img472",
       "status": "reported",
+      "abnormality": "SPIC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 214709,
@@ -139,6 +169,8 @@
     {
       "id": "Img473",
       "status": "reported",
+      "abnormality": "MISC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 320799,
@@ -148,6 +180,8 @@
     {
       "id": "Img474",
       "status": "missed",
+      "abnormality": "MISC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 593798,
@@ -157,6 +191,8 @@
     {
       "id": "Img475",
       "status": "reported",
+      "abnormality": "MISC+CIRC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 200075,
@@ -166,6 +202,8 @@
     {
       "id": "Img476",
       "status": "missed",
+      "abnormality": "MISC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 96561,
@@ -175,6 +213,8 @@
     {
       "id": "Img477",
       "status": "missed",
+      "abnormality": "CIRC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 292252,
@@ -184,6 +224,8 @@
     {
       "id": "Img478",
       "status": "missed",
+      "abnormality": "CIRC+CIRC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 377831,
@@ -193,6 +235,8 @@
     {
       "id": "Img479",
       "status": "reported",
+      "abnormality": "SPIC",
+      "has_calc": false,
       "h": 6000,
       "w": 4752,
       "area_px": 125812,
@@ -202,6 +246,8 @@
     {
       "id": "Img480",
       "status": "missed",
+      "abnormality": "SPIC",
+      "has_calc": false,
       "h": 6000,
       "w": 4754,
       "area_px": 477666,
@@ -211,6 +257,8 @@
     {
       "id": "Img481",
       "status": "missed",
+      "abnormality": "CIRC",
+      "has_calc": false,
       "h": 6000,
       "w": 4750,
       "area_px": 163180,
@@ -220,6 +268,8 @@
     {
       "id": "Img482",
       "status": "missed",
+      "abnormality": "CIRC",
+      "has_calc": false,
       "h": 6000,
       "w": 4753,
       "area_px": 319832,
@@ -229,6 +279,8 @@
     {
       "id": "Img483",
       "status": "reported",
+      "abnormality": "SPIC",
+      "has_calc": false,
       "h": 4784,
       "w": 3512,
       "area_px": 303657,
@@ -238,6 +290,8 @@
     {
       "id": "Img484",
       "status": "reported",
+      "abnormality": "SPIC",
+      "has_calc": false,
       "h": 4784,
       "w": 3520,
       "area_px": 403592,
@@ -247,6 +301,8 @@
     {
       "id": "Img485",
       "status": "reported",
+      "abnormality": "SPIC+CALC",
+      "has_calc": true,
       "h": 6000,
       "w": 4744,
       "area_px": 256399,
@@ -256,6 +312,8 @@
     {
       "id": "Img486",
       "status": "reported",
+      "abnormality": "SPIC",
+      "has_calc": false,
       "h": 6000,
       "w": 4736,
       "area_px": 143075,
@@ -265,6 +323,8 @@
     {
       "id": "Img487",
       "status": "reported",
+      "abnormality": "SPIC",
+      "has_calc": false,
       "h": 6000,
       "w": 4736,
       "area_px": 131741,
@@ -274,6 +334,8 @@
     {
       "id": "Img488",
       "status": "reported",
+      "abnormality": "SPIC",
+      "has_calc": false,
       "h": 4784,
       "w": 3520,
       "area_px": 323275,
@@ -283,6 +345,8 @@
     {
       "id": "Img489",
       "status": "missed",
+      "abnormality": "SPIC",
+      "has_calc": false,
       "h": 4784,
       "w": 3520,
       "area_px": 222594,
@@ -292,6 +356,8 @@
     {
       "id": "Img490",
       "status": "reported",
+      "abnormality": "SPIC+CALC",
+      "has_calc": true,
       "h": 6000,
       "w": 4744,
       "area_px": 189236,
@@ -301,6 +367,8 @@
     {
       "id": "Img491",
       "status": "reported",
+      "abnormality": "SPIC+CALC",
+      "has_calc": true,
       "h": 6000,
       "w": 4744,
       "area_px": 298999,
@@ -310,6 +378,8 @@
     {
       "id": "Img492",
       "status": "reported",
+      "abnormality": "MISC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 823481,
@@ -319,6 +389,8 @@
     {
       "id": "Img493",
       "status": "reported",
+      "abnormality": "MISC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 838886,
@@ -328,6 +400,8 @@
     {
       "id": "Img494",
       "status": "reported",
+      "abnormality": "CIRC+CALC",
+      "has_calc": true,
       "h": 6000,
       "w": 4752,
       "area_px": 279953,
@@ -337,6 +411,8 @@
     {
       "id": "Img495",
       "status": "reported",
+      "abnormality": "CIRC+CALC",
+      "has_calc": true,
       "h": 6000,
       "w": 4752,
       "area_px": 277140,
@@ -346,6 +422,8 @@
     {
       "id": "Img496",
       "status": "reported",
+      "abnormality": "MISC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 289519,
@@ -355,6 +433,8 @@
     {
       "id": "Img497",
       "status": "reported",
+      "abnormality": "CALC+CIRC",
+      "has_calc": true,
       "h": 6000,
       "w": 4744,
       "area_px": 124090,
@@ -364,6 +444,8 @@
     {
       "id": "Img498",
       "status": "reported",
+      "abnormality": "CALC+CIRC",
+      "has_calc": true,
       "h": 6000,
       "w": 4744,
       "area_px": 159383,
@@ -373,6 +455,8 @@
     {
       "id": "Img499",
       "status": "reported",
+      "abnormality": "CIRC",
+      "has_calc": false,
       "h": 6000,
       "w": 4744,
       "area_px": 141413,
@@ -382,6 +466,8 @@
     {
       "id": "Img500",
       "status": "missed",
+      "abnormality": "CIRC",
+      "has_calc": false,
       "h": 6000,
       "w": 4736,
       "area_px": 119869,
@@ -391,6 +477,8 @@
     {
       "id": "Img501",
       "status": "missed",
+      "abnormality": "MISC+CALC",
+      "has_calc": true,
       "h": 6000,
       "w": 4744,
       "area_px": 872202,
@@ -400,6 +488,8 @@
     {
       "id": "Img502",
       "status": "reported",
+      "abnormality": "MISC+CALC",
+      "has_calc": true,
       "h": 6000,
       "w": 4744,
       "area_px": 2335117,

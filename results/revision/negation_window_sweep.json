@@ -542,5 +542,111 @@
         }
       }
     }
+  },
+  "category_level": {
+    "clean49": {
+      "zero_shot": {
+        "extra_categories": 3,
+        "hyp_categories": 14,
+        "extra_rate": 0.2143,
+        "missing_categories": 45,
+        "ref_categories": 56,
+        "missing_rate": 0.8036,
+        "cases_with_extra_category": 3,
+        "cases_with_finding_on_normal_reference": 0
+      },
+      "dmid_only_r16": {
+        "extra_categories": 0,
+        "hyp_categories": 24,
+        "extra_rate": 0.0,
+        "missing_categories": 32,
+        "ref_categories": 56,
+        "missing_rate": 0.5714,
+        "cases_with_extra_category": 0,
+        "cases_with_finding_on_normal_reference": 0
+      },
+      "two_stage_r16": {
+        "extra_categories": 0,
+        "hyp_categories": 23,
+        "extra_rate": 0.0,
+        "missing_categories": 33,
+        "ref_categories": 56,
+        "missing_rate": 0.5893,
+        "cases_with_extra_category": 0,
+        "cases_with_finding_on_normal_reference": 0
+      },
+      "dmid_only_r64": {
+        "extra_categories": 1,
+        "hyp_categories": 30,
+        "extra_rate": 0.0333,
+        "missing_categories": 27,
+        "ref_categories": 56,
+        "missing_rate": 0.4821,
+        "cases_with_extra_category": 1,
+        "cases_with_finding_on_normal_reference": 0
+      },
+      "two_stage_r64": {
+        "extra_categories": 3,
+        "hyp_categories": 31,
+        "extra_rate": 0.0968,
+        "missing_categories": 28,
+        "ref_categories": 56,
+        "missing_rate": 0.5,
+        "cases_with_extra_category": 3,
+        "cases_with_finding_on_normal_reference": 0
+      }
+    },
+    "full52": {
+      "zero_shot": {
+        "extra_categories": 3,
+        "hyp_categories": 14,
+        "extra_rate": 0.2143,
+        "missing_categories": 45,
+        "ref_categories": 56,
+        "missing_rate": 0.8036,
+        "cases_with_extra_category": 3,
+        "cases_with_finding_on_normal_reference": 0
+      },
+      "dmid_only_r16": {
+        "extra_categories": 0,
+        "hyp_categories": 24,
+        "extra_rate": 0.0,
+        "missing_categories": 32,
+        "ref_categories": 56,
+        "missing_rate": 0.5714,
+        "cases_with_extra_category": 0,
+        "cases_with_finding_on_normal_reference": 0
+      },
+      "two_stage_r16": {
+        "extra_categories": 0,
+        "hyp_categories": 23,
+        "extra_rate": 0.0,
+        "missing_categories": 33,
+        "ref_categories": 56,
+        "missing_rate": 0.5893,
+        "cases_with_extra_category": 0,
+        "cases_with_finding_on_normal_reference": 0
+      },
+      "dmid_only_r64": {
+        "extra_categories": 1,
+        "hyp_categories": 30,
+        "extra_rate": 0.0333,
+        "missing_categories": 27,
+        "ref_categories": 56,
+        "missing_rate": 0.4821,
+        "cases_with_extra_category": 1,
+        "cases_with_finding_on_normal_reference": 0
+      },
+      "two_stage_r64": {
+        "extra_categories": 3,
+        "hyp_categories": 31,
+        "extra_rate": 0.0968,
+        "missing_categories": 28,
+        "ref_categories": 56,
+        "missing_rate": 0.5,
+        "cases_with_extra_category": 3,
+        "cases_with_finding_on_normal_reference": 0
+      }
+    }
   }
 }

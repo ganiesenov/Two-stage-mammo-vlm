@@ -5,7 +5,7 @@
 чтобы не трогать зависимости rag_mammo:
     /home/gani/miniconda3/envs/medspacy/bin/python scripts/7_revision/31_negation_medspacy.py
 
-Сравнение на двух уровнях, по всем референсам и генерациям моделей Table 6 (n=52):
+Сравнение на двух уровнях, по всем референсам и генерациям моделей Table 6 (n=52; отдельно n=49):
   • упоминание — каждое вхождение термина находки: отрицается ли оно (наше окно 45
     символов против ConText с правилами по умолчанию, скоуп до конца предложения);
   • отчёт — утверждает ли отчёт хотя бы одну находку (то, что реально входит в Eq. 8).
@@ -61,7 +61,10 @@ def main():
             texts[("ref", p["id"])] = p["ref"]
             texts[(m, p["id"])] = p["hyp"]
 
+    man = json.load(open(f"{ROOT}/results/revision/split_manifest.json"))
+    leaked = set(man["verbatim_duplicate_leakage"]["test_ids"])
     mention_pairs, report_pairs, disagreements = [], [], []
+    clean_m, clean_r = [], []
     unmatched = 0
     for (src, pid), text in texts.items():
         ours = ours_mentions(text)
@@ -72,6 +75,8 @@ def main():
                 unmatched += 1
                 continue
             mention_pairs.append((neg, theirs[pos]))
+            if pid not in leaked:
+                clean_m.append((neg, theirs[pos]))
             if neg != theirs[pos]:
                 t = text.replace("\n", " ")
                 disagreements.append({"src": src, "id": pid, "ours_negated": neg,
@@ -80,6 +85,8 @@ def main():
         our_assert = any(not v for v in ours.values())
         their_assert = any(not v for v in theirs.values())
         report_pairs.append((our_assert, their_assert))
+        if pid not in leaked:
+            clean_r.append((our_assert, their_assert))
 
     def summ(pairs):
         return {"n": len(pairs),
@@ -89,12 +96,16 @@ def main():
 
     out = {"n_texts": len(texts), "unmatched_mentions": unmatched,
            "mention_level": summ(mention_pairs), "report_level": summ(report_pairs),
+           "clean49": {"mention_level": summ(clean_m), "report_level": summ(clean_r)},
            "disagreements": disagreements}
     json.dump(out, open(OUT, "w"), indent=2, ensure_ascii=False)
     print(f"текстов {len(texts)}, упоминаний без пары {unmatched}")
     for lvl in ("mention_level", "report_level"):
         s = out[lvl]
         print(f"{lvl:14s} n={s['n']}  agreement={s['agreement']:.4f}  κ={s['kappa']:.4f}  {s['table']}")
+    for lvl in ("mention_level", "report_level"):
+        s = out["clean49"][lvl]
+        print(f"clean49 {lvl:14s} n={s['n']}  agreement={s['agreement']:.4f}  κ={s['kappa']:.4f}")
     print(f"расхождений: {len(disagreements)}")
 
 

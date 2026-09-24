@@ -1,7 +1,9 @@
 """
 Сверка чисел рукописи с сохранёнными результатами (CPU).
 
-Проверяет, что Table 4, 5, 6 и 9 в manuscript/main.tex совпадают с тем, что
+Проверяет, что Table 4, 5, 6 и 9 в manuscript/main.tex, Supplementary Tables S3–S5
+и числа раунда 3 в прозе (medspaCy, leave-one-out, размер снимков, блоки проекций,
+пропуски по типу находки) совпадают с тем, что
 лежит в results/revision/*.json на чистом подмножестве теста (n=49). Запускать
 после любой правки таблиц: расхождение здесь означает, что в рукописи осталось
 число из другого прогона.
@@ -9,7 +11,7 @@
 Строки таблиц вытаскиваются регулярками из \\begin{tabular} нужного окружения;
 макросы разметки (\\rev, \\revf, \\textbf) снимаются перед разбором.
 """
-import json, os, re, sys
+import json, math, os, re, sys
 
 sys.path.insert(0, os.path.dirname(__file__))
 from _common import ROOT
@@ -48,6 +50,124 @@ def table_rows(tex, label):
 
 def nums(row):
     return [float(x) for x in re.findall(r"[-+]?\d*\.\d+", row)]
+
+
+SUPP = f"{ROOT}/manuscript/supplementary.tex"
+NAMES = {"MedGemma-4B (ZS)": "zero_shot", "DMID-only, r=16": "dmid_only_r16",
+         "Two-stage, r=16": "two_stage_r16", "DMID-only, r=64": "dmid_only_r64",
+         "Two-stage, r=64": "two_stage_r64"}
+
+
+def supp_rows(sup, label, k=0):
+    """Строки k-го tabular после \\label{label} в supplementary.tex."""
+    i = sup.index("\\label{" + label + "}")
+    for _ in range(k + 1):
+        j = sup.index("\\begin{tabular}", i)
+        i = sup.index("\\end{tabular}", j)
+    return [strip(l).strip() for l in sup[j:i].split("\\\\") if "&" in l]
+
+
+def verify_supplementary(clin):
+    """S3–S5: таблицы генерируются 33_supp_tables.py, здесь ловится ручная правка
+    или устаревший прогон генератора."""
+    sup = open(SUPP, encoding="utf-8").read()
+    # S3 — плотность
+    for row in supp_rows(sup, "stab:density"):
+        name = row.split("&")[0].strip()
+        if name not in NAMES:
+            continue
+        d, v = clin[NAMES[name]]["density"], nums(row.split("&", 2)[2])
+        check(f"S3 / {name} / acc", v[0], d["accuracy"])
+        check(f"S3 / {name} / kappa", v[1], d["cohens_kappa"])
+    # S4 — окно, согласие с medspaCy, категории
+    w = json.load(open(f"{RES}/negation_window_sweep.json"))
+    ms = json.load(open(f"{RES}/negation_medspacy.json"))
+    for row in supp_rows(sup, "stab:negation", 0):
+        name = row.split("&")[0].strip()
+        if name not in NAMES:
+            continue
+        v = nums(row)
+        for i, win in enumerate(["30", "45", "60", "90"]):
+            r = w["clean49"][NAMES[name]][win]
+            check(f"S4a / {name} / {win} sens", v[2 * i], r["sensitivity"])
+            check(f"S4a / {name} / {win} halluc", v[2 * i + 1], r["hallucination_rate"])
+    rows_b = supp_rows(sup, "stab:negation", 1)
+    srcs = [ms["clean49"]["mention_level"], ms["clean49"]["report_level"],
+            ms["mention_level"], ms["report_level"]]
+    for row, src in zip([r for r in rows_b if "%" in r], srcs):
+        v = [float(x) for x in re.findall(r"\d+\.?\d*", row.split("&", 2)[2])]
+        check(f"S4b / {row[:30]} / n", v[0], src["n"])
+        check(f"S4b / {row[:30]} / agreement%", v[1] / 100, src["agreement"])
+        check(f"S4b / {row[:30]} / kappa", round(v[2], 2), round(src["kappa"], 2))
+    for row in supp_rows(sup, "stab:negation", 2):
+        name = row.split("&")[0].strip()
+        if name not in NAMES:
+            continue
+        c = w["category_level"]["clean49"][NAMES[name]]
+        v = [int(x) for x in re.findall(r"\d+", row.split("&", 1)[1])]
+        want = [c["extra_categories"], c["hyp_categories"], c["cases_with_extra_category"],
+                c["cases_with_finding_on_normal_reference"], c["missing_categories"], c["ref_categories"]]
+        for lab, g, t in zip(["extra", "hyp", "cases", "normal", "missing", "ref"], v, want):
+            check(f"S4c / {name} / {lab}", g, t)
+    # S5 — leave-one-out
+    loo = json.load(open(f"{RES}/leave_one_out.json"))
+    keys = {"BLEU-1": "bleu1", "BLEU-4": "bleu4", "ROUGE-1": "rouge1", "ROUGE-L": "rougeL",
+            "METEOR": "meteor", "CIDEr": "cider", "BERTScore": "bertscore",
+            "Sensitivity": "sensitivity", "BI-RADS exact": "birads_exact"}
+    models = ["dmid_only_r16", "two_stage_r16", "dmid_only_r64", "two_stage_r64"]
+    for row in supp_rows(sup, "stab:loo"):
+        name = row.split("&")[0].strip()
+        if name not in keys:
+            continue
+        v = nums(row)
+        for i, m in enumerate(models):
+            e = loo["models"][m][keys[name]]
+            check(f"S5 / {name} / {m} value", v[2 * i], e["full"])
+            check(f"S5 / {name} / {m} shift", v[2 * i + 1], e["max_abs_shift"])
+
+
+def verify_prose(tex):
+    """Числа раунда 3 в прозе: берутся из данных и ищутся в тексте дословно."""
+    def need(label, text):
+        global checks
+        checks += 1
+        if text not in tex:
+            fails.append(f"проза / {label}: в рукописи нет «{text}»")
+
+    ms = json.load(open(f"{RES}/negation_medspacy.json"))["clean49"]
+    need("medspaCy mentions %", f"${100 * ms['mention_level']['agreement']:.1f}\\%$ of the ${ms['mention_level']['n']}$")
+    need("medspaCy mentions κ", f"$\\kappa = {ms['mention_level']['kappa']:.2f}$")
+    need("medspaCy reports %", f"${100 * ms['report_level']['agreement']:.1f}\\%$ of the ${ms['report_level']['n']}$")
+    need("medspaCy reports κ", f"$\\kappa = {ms['report_level']['kappa']:.2f}$")
+
+    loo = json.load(open(f"{RES}/leave_one_out.json"))
+    text_max = max(loo["models"][m][k]["max_abs_shift"] for m in loo["models"]
+                   for k in ("bleu1", "bleu4", "rouge1", "rougeL", "meteor"))
+    cider_max = max(v["cider"]["max_abs_shift"] for v in loo["models"].values())
+    bert_max = max(v["bertscore"]["max_abs_shift"] for v in loo["models"].values())
+    delta_max = max(v["max_abs_shift"] for v in loo["paired_rougeL_delta"].values())
+    # «не больше X»: X — верхняя граница, поэтому округление вверх до 3 знаков
+    up = lambda x: math.ceil(round(x * 1000, 6)) / 1000
+    need("LOO text", f"other than CIDEr by more than ${up(text_max):.3f}$")
+    need("LOO CIDEr", f"(CIDEr: ${up(cider_max):.3f}$)")
+    need("LOO BERTScore", f"BERTScore by more than ${up(bert_max):.3f}$")
+    need("LOO Δ", f"difference by more than ${up(delta_max):.3f}$")
+
+    iv = json.load(open(f"{RES}/image_size_and_views.json"))
+    sz, vw = iv["image_size"], iv["view_pairing"]
+    need("размер снимков", f"$4784\\times3512$ to $6000\\times4754$ px ({sz['n_main_group']} of {sz['n_images']} images)")
+    need("кратность", f"{sz['fold_main_group'][0]:.0f}- to {sz['fold_main_group'][1]:.0f}-fold")
+    need("медиана кратности", f"median of {sz['fold_median']:.0f}-fold")
+    need("блоки видов", f"{vw['n_complete_blocks']} of {vw['n_blocks']} consecutive four-image blocks")
+    nc, na = vw["normal_in_complete"]; ec, ea = vw["normal_elsewhere"]
+    need("норма в блоках", f"${100 * nc / na:.0f}\\%$ of the images in complete blocks are normal, against ${100 * ec / ea:.0f}\\%$")
+
+    mk = json.load(open(f"{RES}/dmid_mask_size.json"))["by_calcification"]
+    miss, rep = mk["missed"], mk["reported"]
+    need("пропуски без кальцинатов",
+         f"{miss['without_calcification']} of {miss['without_calcification'] + miss['with_calcification']} omitted finding cases are masses without calcifications")
+    need("кальцинаты названы",
+         f"{rep['with_calcification']} of {rep['with_calcification'] + miss['with_calcification']} calcification-bearing cases are reported")
 
 
 def main():
@@ -100,13 +220,15 @@ def main():
             continue
         c = clin[key6[name]]
         v = nums(row)
-        # exact, κ, [downgr не число], sens, omis, halluc, dens_acc, dens_κ
+        # exact, κ, [downgr не число], sens, omis, halluc  (плотность вынесена в S3)
         check(f"Table 6 / {name} / exact", v[0], c["birads"]["exact"])
         check(f"Table 6 / {name} / kappa", v[1], c["birads"]["cohens_kappa"])
-        check(f"Table 6 / {name} / sens", v[-5], c["findings"]["sensitivity"])
-        check(f"Table 6 / {name} / omis", v[-4], c["findings"]["omission_rate"])
-        check(f"Table 6 / {name} / dens_acc", v[-2], c["density"]["accuracy"])
-        check(f"Table 6 / {name} / dens_kappa", v[-1], c["density"]["cohens_kappa"])
+        check(f"Table 6 / {name} / sens", v[-3], c["findings"]["sensitivity"])
+        check(f"Table 6 / {name} / omis", v[-2], c["findings"]["omission_rate"])
+        check(f"Table 6 / {name} / halluc", v[-1], c["findings"]["hallucination_rate"])
+
+    verify_supplementary(clin)
+    verify_prose(tex)
 
     # ── Table 9 ──
     order = ["r16_a32", "r32_a64", "r64_a64"]

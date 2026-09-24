@@ -1,0 +1,203 @@
+{
+  "n": 49,
+  "models": {
+    "dmid_only_r16": {
+      "bleu1": {
+        "full": 0.4323,
+        "max_abs_shift": 0.0059,
+        "argmax_id": "Img483"
+      },
+      "bleu4": {
+        "full": 0.1926,
+        "max_abs_shift": 0.0042,
+        "argmax_id": "Img508"
+      },
+      "rouge1": {
+        "full": 0.6599,
+        "max_abs_shift": 0.0052,
+        "argmax_id": "Img501"
+      },
+      "rougeL": {
+        "full": 0.5857,
+        "max_abs_shift": 0.0049,
+        "argmax_id": "Img510"
+      },
+      "meteor": {
+        "full": 0.5776,
+        "max_abs_shift": 0.0063,
+        "argmax_id": "Img509"
+      },
+      "cider": {
+        "full": 0.3618,
+        "max_abs_shift": 0.029,
+        "argmax_id": "Img509"
+      },
+      "sensitivity": {
+        "full": 0.575,
+        "max_abs_shift": 0.0147,
+        "argmax_id": "Img466"
+      },
+      "birads_exact": {
+        "full": 0.3265,
+        "max_abs_shift": 0.014,
+        "argmax_id": "Img461"
+      },
+      "bertscore": {
+        "full": 0.9065,
+        "max_abs_shift": 0.0006,
+        "argmax_id": "Img509"
+      }
+    },
+    "two_stage_r16": {
+      "bleu1": {
+        "full": 0.4879,
+        "max_abs_shift": 0.0072,
+        "argmax_id": "Img484"
+      },
+      "bleu4": {
+        "full": 0.2683,
+        "max_abs_shift": 0.0056,
+        "argmax_id": "Img484"
+      },
+      "rouge1": {
+        "full": 0.703,
+        "max_abs_shift": 0.0065,
+        "argmax_id": "Img501"
+      },
+      "rougeL": {
+        "full": 0.6436,
+        "max_abs_shift": 0.0059,
+        "argmax_id": "Img501"
+      },
+      "meteor": {
+        "full": 0.6377,
+        "max_abs_shift": 0.0072,
+        "argmax_id": "Img501"
+      },
+      "cider": {
+        "full": 0.5559,
+        "max_abs_shift": 0.0327,
+        "argmax_id": "Img484"
+      },
+      "sensitivity": {
+        "full": 0.525,
+        "max_abs_shift": 0.0135,
+        "argmax_id": "Img465"
+      },
+      "birads_exact": {
+        "full": 0.2857,
+        "max_abs_shift": 0.0149,
+        "argmax_id": "Img461"
+      },
+      "bertscore": {
+        "full": 0.9137,
+        "max_abs_shift": 0.0007,
+        "argmax_id": "Img501"
+      }
+    },
+    "dmid_only_r64": {
+      "bleu1": {
+        "full": 0.5324,
+        "max_abs_shift": 0.0071,
+        "argmax_id": "Img469"
+      },
+      "bleu4": {
+        "full": 0.3047,
+        "max_abs_shift": 0.0059,
+        "argmax_id": "Img484"
+      },
+      "rouge1": {
+        "full": 0.7229,
+        "max_abs_shift": 0.0068,
+        "argmax_id": "Img501"
+      },
+      "rougeL": {
+        "full": 0.6551,
+        "max_abs_shift": 0.0061,
+        "argmax_id": "Img501"
+      },
+      "meteor": {
+        "full": 0.6729,
+        "max_abs_shift": 0.0079,
+        "argmax_id": "Img501"
+      },
+      "cider": {
+        "full": 0.6119,
+        "max_abs_shift": 0.0399,
+        "argmax_id": "Img486"
+      },
+      "sensitivity": {
+        "full": 0.675,
+        "max_abs_shift": 0.0173,
+        "argmax_id": "Img466"
+      },
+      "birads_exact": {
+        "full": 0.3265,
+        "max_abs_shift": 0.014,
+        "argmax_id": "Img461"
+      },
+      "bertscore": {
+        "full": 0.9179,
+        "max_abs_shift": 0.0008,
+        "argmax_id": "Img501"
+      }
+    },
+    "two_stage_r64": {
+      "bleu1": {
+        "full": 0.5203,
+        "max_abs_shift": 0.0069,
+        "argmax_id": "Img469"
+      },
+      "bleu4": {
+        "full": 0.3016,
+        "max_abs_shift": 0.0059,
+        "argmax_id": "Img484"
+      },
+      "rouge1": {
+        "full": 0.7182,
+        "max_abs_shift": 0.0067,
+        "argmax_id": "Img501"
+      },
+      "rougeL": {
+        "full": 0.6561,
+        "max_abs_shift": 0.0061,
+        "argmax_id": "Img501"
+      },
+      "meteor": {
+        "full": 0.6664,
+        "max_abs_shift": 0.0079,
+        "argmax_id": "Img501"
+      },
+      "cider": {
+        "full": 0.6495,
+        "max_abs_shift": 0.0356,
+        "argmax_id": "Img486"
+      },
+      "sensitivity": {
+        "full": 0.65,
+        "max_abs_shift": 0.0167,
+        "argmax_id": "Img466"
+      },
+      "birads_exact": {
+        "full": 0.3265,
+        "max_abs_shift": 0.014,
+        "argmax_id": "Img461"
+      },
+      "bertscore": {
+        "full": 0.9175,
+        "max_abs_shift": 0.0008,
+        "argmax_id": "Img501"
+      }
+    }
+  },
+  "paired_rougeL_delta": {
+    "r16": {
+      "full": 0.0579,
+      "max_abs_shift": 0.0039
+    },
+    "r64": {
+      "full": 0.001,
+      "max_abs_shift": 0.0049
+    }
+  }
+}

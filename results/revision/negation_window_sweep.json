@@ -1,0 +1,546 @@
+{
+  "clean49": {
+    "zero_shot": {
+      "30": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 18,
+        "sensitivity": 0.375,
+        "omission_rate": 0.625,
+        "hallucination_rate": 0.0612,
+        "confusion": {
+          "tp": 15,
+          "fp": 3,
+          "fn": 25,
+          "tn": 6
+        }
+      },
+      "45": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 12,
+        "sensitivity": 0.3,
+        "omission_rate": 0.7,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 28,
+          "tn": 9
+        }
+      },
+      "60": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 12,
+        "sensitivity": 0.3,
+        "omission_rate": 0.7,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 28,
+          "tn": 9
+        }
+      },
+      "90": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 12,
+        "sensitivity": 0.3,
+        "omission_rate": 0.7,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 28,
+          "tn": 9
+        }
+      }
+    },
+    "dmid_only_r16": {
+      "30": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 23,
+        "sensitivity": 0.575,
+        "omission_rate": 0.425,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 17,
+          "tn": 9
+        }
+      },
+      "45": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 23,
+        "sensitivity": 0.575,
+        "omission_rate": 0.425,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 17,
+          "tn": 9
+        }
+      },
+      "60": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 23,
+        "sensitivity": 0.575,
+        "omission_rate": 0.425,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 17,
+          "tn": 9
+        }
+      },
+      "90": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 23,
+        "sensitivity": 0.575,
+        "omission_rate": 0.425,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 17,
+          "tn": 9
+        }
+      }
+    },
+    "two_stage_r16": {
+      "30": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 21,
+        "sensitivity": 0.525,
+        "omission_rate": 0.475,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 19,
+          "tn": 9
+        }
+      },
+      "45": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 21,
+        "sensitivity": 0.525,
+        "omission_rate": 0.475,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 19,
+          "tn": 9
+        }
+      },
+      "60": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 21,
+        "sensitivity": 0.525,
+        "omission_rate": 0.475,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 19,
+          "tn": 9
+        }
+      },
+      "90": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 21,
+        "sensitivity": 0.525,
+        "omission_rate": 0.475,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 19,
+          "tn": 9
+        }
+      }
+    },
+    "dmid_only_r64": {
+      "30": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 27,
+        "sensitivity": 0.675,
+        "omission_rate": 0.325,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 27,
+          "fp": 0,
+          "fn": 13,
+          "tn": 9
+        }
+      },
+      "45": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 27,
+        "sensitivity": 0.675,
+        "omission_rate": 0.325,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 27,
+          "fp": 0,
+          "fn": 13,
+          "tn": 9
+        }
+      },
+      "60": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 27,
+        "sensitivity": 0.675,
+        "omission_rate": 0.325,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 27,
+          "fp": 0,
+          "fn": 13,
+          "tn": 9
+        }
+      },
+      "90": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 27,
+        "sensitivity": 0.675,
+        "omission_rate": 0.325,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 27,
+          "fp": 0,
+          "fn": 13,
+          "tn": 9
+        }
+      }
+    },
+    "two_stage_r64": {
+      "30": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 26,
+        "sensitivity": 0.65,
+        "omission_rate": 0.35,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 26,
+          "fp": 0,
+          "fn": 14,
+          "tn": 9
+        }
+      },
+      "45": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 26,
+        "sensitivity": 0.65,
+        "omission_rate": 0.35,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 26,
+          "fp": 0,
+          "fn": 14,
+          "tn": 9
+        }
+      },
+      "60": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 26,
+        "sensitivity": 0.65,
+        "omission_rate": 0.35,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 26,
+          "fp": 0,
+          "fn": 14,
+          "tn": 9
+        }
+      },
+      "90": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 26,
+        "sensitivity": 0.65,
+        "omission_rate": 0.35,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 26,
+          "fp": 0,
+          "fn": 14,
+          "tn": 9
+        }
+      }
+    }
+  },
+  "full52": {
+    "zero_shot": {
+      "30": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 19,
+        "sensitivity": 0.375,
+        "omission_rate": 0.625,
+        "hallucination_rate": 0.0769,
+        "confusion": {
+          "tp": 15,
+          "fp": 4,
+          "fn": 25,
+          "tn": 8
+        }
+      },
+      "45": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 12,
+        "sensitivity": 0.3,
+        "omission_rate": 0.7,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 28,
+          "tn": 12
+        }
+      },
+      "60": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 12,
+        "sensitivity": 0.3,
+        "omission_rate": 0.7,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 28,
+          "tn": 12
+        }
+      },
+      "90": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 12,
+        "sensitivity": 0.3,
+        "omission_rate": 0.7,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 12,
+          "fp": 0,
+          "fn": 28,
+          "tn": 12
+        }
+      }
+    },
+    "dmid_only_r16": {
+      "30": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 23,
+        "sensitivity": 0.575,
+        "omission_rate": 0.425,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 17,
+          "tn": 12
+        }
+      },
+      "45": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 23,
+        "sensitivity": 0.575,
+        "omission_rate": 0.425,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 17,
+          "tn": 12
+        }
+      },
+      "60": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 23,
+        "sensitivity": 0.575,
+        "omission_rate": 0.425,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 17,
+          "tn": 12
+        }
+      },
+      "90": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 23,
+        "sensitivity": 0.575,
+        "omission_rate": 0.425,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 23,
+          "fp": 0,
+          "fn": 17,
+          "tn": 12
+        }
+      }
+    },
+    "two_stage_r16": {
+      "30": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 21,
+        "sensitivity": 0.525,
+        "omission_rate": 0.475,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 19,
+          "tn": 12
+        }
+      },
+      "45": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 21,
+        "sensitivity": 0.525,
+        "omission_rate": 0.475,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 19,
+          "tn": 12
+        }
+      },
+      "60": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 21,
+        "sensitivity": 0.525,
+        "omission_rate": 0.475,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 19,
+          "tn": 12
+        }
+      },
+      "90": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 21,
+        "sensitivity": 0.525,
+        "omission_rate": 0.475,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 21,
+          "fp": 0,
+          "fn": 19,
+          "tn": 12
+        }
+      }
+    },
+    "dmid_only_r64": {
+      "30": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 27,
+        "sensitivity": 0.675,
+        "omission_rate": 0.325,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 27,
+          "fp": 0,
+          "fn": 13,
+          "tn": 12
+        }
+      },
+      "45": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 27,
+        "sensitivity": 0.675,
+        "omission_rate": 0.325,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 27,
+          "fp": 0,
+          "fn": 13,
+          "tn": 12
+        }
+      },
+      "60": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 27,
+        "sensitivity": 0.675,
+        "omission_rate": 0.325,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 27,
+          "fp": 0,
+          "fn": 13,
+          "tn": 12
+        }
+      },
+      "90": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 27,
+        "sensitivity": 0.675,
+        "omission_rate": 0.325,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 27,
+          "fp": 0,
+          "fn": 13,
+          "tn": 12
+        }
+      }
+    },
+    "two_stage_r64": {
+      "30": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 26,
+        "sensitivity": 0.65,
+        "omission_rate": 0.35,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 26,
+          "fp": 0,
+          "fn": 14,
+          "tn": 12
+        }
+      },
+      "45": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 26,
+        "sensitivity": 0.65,
+        "omission_rate": 0.35,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 26,
+          "fp": 0,
+          "fn": 14,
+          "tn": 12
+        }
+      },
+      "60": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 26,
+        "sensitivity": 0.65,
+        "omission_rate": 0.35,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 26,
+          "fp": 0,
+          "fn": 14,
+          "tn": 12
+        }
+      },
+      "90": {
+        "n_ref_positive": 40,
+        "n_hyp_positive": 26,
+        "sensitivity": 0.65,
+        "omission_rate": 0.35,
+        "hallucination_rate": 0.0,
+        "confusion": {
+          "tp": 26,
+          "fp": 0,
+          "fn": 14,
+          "tn": 12
+        }
+      }
+    }
+  }
+}

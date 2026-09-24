@@ -1,0 +1,201 @@
+{
+  "n_texts": 312,
+  "unmatched_mentions": 0,
+  "mention_level": {
+    "n": 738,
+    "agreement": 0.9661,
+    "kappa": 0.9323,
+    "table": {
+      "ours=False/context=False": 345,
+      "ours=True/context=False": 25,
+      "ours=True/context=True": 368
+    }
+  },
+  "report_level": {
+    "n": 312,
+    "agreement": 0.9615,
+    "kappa": 0.9232,
+    "table": {
+      "ours=False/context=False": 151,
+      "ours=False/context=True": 12,
+      "ours=True/context=True": 149
+    }
+  },
+  "disagreements": [
+    {
+      "src": "ref",
+      "id": "Img461",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: No abnormal soft opacity or microcalcifications"
+    },
+    {
+      "src": "ref",
+      "id": "Img461",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "ibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: No abnormal soft opacity or microcalcifications seen.  ski"
+    },
+    {
+      "src": "ref",
+      "id": "Img462",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: No abnormal soft opacity or microcalcifications"
+    },
+    {
+      "src": "ref",
+      "id": "Img462",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "ibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: No abnormal soft opacity or microcalcifications seen.  ski"
+    },
+    {
+      "src": "ref",
+      "id": "Img463",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR C)  FINDINGS: No abnormal soft opacity or microcalcifications"
+    },
+    {
+      "src": "ref",
+      "id": "Img463",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "ibro fatty and glandular breast parenchyma (ACR C)  FINDINGS: No abnormal soft opacity or microcalcifications seen.  ski"
+    },
+    {
+      "src": "ref",
+      "id": "Img464",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR C)  FINDINGS: No abnormal soft opacity or microcalcifications"
+    },
+    {
+      "src": "ref",
+      "id": "Img464",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "ibro fatty and glandular breast parenchyma (ACR C)  FINDINGS: No abnormal soft opacity or microcalcifications seen.  ski"
+    },
+    {
+      "src": "zero_shot",
+      "id": "Img469",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": " The mass has a slightly irregular border.     *   The mass is not calcified.     *   The mass is not associated with sk"
+    },
+    {
+      "src": "ref",
+      "id": "Img503",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR D)  FINDINGS: no abnormal soft opacity or microcalcification "
+    },
+    {
+      "src": "ref",
+      "id": "Img503",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "ibro fatty and glandular breast parenchyma (ACR D)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
+    },
+    {
+      "src": "ref",
+      "id": "Img504",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: no abnormal soft opacity or microcalcification "
+    },
+    {
+      "src": "ref",
+      "id": "Img504",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "ibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
+    },
+    {
+      "src": "ref",
+      "id": "Img505",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR C)  FINDINGS: no abnormal soft opacity or microcalcification "
+    },
+    {
+      "src": "ref",
+      "id": "Img505",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "ibro fatty and glandular breast parenchyma (ACR C)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
+    },
+    {
+      "src": "ref",
+      "id": "Img506",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: no abnormal soft opacity or microcalcification "
+    },
+    {
+      "src": "ref",
+      "id": "Img506",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "ibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
+    },
+    {
+      "src": "ref",
+      "id": "Img507",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "POSITION: predominently fibro fatty breast parenchyma (ACR A)  FINDINGS: no abnormal soft opacity or microcalcification "
+    },
+    {
+      "src": "ref",
+      "id": "Img507",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "redominently fibro fatty breast parenchyma (ACR A)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
+    },
+    {
+      "src": "ref",
+      "id": "Img508",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "POSITION: predominantly fibro fatty breast parenchyma (ACR A)  FINDINGS: no abnormal soft opacity or microcalcification "
+    },
+    {
+      "src": "ref",
+      "id": "Img508",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "redominantly fibro fatty breast parenchyma (ACR A)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
+    },
+    {
+      "src": "ref",
+      "id": "Img509",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "POSITION: predominently fibro fatty breast parenchyma (ACR A)  FINDINGS: no abnormal soft opacity or microcalcification "
+    },
+    {
+      "src": "ref",
+      "id": "Img509",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "redominently fibro fatty breast parenchyma (ACR A)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
+    },
+    {
+      "src": "ref",
+      "id": "Img510",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: no abnormal soft opacity or microcalcification "
+    },
+    {
+      "src": "ref",
+      "id": "Img510",
+      "ours_negated": true,
+      "context_negated": false,
+      "snippet": "ibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
+    }
+  ]
+}

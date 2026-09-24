@@ -46,6 +46,7 @@ __pycache__/
 results/revision/predictions/ru_external_*
 # Ответ рецензентам: рецензирование конфиденциально (как в раунде 1)
 manuscript/response_round2.tex
+manuscript/response_round3.tex
 submission/build/response_round2.pdf
 .env
 lora_ablation/

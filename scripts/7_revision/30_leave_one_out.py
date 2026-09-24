@@ -69,7 +69,7 @@ def main():
             for k in shifts:
                 shifts[k].append(abs(cs[k] - full[k]))
             print(f"  {m} {i + 1}/{n}", end="\r", flush=True)
-        out["models"][m] = {k: {"full": round(full[k], 4),
+        out["models"][m] = {k: {"full": round(full[k], 6),
                                 "max_abs_shift": round(max(v), 4),
                                 "argmax_id": preds[int(np.argmax(v))]["id"]}
                             for k, v in shifts.items()}

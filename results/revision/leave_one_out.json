@@ -38,12 +38,12 @@
         "argmax_id": "Img466"
       },
       "birads_exact": {
-        "full": 0.3265,
+        "full": 0.326531,
         "max_abs_shift": 0.014,
         "argmax_id": "Img461"
       },
       "bertscore": {
-        "full": 0.9065,
+        "full": 0.906518,
         "max_abs_shift": 0.0006,
         "argmax_id": "Img509"
       }
@@ -85,12 +85,12 @@
         "argmax_id": "Img465"
       },
       "birads_exact": {
-        "full": 0.2857,
+        "full": 0.285714,
         "max_abs_shift": 0.0149,
         "argmax_id": "Img461"
       },
       "bertscore": {
-        "full": 0.9137,
+        "full": 0.913676,
         "max_abs_shift": 0.0007,
         "argmax_id": "Img501"
       }
@@ -132,12 +132,12 @@
         "argmax_id": "Img466"
       },
       "birads_exact": {
-        "full": 0.3265,
+        "full": 0.326531,
         "max_abs_shift": 0.014,
         "argmax_id": "Img461"
       },
       "bertscore": {
-        "full": 0.9179,
+        "full": 0.917925,
         "max_abs_shift": 0.0008,
         "argmax_id": "Img501"
       }
@@ -179,12 +179,12 @@
         "argmax_id": "Img466"
       },
       "birads_exact": {
-        "full": 0.3265,
+        "full": 0.326531,
         "max_abs_shift": 0.014,
         "argmax_id": "Img461"
       },
       "bertscore": {
-        "full": 0.9175,
+        "full": 0.917484,
         "max_abs_shift": 0.0008,
         "argmax_id": "Img501"
       }

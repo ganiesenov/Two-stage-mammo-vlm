@@ -9,55 +9,61 @@
     "r16_a32": {
       "r": 16,
       "alpha": 32,
-      "n_runs": 3,
-      "two_stage_mean": 0.6195,
-      "two_stage_sd": 0.0419,
-      "dmid_only_mean": 0.6161,
-      "dmid_only_sd": 0.0453,
-      "delta_mean": 0.0034,
-      "ci_low": -0.0036,
-      "ci_high": 0.0103,
+      "n_runs": 5,
+      "two_stage_mean": 0.6115,
+      "two_stage_sd": 0.0317,
+      "dmid_only_mean": 0.6061,
+      "dmid_only_sd": 0.0348,
+      "delta_mean": 0.0054,
+      "ci_low": -0.0004,
+      "ci_high": 0.0112,
       "verdict": "\u042d\u041a\u0412\u0418\u0412\u0410\u041b\u0415\u041d\u0422\u041d\u041e\u0421\u0422\u042c",
       "per_seed_deltas": [
         0.0039,
         -0.001,
-        0.0072
+        0.0072,
+        0.002,
+        0.0149
       ]
     },
     "r32_a64": {
       "r": 32,
       "alpha": 64,
-      "n_runs": 3,
-      "two_stage_mean": 0.6377,
-      "two_stage_sd": 0.0327,
-      "dmid_only_mean": 0.6443,
-      "dmid_only_sd": 0.0178,
-      "delta_mean": -0.0067,
-      "ci_low": -0.0319,
-      "ci_high": 0.0185,
-      "verdict": "\u041d\u0415\u041e\u041f\u0420\u0415\u0414\u0415\u041b\u0401\u041d\u041d\u041e\u0421\u0422\u042c",
+      "n_runs": 5,
+      "two_stage_mean": 0.6275,
+      "two_stage_sd": 0.0296,
+      "dmid_only_mean": 0.6247,
+      "dmid_only_sd": 0.0307,
+      "delta_mean": 0.0028,
+      "ci_low": -0.0137,
+      "ci_high": 0.0193,
+      "verdict": "\u042d\u041a\u0412\u0418\u0412\u0410\u041b\u0415\u041d\u0422\u041d\u041e\u0421\u0422\u042c",
       "per_seed_deltas": [
         -0.0002,
         0.004,
-        -0.0238
+        -0.0238,
+        0.0109,
+        0.0232
       ]
     },
     "r64_a64": {
       "r": 64,
       "alpha": 64,
-      "n_runs": 3,
-      "two_stage_mean": 0.6385,
-      "two_stage_sd": 0.0309,
-      "dmid_only_mean": 0.6394,
-      "dmid_only_sd": 0.0319,
-      "delta_mean": -0.0009,
-      "ci_low": -0.0028,
-      "ci_high": 0.0011,
+      "n_runs": 5,
+      "two_stage_mean": 0.6225,
+      "two_stage_sd": 0.0328,
+      "dmid_only_mean": 0.6264,
+      "dmid_only_sd": 0.0355,
+      "delta_mean": -0.0039,
+      "ci_low": -0.0142,
+      "ci_high": 0.0064,
       "verdict": "\u042d\u041a\u0412\u0418\u0412\u0410\u041b\u0415\u041d\u0422\u041d\u041e\u0421\u0422\u042c",
       "per_seed_deltas": [
         -0.0008,
         -0.002,
-        0.0002
+        0.0002,
+        0.0056,
+        -0.0224
       ]
     }
   }

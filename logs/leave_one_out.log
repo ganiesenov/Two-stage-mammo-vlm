@@ -1,0 +1,74 @@
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights:  43%|████▎     | 167/389 [00:00<00:00, 1656.53it/s]Loading weights:  86%|████████▌ | 333/389 [00:00<00:00, 1607.22it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 1876.58it/s]
+[1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                             | Status     | 
+--------------------------------+------------+-
+lm_head.dense.bias              | UNEXPECTED | 
+roberta.embeddings.position_ids | UNEXPECTED | 
+lm_head.layer_norm.weight       | UNEXPECTED | 
+lm_head.dense.weight            | UNEXPECTED | 
+lm_head.layer_norm.bias         | UNEXPECTED | 
+lm_head.bias                    | UNEXPECTED | 
+pooler.dense.bias               | MISSING    | 
+pooler.dense.weight             | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  dmid_only_r16 1/49  dmid_only_r16 2/49  dmid_only_r16 3/49  dmid_only_r16 4/49  dmid_only_r16 5/49  dmid_only_r16 6/49  dmid_only_r16 7/49  dmid_only_r16 8/49  dmid_only_r16 9/49  dmid_only_r16 10/49  dmid_only_r16 11/49  dmid_only_r16 12/49  dmid_only_r16 13/49  dmid_only_r16 14/49  dmid_only_r16 15/49  dmid_only_r16 16/49  dmid_only_r16 17/49  dmid_only_r16 18/49  dmid_only_r16 19/49  dmid_only_r16 20/49  dmid_only_r16 21/49  dmid_only_r16 22/49  dmid_only_r16 23/49  dmid_only_r16 24/49  dmid_only_r16 25/49  dmid_only_r16 26/49  dmid_only_r16 27/49  dmid_only_r16 28/49  dmid_only_r16 29/49  dmid_only_r16 30/49  dmid_only_r16 31/49  dmid_only_r16 32/49  dmid_only_r16 33/49  dmid_only_r16 34/49  dmid_only_r16 35/49  dmid_only_r16 36/49  dmid_only_r16 37/49  dmid_only_r16 38/49  dmid_only_r16 39/49  dmid_only_r16 40/49  dmid_only_r16 41/49  dmid_only_r16 42/49  dmid_only_r16 43/49  dmid_only_r16 44/49  dmid_only_r16 45/49  dmid_only_r16 46/49  dmid_only_r16 47/49  dmid_only_r16 48/49  dmid_only_r16 49/49
+dmid_only_r16: bleu1 0.0059  bleu4 0.0042  rouge1 0.0052  rougeL 0.0049  meteor 0.0063  cider 0.0290  sensitivity 0.0147  birads_exact 0.0140  bertscore 0.0006
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 152/389 [00:00<00:00, 1517.82it/s]Loading weights:  78%|███████▊  | 304/389 [00:00<00:00, 1490.47it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 1781.15it/s]
+[1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                             | Status     | 
+--------------------------------+------------+-
+lm_head.dense.bias              | UNEXPECTED | 
+roberta.embeddings.position_ids | UNEXPECTED | 
+lm_head.layer_norm.weight       | UNEXPECTED | 
+lm_head.dense.weight            | UNEXPECTED | 
+lm_head.layer_norm.bias         | UNEXPECTED | 
+lm_head.bias                    | UNEXPECTED | 
+pooler.dense.bias               | MISSING    | 
+pooler.dense.weight             | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  two_stage_r16 1/49  two_stage_r16 2/49  two_stage_r16 3/49  two_stage_r16 4/49  two_stage_r16 5/49  two_stage_r16 6/49  two_stage_r16 7/49  two_stage_r16 8/49  two_stage_r16 9/49  two_stage_r16 10/49  two_stage_r16 11/49  two_stage_r16 12/49  two_stage_r16 13/49  two_stage_r16 14/49  two_stage_r16 15/49  two_stage_r16 16/49  two_stage_r16 17/49  two_stage_r16 18/49  two_stage_r16 19/49  two_stage_r16 20/49  two_stage_r16 21/49  two_stage_r16 22/49  two_stage_r16 23/49  two_stage_r16 24/49  two_stage_r16 25/49  two_stage_r16 26/49  two_stage_r16 27/49  two_stage_r16 28/49  two_stage_r16 29/49  two_stage_r16 30/49  two_stage_r16 31/49  two_stage_r16 32/49  two_stage_r16 33/49  two_stage_r16 34/49  two_stage_r16 35/49  two_stage_r16 36/49  two_stage_r16 37/49  two_stage_r16 38/49  two_stage_r16 39/49  two_stage_r16 40/49  two_stage_r16 41/49  two_stage_r16 42/49  two_stage_r16 43/49  two_stage_r16 44/49  two_stage_r16 45/49  two_stage_r16 46/49  two_stage_r16 47/49  two_stage_r16 48/49  two_stage_r16 49/49
+two_stage_r16: bleu1 0.0072  bleu4 0.0056  rouge1 0.0065  rougeL 0.0059  meteor 0.0072  cider 0.0327  sensitivity 0.0135  birads_exact 0.0149  bertscore 0.0007
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights:  40%|███▉      | 154/389 [00:00<00:00, 1524.79it/s]Loading weights:  79%|███████▉  | 307/389 [00:00<00:00, 1491.77it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 1860.57it/s]
+[1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                             | Status     | 
+--------------------------------+------------+-
+lm_head.dense.bias              | UNEXPECTED | 
+roberta.embeddings.position_ids | UNEXPECTED | 
+lm_head.layer_norm.weight       | UNEXPECTED | 
+lm_head.dense.weight            | UNEXPECTED | 
+lm_head.layer_norm.bias         | UNEXPECTED | 
+lm_head.bias                    | UNEXPECTED | 
+pooler.dense.bias               | MISSING    | 
+pooler.dense.weight             | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  dmid_only_r64 1/49  dmid_only_r64 2/49  dmid_only_r64 3/49  dmid_only_r64 4/49  dmid_only_r64 5/49  dmid_only_r64 6/49  dmid_only_r64 7/49  dmid_only_r64 8/49  dmid_only_r64 9/49  dmid_only_r64 10/49  dmid_only_r64 11/49  dmid_only_r64 12/49  dmid_only_r64 13/49  dmid_only_r64 14/49  dmid_only_r64 15/49  dmid_only_r64 16/49  dmid_only_r64 17/49  dmid_only_r64 18/49  dmid_only_r64 19/49  dmid_only_r64 20/49  dmid_only_r64 21/49  dmid_only_r64 22/49  dmid_only_r64 23/49  dmid_only_r64 24/49  dmid_only_r64 25/49  dmid_only_r64 26/49  dmid_only_r64 27/49  dmid_only_r64 28/49  dmid_only_r64 29/49  dmid_only_r64 30/49  dmid_only_r64 31/49  dmid_only_r64 32/49  dmid_only_r64 33/49  dmid_only_r64 34/49  dmid_only_r64 35/49  dmid_only_r64 36/49  dmid_only_r64 37/49  dmid_only_r64 38/49  dmid_only_r64 39/49  dmid_only_r64 40/49  dmid_only_r64 41/49  dmid_only_r64 42/49  dmid_only_r64 43/49  dmid_only_r64 44/49  dmid_only_r64 45/49  dmid_only_r64 46/49  dmid_only_r64 47/49  dmid_only_r64 48/49  dmid_only_r64 49/49
+dmid_only_r64: bleu1 0.0071  bleu4 0.0059  rouge1 0.0068  rougeL 0.0061  meteor 0.0079  cider 0.0399  sensitivity 0.0173  birads_exact 0.0140  bertscore 0.0008
+Loading weights:   0%|          | 0/389 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 151/389 [00:00<00:00, 1485.76it/s]Loading weights:  78%|███████▊  | 303/389 [00:00<00:00, 1505.31it/s]Loading weights: 100%|██████████| 389/389 [00:00<00:00, 1904.29it/s]
+[1mRobertaModel LOAD REPORT[0m from: roberta-large
+Key                             | Status     | 
+--------------------------------+------------+-
+lm_head.dense.bias              | UNEXPECTED | 
+roberta.embeddings.position_ids | UNEXPECTED | 
+lm_head.layer_norm.weight       | UNEXPECTED | 
+lm_head.dense.weight            | UNEXPECTED | 
+lm_head.layer_norm.bias         | UNEXPECTED | 
+lm_head.bias                    | UNEXPECTED | 
+pooler.dense.bias               | MISSING    | 
+pooler.dense.weight             | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  two_stage_r64 1/49  two_stage_r64 2/49  two_stage_r64 3/49  two_stage_r64 4/49  two_stage_r64 5/49  two_stage_r64 6/49  two_stage_r64 7/49  two_stage_r64 8/49  two_stage_r64 9/49  two_stage_r64 10/49  two_stage_r64 11/49  two_stage_r64 12/49  two_stage_r64 13/49  two_stage_r64 14/49  two_stage_r64 15/49  two_stage_r64 16/49  two_stage_r64 17/49  two_stage_r64 18/49  two_stage_r64 19/49  two_stage_r64 20/49  two_stage_r64 21/49  two_stage_r64 22/49  two_stage_r64 23/49  two_stage_r64 24/49  two_stage_r64 25/49  two_stage_r64 26/49  two_stage_r64 27/49  two_stage_r64 28/49  two_stage_r64 29/49  two_stage_r64 30/49  two_stage_r64 31/49  two_stage_r64 32/49  two_stage_r64 33/49  two_stage_r64 34/49  two_stage_r64 35/49  two_stage_r64 36/49  two_stage_r64 37/49  two_stage_r64 38/49  two_stage_r64 39/49  two_stage_r64 40/49  two_stage_r64 41/49  two_stage_r64 42/49  two_stage_r64 43/49  two_stage_r64 44/49  two_stage_r64 45/49  two_stage_r64 46/49  two_stage_r64 47/49  two_stage_r64 48/49  two_stage_r64 49/49
+two_stage_r64: bleu1 0.0069  bleu4 0.0059  rouge1 0.0067  rougeL 0.0061  meteor 0.0079  cider 0.0356  sensitivity 0.0167  birads_exact 0.0140  bertscore 0.0008
+ΔROUGE-L r16: +0.0579, max LOO shift 0.0039
+ΔROUGE-L r64: +0.0010, max LOO shift 0.0049

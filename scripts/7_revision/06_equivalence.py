@@ -133,12 +133,16 @@ def main():
     for r, alpha in configs:
         seeds = sorted({v["seed"] for v in res.values()
                         if v["r"] == r and v["alpha"] == alpha})
-        per_seed_delta, paired_all = [], []
+        per_seed_delta, paired_all, ts_vals, do_vals = [], [], [], []
         for s in seeds:
             ts = cell_metric(res, "two_stage", r, alpha, s, TAG)
             do = cell_metric(res, "dmid_only", r, alpha, s, TAG)
             if ts is None or do is None:
                 continue
+            # Средние ветвей — только по парным сидам, иначе они не сходятся с Δ
+            # (у v1 two-stage есть лишь на 42–44, а DMID-only — на пяти сидах).
+            ts_vals.append(ts)
+            do_vals.append(do)
             per_seed_delta.append(ts - do)
             a = per_case("two_stage", r, alpha, s, TAG)
             b = per_case("dmid_only", r, alpha, s, TAG)
@@ -153,10 +157,6 @@ def main():
             continue
 
         m, lo, hi, verdict = tost(per_seed_delta, args.delta_eq)
-        ts_vals = [v for v in (cell_metric(res, "two_stage", r, alpha, s, TAG)
-                               for s in seeds) if v is not None]
-        do_vals = [v for v in (cell_metric(res, "dmid_only", r, alpha, s, TAG)
-                               for s in seeds) if v is not None]
 
         print(f"\n  r = {r}, α = {alpha}   (прогонов на ветвь: {len(per_seed_delta)})")
         print(f"    two-stage  {np.mean(ts_vals):.4f} ± {np.std(ts_vals, ddof=1) if len(ts_vals)>1 else 0:.4f}"

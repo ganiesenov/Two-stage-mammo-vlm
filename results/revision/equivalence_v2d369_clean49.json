@@ -9,55 +9,61 @@
     "r16_a32": {
       "r": 16,
       "alpha": 32,
-      "n_runs": 3,
-      "two_stage_mean": 0.6193,
-      "two_stage_sd": 0.0342,
-      "dmid_only_mean": 0.6161,
-      "dmid_only_sd": 0.0453,
-      "delta_mean": 0.0032,
-      "ci_low": -0.0163,
-      "ci_high": 0.0227,
-      "verdict": "\u041d\u0415\u041e\u041f\u0420\u0415\u0414\u0415\u041b\u0401\u041d\u041d\u041e\u0421\u0422\u042c",
+      "n_runs": 5,
+      "two_stage_mean": 0.6116,
+      "two_stage_sd": 0.0264,
+      "dmid_only_mean": 0.6061,
+      "dmid_only_sd": 0.0348,
+      "delta_mean": 0.0055,
+      "ci_low": -0.0029,
+      "ci_high": 0.014,
+      "verdict": "\u042d\u041a\u0412\u0418\u0412\u0410\u041b\u0415\u041d\u0422\u041d\u041e\u0421\u0422\u042c",
       "per_seed_deltas": [
         0.0006,
         -0.0068,
-        0.0159
+        0.0159,
+        0.0071,
+        0.0109
       ]
     },
     "r32_a64": {
       "r": 32,
       "alpha": 64,
-      "n_runs": 3,
-      "two_stage_mean": 0.6367,
-      "two_stage_sd": 0.0268,
-      "dmid_only_mean": 0.6443,
-      "dmid_only_sd": 0.0178,
-      "delta_mean": -0.0077,
-      "ci_low": -0.0232,
-      "ci_high": 0.0078,
-      "verdict": "\u041d\u0415\u041e\u041f\u0420\u0415\u0414\u0415\u041b\u0401\u041d\u041d\u041e\u0421\u0422\u042c",
+      "n_runs": 5,
+      "two_stage_mean": 0.6279,
+      "two_stage_sd": 0.0259,
+      "dmid_only_mean": 0.6247,
+      "dmid_only_sd": 0.0307,
+      "delta_mean": 0.0032,
+      "ci_low": -0.013,
+      "ci_high": 0.0195,
+      "verdict": "\u042d\u041a\u0412\u0418\u0412\u0410\u041b\u0415\u041d\u0422\u041d\u041e\u0421\u0422\u042c",
       "per_seed_deltas": [
         -0.0021,
         -0.0027,
-        -0.0183
+        -0.0183,
+        0.0124,
+        0.0268
       ]
     },
     "r64_a64": {
       "r": 64,
       "alpha": 64,
-      "n_runs": 3,
-      "two_stage_mean": 0.6486,
-      "two_stage_sd": 0.0109,
-      "dmid_only_mean": 0.6394,
-      "dmid_only_sd": 0.0319,
-      "delta_mean": 0.0093,
-      "ci_low": -0.0284,
-      "ci_high": 0.0469,
+      "n_runs": 5,
+      "two_stage_mean": 0.6322,
+      "two_stage_sd": 0.0253,
+      "dmid_only_mean": 0.6264,
+      "dmid_only_sd": 0.0355,
+      "delta_mean": 0.0058,
+      "ci_low": -0.0136,
+      "ci_high": 0.0253,
       "verdict": "\u041d\u0415\u041e\u041f\u0420\u0415\u0414\u0415\u041b\u0401\u041d\u041d\u041e\u0421\u0422\u042c",
       "per_seed_deltas": [
         0.005,
         -0.0106,
-        0.0334
+        0.0334,
+        0.0176,
+        -0.0164
       ]
     }
   }

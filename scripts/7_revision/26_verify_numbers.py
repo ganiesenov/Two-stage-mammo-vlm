@@ -44,7 +44,11 @@ def table_rows(tex, label):
     i = tex.index("\\label{" + label + "}")
     j = tex.index("\\begin{tabular}", i)
     k = tex.index("\\end{tabular}", j)
-    body = tex[j:k]
+    # Правила таблицы стоят перед первой строкой данных без собственного \\,
+    # и без их удаления заголовок первой строки читался как «midrule 369»,
+    # а сама строка молча пропускалась.
+    body = re.sub(r"\\(?:top|mid|bottom)rule|\\cmidrule(?:\([^)]*\))?\{[^}]*\}",
+                  "", tex[j:k])
     return [strip(l).strip() for l in body.split("\\\\") if "&" in l]
 
 

@@ -3,222 +3,230 @@
     "seeds": [
       42,
       43,
-      44
+      44,
+      45,
+      46
     ],
     "cells": {
       "369/r16_a32": {
-        "delta": 0.0032,
+        "delta": 0.0055,
         "ci": [
-          -0.0163,
-          0.0227
+          -0.0029,
+          0.014
         ],
-        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0342,
-        "dmid_only_sd": 0.0453,
-        "ci_width": 0.039,
+        "verdict": "ЭКВИВАЛЕНТНОСТЬ",
+        "n_runs": 5,
+        "two_stage_sd": 0.0264,
+        "dmid_only_sd": 0.0348,
+        "ci_width": 0.0169,
         "ci_width_3seed": 0.039,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": 56.666666666666664,
         "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
         "delta_3seed": 0.0032,
         "worst_seed_two_stage": 44,
         "worst_seed_dmid_only": 44
       },
       "369/r32_a64": {
-        "delta": -0.0077,
+        "delta": 0.0032,
         "ci": [
-          -0.0232,
-          0.0078
-        ],
-        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0268,
-        "dmid_only_sd": 0.0178,
-        "ci_width": 0.031,
-        "ci_width_3seed": 0.031,
-        "ci_narrowing_pct": 0.0,
-        "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
-        "delta_3seed": -0.0077,
-        "worst_seed_two_stage": 44,
-        "worst_seed_dmid_only": 44
-      },
-      "369/r64_a64": {
-        "delta": 0.0093,
-        "ci": [
-          -0.0284,
-          0.0469
-        ],
-        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0109,
-        "dmid_only_sd": 0.0319,
-        "ci_width": 0.0753,
-        "ci_width_3seed": 0.0753,
-        "ci_narrowing_pct": 0.0,
-        "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
-        "delta_3seed": 0.0093,
-        "worst_seed_two_stage": 44,
-        "worst_seed_dmid_only": 44
-      },
-      "800/r16_a32": {
-        "delta": 0.0034,
-        "ci": [
-          -0.0036,
-          0.0103
+          -0.013,
+          0.0195
         ],
         "verdict": "ЭКВИВАЛЕНТНОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0419,
-        "dmid_only_sd": 0.0453,
-        "ci_width": 0.0139,
+        "n_runs": 5,
+        "two_stage_sd": 0.0259,
+        "dmid_only_sd": 0.0307,
+        "ci_width": 0.0325,
+        "ci_width_3seed": 0.031,
+        "ci_narrowing_pct": -4.8387096774193505,
+        "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
+        "delta_3seed": -0.0077,
+        "worst_seed_two_stage": 45,
+        "worst_seed_dmid_only": 45
+      },
+      "369/r64_a64": {
+        "delta": 0.0058,
+        "ci": [
+          -0.0136,
+          0.0253
+        ],
+        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
+        "n_runs": 5,
+        "two_stage_sd": 0.0253,
+        "dmid_only_sd": 0.0355,
+        "ci_width": 0.0389,
+        "ci_width_3seed": 0.0753,
+        "ci_narrowing_pct": 48.33997343957505,
+        "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
+        "delta_3seed": 0.0093,
+        "worst_seed_two_stage": 45,
+        "worst_seed_dmid_only": 45
+      },
+      "800/r16_a32": {
+        "delta": 0.0054,
+        "ci": [
+          -0.0004,
+          0.0112
+        ],
+        "verdict": "ЭКВИВАЛЕНТНОСТЬ",
+        "n_runs": 5,
+        "two_stage_sd": 0.0317,
+        "dmid_only_sd": 0.0348,
+        "ci_width": 0.0116,
         "ci_width_3seed": 0.0139,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": 16.546762589928054,
         "verdict_3seed": "ЭКВИВАЛЕНТНОСТЬ",
         "delta_3seed": 0.0034,
         "worst_seed_two_stage": 44,
         "worst_seed_dmid_only": 44
       },
       "800/r32_a64": {
-        "delta": -0.0067,
+        "delta": 0.0028,
         "ci": [
-          -0.0319,
-          0.0185
+          -0.0137,
+          0.0193
         ],
-        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0327,
-        "dmid_only_sd": 0.0178,
-        "ci_width": 0.0504,
+        "verdict": "ЭКВИВАЛЕНТНОСТЬ",
+        "n_runs": 5,
+        "two_stage_sd": 0.0296,
+        "dmid_only_sd": 0.0307,
+        "ci_width": 0.033,
         "ci_width_3seed": 0.0504,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": 34.523809523809526,
         "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
         "delta_3seed": -0.0067,
-        "worst_seed_two_stage": 44,
-        "worst_seed_dmid_only": 44
+        "worst_seed_two_stage": 45,
+        "worst_seed_dmid_only": 45
       },
       "800/r64_a64": {
-        "delta": -0.0009,
+        "delta": -0.0039,
         "ci": [
-          -0.0028,
-          0.0011
+          -0.0142,
+          0.0064
         ],
         "verdict": "ЭКВИВАЛЕНТНОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0309,
-        "dmid_only_sd": 0.0319,
-        "ci_width": 0.0039,
+        "n_runs": 5,
+        "two_stage_sd": 0.0328,
+        "dmid_only_sd": 0.0355,
+        "ci_width": 0.0206,
         "ci_width_3seed": 0.0039,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": -428.2051282051282,
         "verdict_3seed": "ЭКВИВАЛЕНТНОСТЬ",
         "delta_3seed": -0.0009,
-        "worst_seed_two_stage": 44,
-        "worst_seed_dmid_only": 44
+        "worst_seed_two_stage": 45,
+        "worst_seed_dmid_only": 45
       },
       "1444/r16_a32": {
-        "delta": 0.0027,
+        "delta": 0.0052,
         "ci": [
-          -0.0081,
-          0.0135
+          -0.0006,
+          0.011
         ],
         "verdict": "ЭКВИВАЛЕНТНОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0403,
-        "dmid_only_sd": 0.0453,
-        "ci_width": 0.0216,
+        "n_runs": 5,
+        "two_stage_sd": 0.0303,
+        "dmid_only_sd": 0.0348,
+        "ci_width": 0.0116,
         "ci_width_3seed": 0.0216,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": 46.296296296296305,
         "verdict_3seed": "ЭКВИВАЛЕНТНОСТЬ",
         "delta_3seed": 0.0027,
         "worst_seed_two_stage": 44,
         "worst_seed_dmid_only": 44
       },
       "1444/r32_a64": {
-        "delta": -0.0024,
+        "delta": 0.0004,
         "ci": [
-          -0.0203,
-          0.0156
+          -0.0077,
+          0.0085
         ],
-        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0239,
-        "dmid_only_sd": 0.0178,
-        "ci_width": 0.0359,
+        "verdict": "ЭКВИВАЛЕНТНОСТЬ",
+        "n_runs": 5,
+        "two_stage_sd": 0.0295,
+        "dmid_only_sd": 0.0307,
+        "ci_width": 0.0162,
         "ci_width_3seed": 0.0359,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": 54.874651810584965,
         "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
         "delta_3seed": -0.0024,
-        "worst_seed_two_stage": 44,
-        "worst_seed_dmid_only": 44
+        "worst_seed_two_stage": 45,
+        "worst_seed_dmid_only": 45
       },
       "1444/r64_a64": {
-        "delta": 0.0111,
+        "delta": 0.007,
         "ci": [
-          -0.0075,
-          0.0297
+          -0.0047,
+          0.0188
         ],
-        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0216,
-        "dmid_only_sd": 0.0319,
-        "ci_width": 0.0372,
+        "verdict": "ЭКВИВАЛЕНТНОСТЬ",
+        "n_runs": 5,
+        "two_stage_sd": 0.0307,
+        "dmid_only_sd": 0.0355,
+        "ci_width": 0.0235,
         "ci_width_3seed": 0.0372,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": 36.8279569892473,
         "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
         "delta_3seed": 0.0111,
-        "worst_seed_two_stage": 44,
-        "worst_seed_dmid_only": 44
+        "worst_seed_two_stage": 45,
+        "worst_seed_dmid_only": 45
       }
     },
     "dmid_only": {
       "r16_a32": {
-        "mean": 0.6160958909559012,
-        "sd": 0.04527300840115589,
-        "n": 3,
+        "mean": 0.6061187557590512,
+        "sd": 0.034844670078787485,
+        "n": 5,
         "by_seed": {
           "42": 0.6392156245194893,
           "43": 0.6451408727719369,
-          "44": 0.5639311755762778
+          "44": 0.5639311755762778,
+          "45": 0.5934703090668254,
+          "46": 0.5888357968607267
         }
       },
       "r32_a64": {
-        "mean": 0.6443308168607512,
-        "sd": 0.01777023332562399,
-        "n": 3,
+        "mean": 0.6247213286371991,
+        "sd": 0.03070535630220479,
+        "n": 5,
         "by_seed": {
           "42": 0.6504380071263446,
           "43": 0.6582421226337071,
-          "44": 0.6243123208222022
+          "44": 0.6243123208222022,
+          "45": 0.583999509805078,
+          "46": 0.6066146827986634
         }
       },
       "r64_a64": {
-        "mean": 0.6393502376762062,
-        "sd": 0.03189924297457655,
-        "n": 3,
+        "mean": 0.6264217198734425,
+        "sd": 0.03545684772773169,
+        "n": 5,
         "by_seed": {
           "42": 0.6523973350574819,
           "43": 0.6626577405894545,
-          "44": 0.6029956373816826
+          "44": 0.6029956373816826,
+          "45": 0.5775329306919702,
+          "46": 0.6365249556466231
         }
       }
     },
     "sd_by_rank": {
       "r16_a32": [
-        0.0342,
-        0.0453
+        0.0264,
+        0.0348
       ],
       "r32_a64": [
-        0.0178,
-        0.0327
+        0.0259,
+        0.0307
       ],
       "r64_a64": [
-        0.0109,
-        0.0319
+        0.0253,
+        0.0355
       ]
     },
     "spread_by_rank": {
       "r16_a32": 0.08421107796050697,
-      "r32_a64": 0.06165364574317589,
-      "r64_a64": 0.06591205691835977
+      "r32_a64": 0.07819922829657289,
+      "r64_a64": 0.09137476360807217
     },
     "signs_r16_a32": [
       1.0,
@@ -226,9 +234,9 @@
       1.0
     ],
     "signs_r32_a64": [
-      -1.0,
-      -1.0,
-      -1.0
+      1.0,
+      1.0,
+      1.0
     ],
     "signs_r64_a64": [
       1.0,
@@ -236,24 +244,26 @@
       1.0
     ],
     "sd_all": [
-      0.0109,
-      0.0453
+      0.0253,
+      0.0355
     ],
-    "mean_abs_delta": 0.005266666666666666,
-    "max_abs_delta": 0.0111,
+    "mean_abs_delta": 0.004355555555555555,
+    "max_abs_delta": 0.007,
     "verdicts": {
-      "ЭКВИВАЛЕНТНОСТЬ": 3,
-      "НЕОПРЕДЕЛЁННОСТЬ": 6,
+      "ЭКВИВАЛЕНТНОСТЬ": 8,
+      "НЕОПРЕДЕЛЁННОСТЬ": 1,
       "ПРЕВОСХОДСТВО": 0,
       "УСТУПАЕТ": 0
     },
-    "mean_ci_narrowing_pct": 0.0,
+    "mean_ci_narrowing_pct": -15.44085784071552,
     "worst_seed_counts": {
       "two_stage": {
-        "44": 9
+        "44": 3,
+        "45": 6
       },
       "dmid_only_by_config": {
-        "44": 3
+        "44": 1,
+        "45": 2
       }
     },
     "preregistered": {
@@ -270,222 +280,230 @@
     "seeds": [
       42,
       43,
-      44
+      44,
+      45,
+      46
     ],
     "cells": {
       "369/r16_a32": {
-        "delta": 0.0036,
+        "delta": 0.0056,
         "ci": [
-          -0.0163,
-          0.0236
+          -0.0029,
+          0.014
         ],
-        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0332,
-        "dmid_only_sd": 0.0446,
-        "ci_width": 0.0399,
+        "verdict": "ЭКВИВАЛЕНТНОСТЬ",
+        "n_runs": 5,
+        "two_stage_sd": 0.0254,
+        "dmid_only_sd": 0.0339,
+        "ci_width": 0.0169,
         "ci_width_3seed": 0.0399,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": 57.64411027568923,
         "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
         "delta_3seed": 0.0036,
         "worst_seed_two_stage": 44,
         "worst_seed_dmid_only": 44
       },
       "369/r32_a64": {
-        "delta": -0.0068,
+        "delta": 0.0028,
         "ci": [
-          -0.0223,
-          0.0087
-        ],
-        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.026,
-        "dmid_only_sd": 0.0169,
-        "ci_width": 0.031,
-        "ci_width_3seed": 0.031,
-        "ci_narrowing_pct": 0.0,
-        "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
-        "delta_3seed": -0.0068,
-        "worst_seed_two_stage": 44,
-        "worst_seed_dmid_only": 44
-      },
-      "369/r64_a64": {
-        "delta": 0.009,
-        "ci": [
-          -0.0296,
-          0.0476
-        ],
-        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0102,
-        "dmid_only_sd": 0.0316,
-        "ci_width": 0.0772,
-        "ci_width_3seed": 0.0772,
-        "ci_narrowing_pct": 0.0,
-        "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
-        "delta_3seed": 0.009,
-        "worst_seed_two_stage": 44,
-        "worst_seed_dmid_only": 44
-      },
-      "800/r16_a32": {
-        "delta": 0.0035,
-        "ci": [
-          -0.0037,
-          0.0106
+          -0.0116,
+          0.0172
         ],
         "verdict": "ЭКВИВАЛЕНТНОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0409,
-        "dmid_only_sd": 0.0446,
-        "ci_width": 0.0143,
+        "n_runs": 5,
+        "two_stage_sd": 0.0249,
+        "dmid_only_sd": 0.029,
+        "ci_width": 0.0288,
+        "ci_width_3seed": 0.031,
+        "ci_narrowing_pct": 7.096774193548394,
+        "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
+        "delta_3seed": -0.0068,
+        "worst_seed_two_stage": 45,
+        "worst_seed_dmid_only": 45
+      },
+      "369/r64_a64": {
+        "delta": 0.006,
+        "ci": [
+          -0.0129,
+          0.0249
+        ],
+        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
+        "n_runs": 5,
+        "two_stage_sd": 0.024,
+        "dmid_only_sd": 0.0341,
+        "ci_width": 0.0378,
+        "ci_width_3seed": 0.0772,
+        "ci_narrowing_pct": 51.03626943005182,
+        "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
+        "delta_3seed": 0.009,
+        "worst_seed_two_stage": 45,
+        "worst_seed_dmid_only": 45
+      },
+      "800/r16_a32": {
+        "delta": 0.0051,
+        "ci": [
+          -0.0001,
+          0.0103
+        ],
+        "verdict": "ЭКВИВАЛЕНТНОСТЬ",
+        "n_runs": 5,
+        "two_stage_sd": 0.0307,
+        "dmid_only_sd": 0.0339,
+        "ci_width": 0.0104,
         "ci_width_3seed": 0.0143,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": 27.27272727272728,
         "verdict_3seed": "ЭКВИВАЛЕНТНОСТЬ",
         "delta_3seed": 0.0035,
         "worst_seed_two_stage": 44,
         "worst_seed_dmid_only": 44
       },
       "800/r32_a64": {
-        "delta": -0.0059,
+        "delta": 0.0023,
         "ci": [
-          -0.0311,
-          0.0193
+          -0.0127,
+          0.0174
         ],
-        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0318,
-        "dmid_only_sd": 0.0169,
-        "ci_width": 0.0504,
+        "verdict": "ЭКВИВАЛЕНТНОСТЬ",
+        "n_runs": 5,
+        "two_stage_sd": 0.0286,
+        "dmid_only_sd": 0.029,
+        "ci_width": 0.0301,
         "ci_width_3seed": 0.0504,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": 40.27777777777778,
         "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
         "delta_3seed": -0.0059,
-        "worst_seed_two_stage": 44,
-        "worst_seed_dmid_only": 44
+        "worst_seed_two_stage": 45,
+        "worst_seed_dmid_only": 45
       },
       "800/r64_a64": {
-        "delta": -0.0008,
+        "delta": -0.0033,
         "ci": [
-          -0.004,
-          0.0024
+          -0.0122,
+          0.0056
         ],
         "verdict": "ЭКВИВАЛЕНТНОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0298,
-        "dmid_only_sd": 0.0316,
-        "ci_width": 0.0063999999999999994,
+        "n_runs": 5,
+        "two_stage_sd": 0.0313,
+        "dmid_only_sd": 0.0341,
+        "ci_width": 0.0178,
         "ci_width_3seed": 0.0063999999999999994,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": -178.125,
         "verdict_3seed": "ЭКВИВАЛЕНТНОСТЬ",
         "delta_3seed": -0.0008,
-        "worst_seed_two_stage": 44,
-        "worst_seed_dmid_only": 44
+        "worst_seed_two_stage": 45,
+        "worst_seed_dmid_only": 45
       },
       "1444/r16_a32": {
-        "delta": 0.0032,
+        "delta": 0.0051,
         "ci": [
-          -0.0085,
-          0.0148
+          -0.0005,
+          0.0107
         ],
         "verdict": "ЭКВИВАЛЕНТНОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0389,
-        "dmid_only_sd": 0.0446,
-        "ci_width": 0.0233,
+        "n_runs": 5,
+        "two_stage_sd": 0.0291,
+        "dmid_only_sd": 0.0339,
+        "ci_width": 0.0112,
         "ci_width_3seed": 0.0233,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": 51.931330472103014,
         "verdict_3seed": "ЭКВИВАЛЕНТНОСТЬ",
         "delta_3seed": 0.0032,
         "worst_seed_two_stage": 44,
         "worst_seed_dmid_only": 44
       },
       "1444/r32_a64": {
-        "delta": -0.0023,
+        "delta": 0.0007,
         "ci": [
-          -0.0198,
-          0.0152
+          -0.0074,
+          0.0088
         ],
         "verdict": "ЭКВИВАЛЕНТНОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0241,
-        "dmid_only_sd": 0.0169,
-        "ci_width": 0.035,
+        "n_runs": 5,
+        "two_stage_sd": 0.028,
+        "dmid_only_sd": 0.029,
+        "ci_width": 0.0162,
         "ci_width_3seed": 0.035,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": 53.714285714285715,
         "verdict_3seed": "ЭКВИВАЛЕНТНОСТЬ",
         "delta_3seed": -0.0023,
-        "worst_seed_two_stage": 44,
-        "worst_seed_dmid_only": 44
+        "worst_seed_two_stage": 45,
+        "worst_seed_dmid_only": 45
       },
       "1444/r64_a64": {
-        "delta": 0.0109,
+        "delta": 0.0073,
         "ci": [
-          -0.0091,
-          0.031
+          -0.004,
+          0.0186
         ],
-        "verdict": "НЕОПРЕДЕЛЁННОСТЬ",
-        "n_runs": 3,
-        "two_stage_sd": 0.0203,
-        "dmid_only_sd": 0.0316,
-        "ci_width": 0.0401,
+        "verdict": "ЭКВИВАЛЕНТНОСТЬ",
+        "n_runs": 5,
+        "two_stage_sd": 0.0292,
+        "dmid_only_sd": 0.0341,
+        "ci_width": 0.0226,
         "ci_width_3seed": 0.0401,
-        "ci_narrowing_pct": 0.0,
+        "ci_narrowing_pct": 43.64089775561097,
         "verdict_3seed": "НЕОПРЕДЕЛЁННОСТЬ",
         "delta_3seed": 0.0109,
-        "worst_seed_two_stage": 44,
-        "worst_seed_dmid_only": 44
+        "worst_seed_two_stage": 45,
+        "worst_seed_dmid_only": 45
       }
     },
     "dmid_only": {
       "r16_a32": {
-        "mean": 0.6317,
-        "sd": 0.04460168158264885,
-        "n": 3,
+        "mean": 0.6227600000000001,
+        "sd": 0.03386477520964813,
+        "n": 5,
         "by_seed": {
           "42": 0.6546,
           "43": 0.6602,
-          "44": 0.5803
+          "44": 0.5803,
+          "45": 0.6115,
+          "46": 0.6072
         }
       },
       "r32_a64": {
-        "mean": 0.6589333333333333,
-        "sd": 0.016895364255716187,
-        "n": 3,
+        "mean": 0.6405,
+        "sd": 0.02899793096067372,
+        "n": 5,
         "by_seed": {
           "42": 0.6652,
           "43": 0.6718,
-          "44": 0.6398
+          "44": 0.6398,
+          "45": 0.6018,
+          "46": 0.6239
         }
       },
       "r64_a64": {
-        "mean": 0.6543,
-        "sd": 0.03160759402422148,
-        "n": 3,
+        "mean": 0.64178,
+        "sd": 0.03410787299143705,
+        "n": 5,
         "by_seed": {
           "42": 0.6671,
           "43": 0.6775,
-          "44": 0.6183
+          "44": 0.6183,
+          "45": 0.5958,
+          "46": 0.6502
         }
       }
     },
     "sd_by_rank": {
       "r16_a32": [
-        0.0332,
-        0.0446
+        0.0254,
+        0.0339
       ],
       "r32_a64": [
-        0.0169,
-        0.0318
+        0.0249,
+        0.029
       ],
       "r64_a64": [
-        0.0102,
-        0.0316
+        0.024,
+        0.0341
       ]
     },
     "spread_by_rank": {
       "r16_a32": 0.08279999999999998,
-      "r32_a64": 0.06020000000000003,
-      "r64_a64": 0.06430000000000002
+      "r32_a64": 0.07530000000000003,
+      "r64_a64": 0.08679999999999999
     },
     "signs_r16_a32": [
       1.0,
@@ -493,9 +511,9 @@
       1.0
     ],
     "signs_r32_a64": [
-      -1.0,
-      -1.0,
-      -1.0
+      1.0,
+      1.0,
+      1.0
     ],
     "signs_r64_a64": [
       1.0,
@@ -503,24 +521,26 @@
       1.0
     ],
     "sd_all": [
-      0.0102,
-      0.0446
+      0.024,
+      0.0341
     ],
-    "mean_abs_delta": 0.0051111111111111105,
-    "max_abs_delta": 0.0109,
+    "mean_abs_delta": 0.004244444444444444,
+    "max_abs_delta": 0.0073,
     "verdicts": {
-      "ЭКВИВАЛЕНТНОСТЬ": 4,
-      "НЕОПРЕДЕЛЁННОСТЬ": 5,
+      "ЭКВИВАЛЕНТНОСТЬ": 8,
+      "НЕОПРЕДЕЛЁННОСТЬ": 1,
       "ПРЕВОСХОДСТВО": 0,
       "УСТУПАЕТ": 0
     },
-    "mean_ci_narrowing_pct": 0.0,
+    "mean_ci_narrowing_pct": 17.1654636546438,
     "worst_seed_counts": {
       "two_stage": {
-        "44": 9
+        "44": 3,
+        "45": 6
       },
       "dmid_only_by_config": {
-        "44": 3
+        "44": 1,
+        "45": 2
       }
     },
     "preregistered": {

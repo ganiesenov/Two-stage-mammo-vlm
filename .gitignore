@@ -48,6 +48,7 @@ results/revision/predictions/ru_external_*
 manuscript/response_round2.tex
 manuscript/response_round3.tex
 submission/build/response_round2.pdf
+submission/build/response_round3.pdf
 .env
 lora_ablation/
 

@@ -247,12 +247,16 @@ Full split ($n=52$) & report-level assertions & 312 & 96.2\% & 0.92 \\
 \multicolumn{4}{l}{\emph{Rule negates, ConText asserts}} & 19 \\
 \quad Reference & 461, 463, 503--505, 507--510 & mass & ``opacity'' & 9 \\
 \quad Reference & 461, 463, 503--505, 507--510 & calcification & ``microcalcification(s)'' & 9 \\
-\quad MedGemma-4B (ZS) & 469 & mass & ``mass'' & 1 \\
+\quad MedGemma-4B (ZS) & 469 & mass & ``mass''$^{\dagger}$ & 1 \\
 \multicolumn{4}{l}{\emph{Rule asserts, ConText negates}} & 0 \\
 \midrule
 \multicolumn{4}{l}{Total} & 19 \\
 \bottomrule
 \end{tabular}
+
+\begin{minipage}{0.9\textwidth}\raggedright\footnotesize
+$^{\dagger}$This single mismatch is an error of the rule---the negation cue of the preceding sentence falls within the 45-character window---and does not change the report-level assertion.
+\end{minipage}
 
 \vspace{8pt}
 \textbf{(d)} Finding-category level, leak-free subset\\[2pt]

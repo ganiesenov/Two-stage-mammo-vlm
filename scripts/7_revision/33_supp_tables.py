@@ -150,7 +150,12 @@ def s4():
             # «microcalcification», «microcalcifications» → «microcalcification(s)»
             ts = [t for t in ts if not (t.endswith("s") and t[:-1] in ts)]
             terms = ", ".join(f"``{t}(s)''" if t + "s" in g["terms"] else f"``{t}''" for t in ts)
-            mis.append(f"\\quad {text} & {id_ranges(g['ids'])} & {CATN[fcat]} & {terms} & {len(g['ids'])} \\\\")
+            # Расхождения вне эталонного шаблона проверены вручную: единственное такое —
+            # ошибка правила (отрицание соседнего предложения в окне 45 символов)
+            mark = "$^{\\dagger}$" if src != "ref" else ""
+            mis.append(f"\\quad {text} & {id_ranges(g['ids'])} & {CATN[fcat]} & {terms}{mark} & {len(g['ids'])} \\\\")
+    n_nonref = sum(len(g["ids"]) for k, g in groups.items() if k[1] != "ref")
+    assert n_nonref == 1, "сноска панели (c) написана про одно расхождение вне шаблона"
     n_mis_c49 = sum(len(g["ids"]) for g in groups.values())
     assert n_mis_c49 == ms["clean49"]["mention_level"]["table"].get("ours=True/context=False", 0)
     rep_c49 = [x for x in ms["report_disagreements"] if not x["leaked"]]
@@ -205,6 +210,10 @@ def s4():
 \multicolumn{{4}}{{l}}{{Total}} & {n_mis_c49} \\
 \bottomrule
 \end{{tabular}}
+
+\begin{{minipage}}{{0.9\textwidth}}\raggedright\footnotesize
+$^{{\dagger}}$This single mismatch is an error of the rule---the negation cue of the preceding sentence falls within the 45-character window---and does not change the report-level assertion.
+\end{{minipage}}
 
 \vspace{{8pt}}
 \textbf{{(d)}} Finding-category level, leak-free subset\\[2pt]

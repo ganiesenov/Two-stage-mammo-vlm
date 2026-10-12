@@ -22,6 +22,11 @@ spec = importlib.util.spec_from_file_location(
 clin = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(clin)
 
+spec = importlib.util.spec_from_file_location(
+    "sweep", os.path.join(os.path.dirname(__file__), "29_negation_window_sweep.py"))
+sweep = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(sweep)
+
 import medspacy
 from medspacy.ner import TargetRule
 
@@ -41,7 +46,7 @@ def ours_mentions(text):
     out = {}
     for term in clin.FINDING_TERMS:
         for m in re.finditer(rf'\b{re.escape(term)}\b', t):
-            out[m.start()] = clin.negated(t, m.start())
+            out[m.start()] = (clin.negated(t, m.start()), term)
     return out
 
 
@@ -63,14 +68,14 @@ def main():
 
     man = json.load(open(f"{ROOT}/results/revision/split_manifest.json"))
     leaked = set(man["verbatim_duplicate_leakage"]["test_ids"])
-    mention_pairs, report_pairs, disagreements = [], [], []
+    mention_pairs, report_pairs, disagreements, report_dis = [], [], [], []
     clean_m, clean_r = [], []
     unmatched = 0
     for (src, pid), text in texts.items():
         ours = ours_mentions(text)
         doc = nlp(text)
         theirs = {e.start_char: bool(e._.is_negated) for e in doc.ents if e.label_ == "FINDING"}
-        for pos, neg in ours.items():
+        for pos, (neg, term) in ours.items():
             if pos not in theirs:
                 unmatched += 1
                 continue
@@ -79,12 +84,20 @@ def main():
                 clean_m.append((neg, theirs[pos]))
             if neg != theirs[pos]:
                 t = text.replace("\n", " ")
-                disagreements.append({"src": src, "id": pid, "ours_negated": neg,
-                                      "context_negated": theirs[pos],
+                disagreements.append({"src": src, "id": pid, "leaked": pid in leaked,
+                                      "term": term, "category": sweep.CATEGORY[term],
+                                      "ours_negated": neg, "context_negated": theirs[pos],
                                       "snippet": t[max(0, pos - 90):pos + 30]})
-        our_assert = any(not v for v in ours.values())
+        our_assert = any(not v for v, _ in ours.values())
         their_assert = any(not v for v in theirs.values())
         report_pairs.append((our_assert, their_assert))
+        if our_assert != their_assert:
+            # Категории, которые утверждает только одна из сторон: из-за них и разошлись
+            ours_c = {sweep.CATEGORY[t] for v, t in ours.values() if not v}
+            theirs_c = {sweep.CATEGORY[ours[p][1]] for p, v in theirs.items() if not v and p in ours}
+            report_dis.append({"src": src, "id": pid, "leaked": pid in leaked,
+                               "ours_asserts": our_assert, "context_asserts": their_assert,
+                               "categories": sorted(ours_c ^ theirs_c)})
         if pid not in leaked:
             clean_r.append((our_assert, their_assert))
 
@@ -97,7 +110,7 @@ def main():
     out = {"n_texts": len(texts), "unmatched_mentions": unmatched,
            "mention_level": summ(mention_pairs), "report_level": summ(report_pairs),
            "clean49": {"mention_level": summ(clean_m), "report_level": summ(clean_r)},
-           "disagreements": disagreements}
+           "disagreements": disagreements, "report_disagreements": report_dis}
     json.dump(out, open(OUT, "w"), indent=2, ensure_ascii=False)
     print(f"текстов {len(texts)}, упоминаний без пары {unmatched}")
     for lvl in ("mention_level", "report_level"):

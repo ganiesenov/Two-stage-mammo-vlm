@@ -68,7 +68,11 @@ def supp_rows(sup, label, k=0):
     for _ in range(k + 1):
         j = sup.index("\\begin{tabular}", i)
         i = sup.index("\\end{tabular}", j)
-    return [strip(l).strip() for l in sup[j:i].split("\\\\") if "&" in l]
+    # Как в table_rows: без удаления правил первая строка данных читалась как
+    # «midrule <имя>» и молча пропускалась проверкой имени
+    body = re.sub(r"\\(?:top|mid|bottom)rule|\\cmidrule(?:\([^)]*\))?\{[^}]*\}"
+                  r"|\\multicolumn\{[^}]*\}\{[^}]*\}", "", sup[j:i])
+    return [strip(l).strip() for l in body.split("\\\\") if "&" in l]
 
 
 def verify_supplementary(clin):
@@ -103,7 +107,43 @@ def verify_supplementary(clin):
         check(f"S4b / {row[:30]} / n", v[0], src["n"])
         check(f"S4b / {row[:30]} / agreement%", v[1] / 100, src["agreement"])
         check(f"S4b / {row[:30]} / kappa", round(v[2], 2), round(src["kappa"], 2))
+    # (c) — расхождения правила с ConText по направлению, тексту и категории
+    from collections import Counter
+    catn = {"mass": "mass", "calcification": "calc", "asymmetry": "asymmetry",
+            "architectural distortion": "distortion"}
+    dis = [x for x in ms["disagreements"] if not x["leaked"]]
+    want_c = Counter((x["ours_negated"], x["src"], x["category"]) for x in dis)
+    want_ids = {}
+    for x in dis:
+        want_ids.setdefault((x["ours_negated"], x["src"], x["category"]), set()).add(int(x["id"][3:]))
+
+    def expand(cell):
+        out = set()
+        for part in cell.split(","):
+            lo, _, hi = part.strip().partition("--")
+            out |= set(range(int(lo), int(hi or lo) + 1))
+        return out
+
+    got_c, neg = Counter(), None
     for row in supp_rows(sup, "stab:negation", 2):
+        cells = [c.strip() for c in row.split("&")]
+        head = cells[0].replace("emph", "").replace("quad", "").strip()
+        if head == "Total":
+            check("S4c / total", int(cells[-1]), len(dis))
+            check("S4c / total vs panel b", int(cells[-1]),
+                  ms["clean49"]["mention_level"]["table"].get("ours=True/context=False", 0)
+                  + ms["clean49"]["mention_level"]["table"].get("ours=False/context=True", 0))
+        elif head.startswith("Rule negates") or head.startswith("Rule asserts"):
+            neg = head.startswith("Rule negates")
+            check(f"S4c / {head} / subtotal", int(cells[-1]), sum(x["ours_negated"] == neg for x in dis))
+        elif head == "Reference" or head in NAMES:
+            src = "ref" if head == "Reference" else NAMES[head]
+            key = (neg, src, catn[cells[2]])
+            got_c[key] = int(cells[-1])
+            check(f"S4c / {key} / mentions", int(cells[-1]), want_c.get(key))
+            check(f"S4c / {key} / images", float(expand(cells[1]) == want_ids.get(key)), 1.0)
+    check("S4c / groups listed", len(got_c), len(want_c))
+    for row in supp_rows(sup, "stab:negation", 3):
         name = row.split("&")[0].strip()
         if name not in NAMES:
             continue
@@ -112,7 +152,7 @@ def verify_supplementary(clin):
         want = [c["extra_categories"], c["hyp_categories"], c["cases_with_extra_category"],
                 c["cases_with_finding_on_normal_reference"], c["missing_categories"], c["ref_categories"]]
         for lab, g, t in zip(["extra", "hyp", "cases", "normal", "missing", "ref"], v, want):
-            check(f"S4c / {name} / {lab}", g, t)
+            check(f"S4d / {name} / {lab}", g, t)
     # S5 — leave-one-out
     loo = json.load(open(f"{RES}/leave_one_out.json"))
     keys = {"BLEU-1": "bleu1", "BLEU-4": "bleu4", "ROUGE-1": "rouge1", "ROUGE-L": "rougeL",

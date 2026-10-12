@@ -47,8 +47,10 @@ results/revision/predictions/ru_external_*
 # Ответ рецензентам: рецензирование конфиденциально (как в раунде 1)
 manuscript/response_round2.tex
 manuscript/response_round3.tex
+manuscript/response_round4.tex
 submission/build/response_round2.pdf
 submission/build/response_round3.pdf
+submission/build/response_round4.pdf
 .env
 lora_ablation/
 

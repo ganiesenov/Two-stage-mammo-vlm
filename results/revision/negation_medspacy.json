@@ -47,6 +47,9 @@
     {
       "src": "ref",
       "id": "Img461",
+      "leaked": false,
+      "term": "opacity",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: No abnormal soft opacity or microcalcifications"
@@ -54,6 +57,9 @@
     {
       "src": "ref",
       "id": "Img461",
+      "leaked": false,
+      "term": "microcalcifications",
+      "category": "calc",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "ibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: No abnormal soft opacity or microcalcifications seen.  ski"
@@ -61,6 +67,9 @@
     {
       "src": "ref",
       "id": "Img462",
+      "leaked": true,
+      "term": "opacity",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: No abnormal soft opacity or microcalcifications"
@@ -68,6 +77,9 @@
     {
       "src": "ref",
       "id": "Img462",
+      "leaked": true,
+      "term": "microcalcifications",
+      "category": "calc",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "ibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: No abnormal soft opacity or microcalcifications seen.  ski"
@@ -75,6 +87,9 @@
     {
       "src": "ref",
       "id": "Img463",
+      "leaked": false,
+      "term": "opacity",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR C)  FINDINGS: No abnormal soft opacity or microcalcifications"
@@ -82,6 +97,9 @@
     {
       "src": "ref",
       "id": "Img463",
+      "leaked": false,
+      "term": "microcalcifications",
+      "category": "calc",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "ibro fatty and glandular breast parenchyma (ACR C)  FINDINGS: No abnormal soft opacity or microcalcifications seen.  ski"
@@ -89,6 +107,9 @@
     {
       "src": "ref",
       "id": "Img464",
+      "leaked": true,
+      "term": "opacity",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR C)  FINDINGS: No abnormal soft opacity or microcalcifications"
@@ -96,6 +117,9 @@
     {
       "src": "ref",
       "id": "Img464",
+      "leaked": true,
+      "term": "microcalcifications",
+      "category": "calc",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "ibro fatty and glandular breast parenchyma (ACR C)  FINDINGS: No abnormal soft opacity or microcalcifications seen.  ski"
@@ -103,6 +127,9 @@
     {
       "src": "zero_shot",
       "id": "Img469",
+      "leaked": false,
+      "term": "mass",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": " The mass has a slightly irregular border.     *   The mass is not calcified.     *   The mass is not associated with sk"
@@ -110,6 +137,9 @@
     {
       "src": "ref",
       "id": "Img503",
+      "leaked": false,
+      "term": "opacity",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR D)  FINDINGS: no abnormal soft opacity or microcalcification "
@@ -117,6 +147,9 @@
     {
       "src": "ref",
       "id": "Img503",
+      "leaked": false,
+      "term": "microcalcification",
+      "category": "calc",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "ibro fatty and glandular breast parenchyma (ACR D)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
@@ -124,6 +157,9 @@
     {
       "src": "ref",
       "id": "Img504",
+      "leaked": false,
+      "term": "opacity",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: no abnormal soft opacity or microcalcification "
@@ -131,6 +167,9 @@
     {
       "src": "ref",
       "id": "Img504",
+      "leaked": false,
+      "term": "microcalcification",
+      "category": "calc",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "ibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
@@ -138,6 +177,9 @@
     {
       "src": "ref",
       "id": "Img505",
+      "leaked": false,
+      "term": "opacity",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR C)  FINDINGS: no abnormal soft opacity or microcalcification "
@@ -145,6 +187,9 @@
     {
       "src": "ref",
       "id": "Img505",
+      "leaked": false,
+      "term": "microcalcification",
+      "category": "calc",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "ibro fatty and glandular breast parenchyma (ACR C)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
@@ -152,6 +197,9 @@
     {
       "src": "ref",
       "id": "Img506",
+      "leaked": true,
+      "term": "opacity",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: no abnormal soft opacity or microcalcification "
@@ -159,6 +207,9 @@
     {
       "src": "ref",
       "id": "Img506",
+      "leaked": true,
+      "term": "microcalcification",
+      "category": "calc",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "ibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
@@ -166,6 +217,9 @@
     {
       "src": "ref",
       "id": "Img507",
+      "leaked": false,
+      "term": "opacity",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "POSITION: predominently fibro fatty breast parenchyma (ACR A)  FINDINGS: no abnormal soft opacity or microcalcification "
@@ -173,6 +227,9 @@
     {
       "src": "ref",
       "id": "Img507",
+      "leaked": false,
+      "term": "microcalcification",
+      "category": "calc",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "redominently fibro fatty breast parenchyma (ACR A)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
@@ -180,6 +237,9 @@
     {
       "src": "ref",
       "id": "Img508",
+      "leaked": false,
+      "term": "opacity",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "POSITION: predominantly fibro fatty breast parenchyma (ACR A)  FINDINGS: no abnormal soft opacity or microcalcification "
@@ -187,6 +247,9 @@
     {
       "src": "ref",
       "id": "Img508",
+      "leaked": false,
+      "term": "microcalcification",
+      "category": "calc",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "redominantly fibro fatty breast parenchyma (ACR A)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
@@ -194,6 +257,9 @@
     {
       "src": "ref",
       "id": "Img509",
+      "leaked": false,
+      "term": "opacity",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "POSITION: predominently fibro fatty breast parenchyma (ACR A)  FINDINGS: no abnormal soft opacity or microcalcification "
@@ -201,6 +267,9 @@
     {
       "src": "ref",
       "id": "Img509",
+      "leaked": false,
+      "term": "microcalcification",
+      "category": "calc",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "redominently fibro fatty breast parenchyma (ACR A)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
@@ -208,6 +277,9 @@
     {
       "src": "ref",
       "id": "Img510",
+      "leaked": false,
+      "term": "opacity",
+      "category": "mass",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "POSITION: fibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: no abnormal soft opacity or microcalcification "
@@ -215,9 +287,146 @@
     {
       "src": "ref",
       "id": "Img510",
+      "leaked": false,
+      "term": "microcalcification",
+      "category": "calc",
       "ours_negated": true,
       "context_negated": false,
       "snippet": "ibro fatty and glandular breast parenchyma (ACR B)  FINDINGS: no abnormal soft opacity or microcalcification seen.  skin"
+    }
+  ],
+  "report_disagreements": [
+    {
+      "src": "ref",
+      "id": "Img461",
+      "leaked": false,
+      "ours_asserts": false,
+      "context_asserts": true,
+      "categories": [
+        "calc",
+        "mass"
+      ]
+    },
+    {
+      "src": "ref",
+      "id": "Img462",
+      "leaked": true,
+      "ours_asserts": false,
+      "context_asserts": true,
+      "categories": [
+        "calc",
+        "mass"
+      ]
+    },
+    {
+      "src": "ref",
+      "id": "Img463",
+      "leaked": false,
+      "ours_asserts": false,
+      "context_asserts": true,
+      "categories": [
+        "calc",
+        "mass"
+      ]
+    },
+    {
+      "src": "ref",
+      "id": "Img464",
+      "leaked": true,
+      "ours_asserts": false,
+      "context_asserts": true,
+      "categories": [
+        "calc",
+        "mass"
+      ]
+    },
+    {
+      "src": "ref",
+      "id": "Img503",
+      "leaked": false,
+      "ours_asserts": false,
+      "context_asserts": true,
+      "categories": [
+        "calc",
+        "mass"
+      ]
+    },
+    {
+      "src": "ref",
+      "id": "Img504",
+      "leaked": false,
+      "ours_asserts": false,
+      "context_asserts": true,
+      "categories": [
+        "calc",
+        "mass"
+      ]
+    },
+    {
+      "src": "ref",
+      "id": "Img505",
+      "leaked": false,
+      "ours_asserts": false,
+      "context_asserts": true,
+      "categories": [
+        "calc",
+        "mass"
+      ]
+    },
+    {
+      "src": "ref",
+      "id": "Img506",
+      "leaked": true,
+      "ours_asserts": false,
+      "context_asserts": true,
+      "categories": [
+        "calc",
+        "mass"
+      ]
+    },
+    {
+      "src": "ref",
+      "id": "Img507",
+      "leaked": false,
+      "ours_asserts": false,
+      "context_asserts": true,
+      "categories": [
+        "calc",
+        "mass"
+      ]
+    },
+    {
+      "src": "ref",
+      "id": "Img508",
+      "leaked": false,
+      "ours_asserts": false,
+      "context_asserts": true,
+      "categories": [
+        "calc",
+        "mass"
+      ]
+    },
+    {
+      "src": "ref",
+      "id": "Img509",
+      "leaked": false,
+      "ours_asserts": false,
+      "context_asserts": true,
+      "categories": [
+        "calc",
+        "mass"
+      ]
+    },
+    {
+      "src": "ref",
+      "id": "Img510",
+      "leaked": false,
+      "ours_asserts": false,
+      "context_asserts": true,
+      "categories": [
+        "calc",
+        "mass"
+      ]
     }
   ]
 }

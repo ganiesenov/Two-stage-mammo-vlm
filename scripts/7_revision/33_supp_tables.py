@@ -69,12 +69,13 @@ def s3():
         if m == "zero_shot":
             rows.append("\\midrule")
     refd = ", ".join(f"{c}\\,{ref[c]}" for c in sorted(ref))
+    prev_b = r3(ref["B"] / sum(ref.values()))
     return rf"""\clearpage
 \section*{{Supplementary Table S3}}
 
 \begin{{table}}[H]
 \centering
-\caption{{ACR breast density on the leak-free DMID test subset ($n=49$), moved from Table~6 of the main text. Accuracy is exact agreement with the density category stated in the reference report; $\kappa$ is Cohen's kappa. The reference distribution is {refd}. Three of the four fine-tuned models assign a single category to every case---ACR~C for DMID-only at $r=16$, ACR~B for both $r=64$ models---so their accuracy equals the prevalence of that category and $\kappa=0$: these values reflect a constant prediction (mode collapse), not density perception, and they cannot be read as evidence that the models assess density. The one configuration with non-zero agreement (two-stage, $r=16$) is also the one with the lowest BI-RADS agreement in Table~6.}}
+\caption{{ACR breast density on the leak-free DMID test subset ($n=49$), moved from Table~6 of the main text. Accuracy is exact agreement with the density category stated in the reference report; $\kappa$ is Cohen's kappa. The reference distribution is {refd}. Three of the four fine-tuned models assign a single category to every case---ACR~C for DMID-only at $r=16$, ACR~B for both $r=64$ models---so their accuracy equals the prevalence of that category and $\kappa=0$: these values reflect a constant prediction (mode collapse), not density perception, and they cannot be read as evidence that the models assess density. The one configuration with non-zero agreement (two-stage, $r=16$) is also the one with the lowest BI-RADS agreement in Table~6. The accuracy of the $r=64$ models equals the prevalence of ACR~B in the test subset ({prev_b}) because they assign ACR~B to every case; this figure must not be read as evidence of density perception ($\kappa=0$).}}
 \label{{stab:density}}
 \begin{{tabular}}{{lcccl}}
 \toprule
@@ -111,13 +112,60 @@ def s4():
             s = src[lvl]
             agr.append(f"{lab} & {lvlname} & {s['n']} & {100 * s['agreement']:.1f}\\% & {s['kappa']:.2f} \\\\")
     n_dis = len(ms["disagreements"])
+    # Панель (c): каждое расхождение правила с ConText на чистом подмножестве,
+    # сгруппированное по направлению, тексту и категории, с перечнем снимков
+    CATN = {"mass": "mass", "calc": "calcification", "asymmetry": "asymmetry",
+            "distortion": "architectural distortion"}
+    DIRS = [(True, "Rule negates, ConText asserts"), (False, "Rule asserts, ConText negates")]
+
+    def id_ranges(ids):
+        n = sorted(int(i.replace("Img", "")) for i in ids)
+        out, a = [], 0
+        for b in range(1, len(n) + 1):
+            if b == len(n) or n[b] != n[b - 1] + 1:
+                out.append(str(n[a]) if b - a == 1 else
+                           f"{n[a]}, {n[b - 1]}" if b - a == 2 else f"{n[a]}--{n[b - 1]}")
+                a = b
+        return ", ".join(out)
+
+    groups = {}
+    for x in ms["disagreements"]:
+        if x["leaked"]:
+            continue
+        key = (x["ours_negated"], x["src"], x["category"])
+        groups.setdefault(key, {"ids": [], "terms": set()})
+        groups[key]["ids"].append(x["id"])
+        groups[key]["terms"].add(x["term"])
+    order = list(CATN)
+    mis = []
+    for neg, dname in DIRS:
+        keys = sorted((k for k in groups if k[0] == neg),
+                      key=lambda k: (k[1] != "ref", k[1], order.index(k[2])))
+        n_dir = sum(len(groups[k]["ids"]) for k in keys)
+        mis.append(f"\\multicolumn{{4}}{{l}}{{\\emph{{{dname}}}}} & {n_dir} \\\\")
+        for _, src, fcat in keys:
+            g = groups[(neg, src, fcat)]
+            text = "Reference" if src == "ref" else NAMES[src]
+            ts = sorted(g["terms"])
+            # «microcalcification», «microcalcifications» → «microcalcification(s)»
+            ts = [t for t in ts if not (t.endswith("s") and t[:-1] in ts)]
+            terms = ", ".join(f"``{t}(s)''" if t + "s" in g["terms"] else f"``{t}''" for t in ts)
+            mis.append(f"\\quad {text} & {id_ranges(g['ids'])} & {CATN[fcat]} & {terms} & {len(g['ids'])} \\\\")
+    n_mis_c49 = sum(len(g["ids"]) for g in groups.values())
+    assert n_mis_c49 == ms["clean49"]["mention_level"]["table"].get("ours=True/context=False", 0)
+    rep_c49 = [x for x in ms["report_disagreements"] if not x["leaked"]]
+    n_rep_c49 = len(rep_c49)
+    n_ref_rep = len({x["id"] for x in ms["disagreements"] if x["src"] == "ref" and not x["leaked"]})
+    assert n_rep_c49 == n_ref_rep and all(x["src"] == "ref" for x in rep_c49)
+    n_leak_ref = sum(x["leaked"] for x in ms["disagreements"])
+    n_leak_rep = len({x["id"] for x in ms["disagreements"] if x["leaked"]})
     n_tmpl = sum(d["src"] == "ref" for d in ms["disagreements"])
     return rf"""\clearpage
 \section*{{Supplementary Table S4}}
 
 \begin{{table}}[H]
 \centering
-\caption{{Validation of the assertion-level negation rule of Eq.~8. \textbf{{(a)}} Sensitivity / hallucination rate of the models of Table~6 on the leak-free subset ($n=49$) as the negation window is varied; the 45-character column is the one used in the main text. Omission is $1-$sensitivity. \textbf{{(b)}} Agreement between the 45-character rule and the ConText algorithm as implemented in medspaCy (default rules; target terms are the finding terms of the main-text rule), over all reference and generated reports of the five models. A mention is a single occurrence of a finding term, judged negated or not; a report-level assertion is whether a text asserts at least one finding, which is the quantity entering Eq.~8. All {n_dis} disagreeing mentions on the full split were inspected: {n_tmpl} are occurrences of the reference template ``FINDINGS: No abnormal soft opacity or microcalcifications seen'', which ConText does not negate after the section header (the same sentence without the header is negated), and the remaining one is a zero-shot mention preceded by ``not'' from the previous sentence, which does not change the report-level assertion. \textbf{{(c)}} Finding-category level (mass, calcification, asymmetry, architectural distortion), which Eq.~8 does not measure: categories asserted by the generation but absent from the reference, the number of cases in which this happens, how many of those cases have a reference asserting no finding at all, and reference categories not asserted by the generation.}}
+\caption{{Validation of the assertion-level negation rule of Eq.~8. \textbf{{(a)}} Sensitivity / hallucination rate of the models of Table~6 on the leak-free subset ($n=49$) as the negation window is varied; the 45-character column is the one used in the main text. Omission is $1-$sensitivity. \textbf{{(b)}} Agreement between the 45-character rule and the ConText algorithm as implemented in medspaCy (default rules; target terms are the finding terms of the main-text rule), over all reference and generated reports of the five models. A mention is a single occurrence of a finding term, judged negated or not; a report-level assertion is whether a text asserts at least one finding, which is the quantity entering Eq.~8. All {n_dis} disagreeing mentions on the full split were inspected: {n_tmpl} are occurrences of the reference template ``FINDINGS: No abnormal soft opacity or microcalcifications seen'', which ConText does not negate after the section header (the same sentence without the header is negated), and the remaining one is a zero-shot mention preceded by ``not'' from the previous sentence, which does not change the report-level assertion. \textbf{{(c)}} lists every finding-category mismatch between the rule and the reference annotation (medspaCy ConText) on the leak-free subset, by text, finding category and direction; the {n_ref_rep} reference reports carrying the template are the {n_rep_c49} report-level disagreements of panel (b), and no mismatch runs in the opposite direction or involves asymmetry or architectural distortion. On the full split the same template adds {n_leak_ref} mentions from the {n_leak_rep} excluded images. \textbf{{(d)}} Finding-category level (mass, calcification, asymmetry, architectural distortion), which Eq.~8 does not measure: categories asserted by the generation but absent from the reference, the number of cases in which this happens, how many of those cases have a reference asserting no finding at all, and reference categories not asserted by the generation.}}
 \label{{stab:negation}}
 \small
 \textbf{{(a)}} Negation window\\[2pt]
@@ -139,8 +187,27 @@ def s4():
 \bottomrule
 \end{{tabular}}
 
+\end{{table}}
+
+% (c) и (d) на отдельной странице: вместе с (a), (b) и подписью таблица не помещается
+\clearpage
+\begin{{table}}[H]
+\centering
+\small
+{{\normalsize\textbf{{Supplementary Table S4 (continued)}}}}\\[8pt]
+\textbf{{(c)}} Rule vs.\ ConText mismatches by finding category, leak-free subset\\[2pt]
+\begin{{tabular}}{{llllc}}
+\toprule
+\textbf{{Direction / text}} & \textbf{{Images (Img)}} & \textbf{{Category}} & \textbf{{Terms}} & \textbf{{Mentions}} \\
+\midrule
+{chr(10).join(mis)}
+\midrule
+\multicolumn{{4}}{{l}}{{Total}} & {n_mis_c49} \\
+\bottomrule
+\end{{tabular}}
+
 \vspace{{8pt}}
-\textbf{{(c)}} Finding-category level, leak-free subset\\[2pt]
+\textbf{{(d)}} Finding-category level, leak-free subset\\[2pt]
 \begin{{tabular}}{{lcccc}}
 \toprule
 \textbf{{Method}} & \textbf{{Extra categories}} & \textbf{{Cases}} & \textbf{{of which normal ref.}} & \textbf{{Missing categories}} \\
